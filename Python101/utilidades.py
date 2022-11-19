@@ -20,7 +20,8 @@ def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, opinion, tarea
         "id_tarea": f'{tarea}', \
         "calificacion": calificacion, \
         "resultados": resultados, \
-        "edicion": "1"
+        "edicion": "1", \
+        "tipo": "jupyter"
         })
     if resp.status_code != 200:
         print(f"""
