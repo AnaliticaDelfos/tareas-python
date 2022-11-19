@@ -13,15 +13,14 @@ class Resultado:
 def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, opinion, tarea):
     print(f"============> Enviando calificación <============\n")
     resp = requests \
-        .post("https://us-central1-cursos-mios-01.cloudfunctions.net/calificar", \
+        .post("https://us-central1-cursos-delfos.cloudfunctions.net/get_grades", \
         json={"uuid": uuid, \
-        "curso": "pythondelaaalaz", \
+        "id_curso": "gjnKxLIRMX5EFwRVgULs", \
         "ejercicio": ejercicio, \
-        "tarea": f'{tarea}', \
+        "id_tarea": f'{tarea}', \
         "calificacion": calificacion, \
         "resultados": resultados, \
-        "fecha": str(datetime.today()), \
-        "opinion": opinion \
+        "edicion": "1"
         })
     if resp.status_code != 200:
         print(f"""
@@ -67,12 +66,11 @@ def convertir_a_tupla(r):
 
 def helper(resultados, tarea, nombre, uuid, **kwargs):
     if not kwargs['error']:
-        assert uuid != None, "Ingresa tu clave"
-        assert uuid != "TU CLAVE", "Ingresa tu clave"
-        assert len(uuid) == 28, "Tu clave no está bien escriba"
-        print(f"=====================================================================\n")
-        print(f"============> Calificando {tarea+nombre} <============\n")
-        print(f"=====================================================================\n")
+        assert uuid != None, "Ingresa tu correo"
+        assert uuid != "TU CORREO", "Ingresa tu correo"
+        print(f"===============================================================================\n")
+        print(f"============> Calificando: tarea {tarea} - ejercicio {nombre} <============\n")
+        print(f"===============================================================================\n")
         aciertos_arr = []
         errores_arr = []
         for resultado in resultados:
@@ -134,7 +132,7 @@ def helper(resultados, tarea, nombre, uuid, **kwargs):
                 opinion = None
             resultados = list(map(convertir_a_tupla, resultados))
             if prod:
-                mandar_a_firestore(uuid, tarea+nombre, calificacion, resultados, opinion, tarea)
+                mandar_a_firestore(uuid, nombre, calificacion, resultados, opinion, tarea)
             else:
                 print("Sandbox")
     else:

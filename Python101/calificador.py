@@ -42,7 +42,7 @@ def califica_suma_test(f, uuid, deseo_ayudar):
         if error:
             break
     
-    helper(resultados, 't1-', 'suma_test', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '2', 'suma_test', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 def califica_resta_test(f, uuid, deseo_ayudar):
     resultados = []
@@ -62,9 +62,9 @@ def califica_resta_test(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'resta_test', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '2', 'resta_test', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
-@template_sencillo("Hola, mundo!", 'saludo_test', 't1-')
+@template_sencillo("Hola, mundo!", 'saludo_test', '3')
 def califica_saludo_test(f, uuid, deseo_ayudar):
     return f
 
@@ -88,7 +88,7 @@ def califica_suma(f, uuid, deseo_ayudar):
         if error:
             break
     
-    helper(resultados, 't1-', 'suma', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'suma', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 
 
@@ -110,7 +110,7 @@ def califica_resta(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'resta', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'resta', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 @template_sencillo("Hola, mundo!", 'saludo', 't2-')
 def califica_saludo(f, uuid, deseo_ayudar):
@@ -138,7 +138,7 @@ def califica_multiplicacion(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'multiplicacion', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'multiplicacion', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 def califica_division(f, uuid, deseo_ayudar):
     error = False
@@ -158,7 +158,7 @@ def califica_division(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'division', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'division', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 
 def califica_division_cuidadosa(f, uuid, deseo_ayudar):
@@ -179,7 +179,7 @@ def califica_division_cuidadosa(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'division-cuidadosa', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'division-cuidadosa', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 def califica_al_cuadrado(f, uuid, deseo_ayudar):
     error = False
@@ -197,7 +197,7 @@ def califica_al_cuadrado(f, uuid, deseo_ayudar):
             excepcion = str(e)
             break
         
-    helper(resultados, 't1-', 'al_cuadrado', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'al_cuadrado', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 
 def califica_potencia(f, uuid, deseo_ayudar):
@@ -218,7 +218,7 @@ def califica_potencia(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'potencia', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'potencia', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 
 def califica_suma_mas_dos(f, uuid, deseo_ayudar):
@@ -240,7 +240,7 @@ def califica_suma_mas_dos(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'suma_mas_dos', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'suma_mas_dos', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 def califica_resta_menos_veinte(f, uuid, deseo_ayudar):
     error = False
@@ -261,7 +261,7 @@ def califica_resta_menos_veinte(f, uuid, deseo_ayudar):
                 break
         if error:
             break
-    helper(resultados, 't1-', 'resta_menos_veinte', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+    helper(resultados, '3', 'resta_menos_veinte', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
 @template_iterable([
     [[1], 1],
@@ -269,7 +269,7 @@ def califica_resta_menos_veinte(f, uuid, deseo_ayudar):
     [[-3], 3],
     [[-3.6], 3.6],
     [[-100000], 100000]
-], 'valor_absoluto', 't1-')
+], 'valor_absoluto', '3')
 def califica_valor_absoluto(f, uuid, deseo_ayudar):
     return f
 
@@ -278,7 +278,7 @@ def califica_valor_absoluto(f, uuid, deseo_ayudar):
     [["2"], 2],
     [[-3.2], -3],
     [["3"], 3]
-], 'convertir_a_entero', 't1-')
+], 'convertir_a_entero', '3')
 def califica_convertir_a_entero(f, uuid, deseo_ayudar):
     return f
 
@@ -286,7 +286,7 @@ def califica_convertir_a_entero(f, uuid, deseo_ayudar):
     [[3], 3.0],
     [[1.2], 1.2],
     [["2.2"], 2.2]
-], 'convertir_a_float', 't1-')
+], 'convertir_a_float', '3')
 def califica_convertir_a_float(f, uuid, deseo_ayudar):
     return f
 
