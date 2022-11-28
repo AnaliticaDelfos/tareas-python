@@ -437,7 +437,7 @@ def califica_penultimo_caracter(f, uuid, deseo_ayudar):
     [["Hola", "hola"], "Son diferentes"],
     [["Mi nombre es:", "Mi nombre es"], "Son diferentes"],
     [["Tengo ... años", "Tengo --- años"], "Son diferentes"],
-], 'son_iguales', 't3-')
+], 'son_iguales', '3')
 def califica_son_iguales(f, uuid, deseo_ayudar):
     return f
 
@@ -447,7 +447,7 @@ def califica_son_iguales(f, uuid, deseo_ayudar):
     [[12], "Eres menor de edad"],
     [[81], "Eres mayor de edad"],
     [[99], "Eres mayor de edad"],
-], 'mayor_de_edad', 't3-')
+], 'mayor_de_edad', '3')
 def califica_mayor_de_edad(f, uuid, deseo_ayudar):
     return f
 
@@ -457,7 +457,7 @@ def califica_mayor_de_edad(f, uuid, deseo_ayudar):
     [[1,2], "El segundo es mayor"],
     [[89,89], "Son iguales"],
     [[2,2], "Son iguales"],
-], 'es_mayor', 't3-')
+], 'es_mayor', '3')
 def califica_es_mayor(f, uuid, deseo_ayudar):
     return f
 
@@ -467,13 +467,10 @@ def califica_es_mayor(f, uuid, deseo_ayudar):
     [[20], "No pertenece"],
     [[16], "No pertenece"],
     [[28], "Pertenece"],
-], 'en_medio', 't3-')
+], 'en_medio', '3')
 def califica_en_medio(f, uuid, deseo_ayudar):
     return f
 
-####################################################################################################
-#                                       Tarea 4
-####################################################################################################
 @template_iterable([
     [[10000, 'Educación'], '8%'],
     [[15000, 'Educación'], '10%'],
@@ -487,7 +484,7 @@ def califica_en_medio(f, uuid, deseo_ayudar):
     [[10000, 'Tecnología'], '12%'],
     [[15000, 'Tecnología'], '14%'],
     [[25000, 'Tecnología'], '14%'],
-], 'impuestos', 't4-')
+], 'impuestos', '3')
 def califica_impuestos(f, uuid, deseo_ayudar):
     return f
 
@@ -497,18 +494,31 @@ def califica_impuestos(f, uuid, deseo_ayudar):
     [[10], 'Pasaste'],
     [[4.6], 'Prueba de nuevo'],
     [[5.4], 'Prueba de nuevo'],
-], 'calificacion_aprobatoria', 't4-')
+], 'calificacion_aprobatoria', '3')
 def califica_calificacion_aprobatoria(f, uuid, deseo_ayudar):
     return f
 
-    
+
 @template_iterable([
     [[1.40], "Puede subir :D"],
     [[1.23], "No puede subir :("],
     [[1.80], "Puede subir :D"]
-], 'puede_subir', 't4-')
+], 'puede_subir', '3')
 def califica_puede_subir(f, uuid, deseo_ayudar):
     return f
+
+@template_iterable([
+    [[1,2,3], "Escaleno"],
+    [[3,3,3], "Equilátero"],
+    [[1,2,2], "Isósceles"],
+], 'tipo_de_triangulo', '3')
+def califica_tipo_de_triangulo(f, uuid, deseo_ayudar):
+    return f
+    
+####################################################################################################
+#                                       Tarea 4
+####################################################################################################
+
 
 @template_sencillo([], 'creacion_de_lista_vacia', 't4-')
 def califica_creacion_de_lista_vacia(f, uuid, deseo_ayudar):
@@ -638,17 +648,13 @@ def califica_contar_vocales_y_numeros(f, uuid, deseo_ayudar):
 def califica_obtener_promedio2(f, uuid, deseo_ayudar):
     return f
 
+
+
 ####################################################################################################
 #                                       Tarea 7
 ####################################################################################################
 
-@template_iterable([
-    [[1,2,3], "Escaleno"],
-    [[3,3,3], "Equilátero"],
-    [[1,2,2], "Isósceles"],
-], 'tipo_de_triangulo', 't6-')
-def califica_tipo_de_triangulo(f, uuid, deseo_ayudar):
-    return f
+
 
 @template_iterable([
         ([[]], 0),
@@ -897,7 +903,7 @@ def califica_obtener_promedio(f, uuid, deseo_ayudar):
     [[3333], False],
     [[1234], True],
     [[209872], True],
-], 'es_par', 't3-')
+], 'es_par', '3')
 def califica_es_par(f, uuid, deseo_ayudar):
     return f
 
@@ -907,7 +913,7 @@ def califica_es_par(f, uuid, deseo_ayudar):
     [[10,5], 2.0],
     [[23,0], "No puedo dividir entre cero"],
     [[1567,0], "No puedo dividir entre cero"],
-], 'division_cuidadosa', 't3-')
+], 'division_cuidadosa', '3')
 def califica_division_cuidadosa(f, uuid, deseo_ayudar):
     return f
 
