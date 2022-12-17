@@ -520,20 +520,89 @@ def califica_tipo_de_triangulo(f, uuid, deseo_ayudar):
 ####################################################################################################
 
 
-@template_sencillo([], 'creacion_de_lista_vacia', 't4-')
+@template_sencillo([], 'creacion_de_lista_vacia', '4')
 def califica_creacion_de_lista_vacia(f, uuid, deseo_ayudar):
     return f
 
-@template_sencillo((), 'creacion_de_una_tupla_vacia', 't4-')
+@template_sencillo((), 'creacion_de_una_tupla_vacia', '4')
 def califica_creacion_de_una_tupla_vacia(f, uuid, deseo_ayudar):
     return f
     
-@template_sencillo({}, 'creacion_de_un_diccionario_vacio', 't4-')    
+@template_sencillo({}, 'creacion_de_un_diccionario_vacio', '4')    
 def califica_creacion_de_un_diccionario_vacio(f, uuid, deseo_ayudar):
     return f
-####################################################################################################
-#                                       Tarea 5
-####################################################################################################
+
+@template_iterable([
+        ([[]], 0),
+        ([[1,2,3]], 3),
+        ([[1,2,3,4,5,6,7,8,9,10]], 10),
+        ([list(range(100))], 100)
+    ], 'obtener_longitu_de_una_lista', '4')
+def califica_obtener_longitud_de_una_lista(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+        ([()], 0),
+        ([(1,2,3)], 3),
+        ([(1,2,3,4,5,6,7,8,9,10)], 10),
+        ([tuple(range(100))], 100)
+    ], 'obtener_longitud_de_una_tupla', '4')
+def califica_obtener_longitud_de_una_tupla(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+        ([{}], 0),
+        ([{"Uno": 1,"Dos": 2, "Tres": 3}], 3),
+        ([{"Dia": "Martes"}], 1),
+        ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], 2)
+    ], 'obtener_longitud_de_un_diccionario', '4')
+def califica_obtener_longitud_de_un_diccionario(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+        ([1], [1]),
+        ([{"Uno": 1,"Dos": 2, "Tres": 3}], [{"Uno": 1,"Dos": 2, "Tres": 3}]),
+        ([{"Dia": "Martes"}], [{"Dia": "Martes"}]),
+        ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], [{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}])
+    ], 'creacion_de_una_lista_con_exactamente_un_elemento', '4')
+def califica_creacion_de_una_lista_con_exactamente_un_elemento(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+        ([1], (1,)),
+        ([{"Uno": 1,"Dos": 2, "Tres": 3}], ({"Uno": 1,"Dos": 2, "Tres": 3},)),
+        ([{"Dia": "Martes"}], ({"Dia": "Martes"},)),
+        ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], ({"Curso": "Python de la a a la z", "Fecha": "17 de enero"},))
+    ], 'creacion_de_una_tupla_con_exactamente_un_elemento', '4')
+def califica_creacion_de_una_tupla_con_exactamente_un_elemento(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+        ([27], {'edad': 27}), 
+        ([60], {'edad': 60}) 
+    ], 'creacion_de_un_diccionario_con_clave_edad', '4')
+def califica_creacion_de_un_diccionario_con_clave_edad(f, uuid, deseo_ayudar):
+    return f
+
+@template_sencillo(['a', 'b', 'c'], 'creacion_de_una_lista_con_tres_elementos', '4')
+def califica_creacion_de_una_lista_con_tres_elementos(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[1,2,3,4,5,6]], 6],
+    [[['a', 'b', 'c', 'd', 'e', 'f']], 'f'],
+    [[[10, 11, 12, 13, 14, 15, 16, 17]], 15]
+], 'acceder_al_elemento_5', '4')
+def califica_acceder_al_elemento_5(f, uuid, deseo_ayudar):
+    return f
+    
+@template_iterable([
+            [[27], 26], 
+            [[60], 59],
+            [[101], 100],
+        ], 'acceder_al_ultimo_elemento_de_una_tupla_en_rango', '4')
+def califica_acceder_al_ultimo_elemento_de_una_tupla_en_rango(f, uuid, deseo_ayudar):
+        return f
 
 @template_sencillo({
     'estado': 'Activo',
@@ -541,14 +610,14 @@ def califica_creacion_de_un_diccionario_vacio(f, uuid, deseo_ayudar):
         'curso': 'Python de la A a la Z',
         'tareas': 3
     }
-}, 'creacion_de_diccionario_dentro_de_otro_diccionario', 't5-')
+}, 'creacion_de_diccionario_dentro_de_otro_diccionario', '4')
 def califica_creacion_de_diccionario_dentro_de_otro_diccionario(f, uuid, deseo_ayudar):
     return f
 
 @template_sencillo([
     {"pais": "México", "nombre oficial": "Estados Unidos Mexicanos"},
     {"pais": "Estados Unidos", "nombre oficial": "Estados Unidos de América"}
-], 'creacion_de_lista_de_diccionarios', 't5-')
+], 'creacion_de_lista_de_diccionarios', '4')
 def califica_creacion_de_lista_de_diccionarios(f, uuid, deseo_ayudar):
     return f
 
@@ -559,13 +628,13 @@ def califica_creacion_de_lista_de_diccionarios(f, uuid, deseo_ayudar):
         "tarea2": [
             10, 8, 7
         ]
-    }, 'creacion_de_diccionario_con_listas', 't5-')
+    }, 'creacion_de_diccionario_con_listas', '4')
 def califica_creacion_de_diccionario_con_listas(f, uuid, deseo_ayudar):
     return f
 
 @template_sencillo({
         "historial": ((3,5,1,6), (56,2,1,7), (62,4,78,3))
-    }, 'creacion_de_diccionario_con_tuplas', 't5-')
+    }, 'creacion_de_diccionario_con_tuplas', '4')
 def califica_creacion_de_diccionario_con_tuplas(f, uuid, deseo_ayudar):
     return f
 
@@ -574,12 +643,12 @@ def califica_creacion_de_diccionario_con_tuplas(f, uuid, deseo_ayudar):
     [['Nombre', "Pepito"], {'Nombre': 'Pepito'}],
     [[1, 27], {1: 27}],
     [["Calif", 100], {'Calif': 100}],
-], 'creacion_de_diccionario_a_partir_de_clave', 't5-')
+], 'creacion_de_diccionario_a_partir_de_clave', '4')
 def califica_creacion_de_diccionario_a_partir_de_clave(f, uuid, deseo_ayudar):
     return f
 
 @template_sencillo(
-    list(range(10001)), 'lista_hasta_10000', 't5-'
+    list(range(10001)), 'lista_hasta_10000', '4'
 )
 def califica_lista_hasta_10000(f, uuid, deseo_ayudar):
     return f
@@ -590,13 +659,57 @@ def califica_lista_hasta_10000(f, uuid, deseo_ayudar):
     [[110], list(range(110))],
     [[2], list(range(2))],
     [[3], list(range(3))],
-], 'lista_en_rango', 't5-')
+], 'lista_en_rango', '4')
 def califica_lista_en_rango(f, uuid, deseo_ayudar):
     return f
 
-####################################################################################################
-#                                       Tarea 6
-####################################################################################################
+@template_iterable([
+    [[[1,2,3]], 6],
+    [[[10, 20, 30]], 60],
+    [[[9,8,7]], 24]
+], 'obtener_suma_sencilla', '4')
+def califica_obtener_suma_sencilla(f, uuid, deseo_ayudar):
+    return f
+
+
+@template_iterable([
+    [[[17, 18, 12, 12, 17]], 749088],
+    [[[105, 148, 111, 143, 113]], 27873305460],
+    [[[82, 56, 37, 153, 123]], 3197423376]
+], 'obtener_multiplicacion_sencilla', '4')
+def califica_obtener_multiplicacion_sencilla(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[["abecedario", "tacos", "enchiladas", "sal"]], ('abecedario', 'tacos', 'enchiladas')]
+], 'obtener_palabras_mayores_a_3', '4')
+def califica_obtener_palabras_mayores_a_3(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[10], 3628800],
+    [[11], 39916800],
+    [[12], 479001600],
+], 'obtener_factorial', '4')
+def califica_obtener_factorial(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[110], 3025],
+    [[123], 3844],
+    [[254], 16129],
+], 'sumar_impares', '4')
+def califica_sumar_impares(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[3,7,5,1], 7], 1],
+    [[[3,7,5,1], 1], 3],
+    [[[3,7,5,1], 3], 0],
+], 'encontrar_indice', '4')
+def califica_encontrar_indice(f, uuid, deseo_ayudar):
+    return f
+
 @template_iterable([
     [[[("tacos", 300), ("enchiladas", 200), ("sopes", 150)]], 650],
     [[[("Macbook Pro", 50), ("Macbook Air", 200), ("IPhone", 1000)]], 1250],
@@ -606,6 +719,60 @@ def califica_lista_en_rango(f, uuid, deseo_ayudar):
 ], 'suma_totales', 't6-')
 def califica_suma_totales(f, uuid, deseo_ayudar):
     return f
+
+@template_iterable([
+    [[{"comida": "enchiladas", "Aguacate": "Verde", "agua": "Salada", "espinaca": "verdura"}], {"Aguacate": "Verde", "agua": "Salada"}],
+    [[{"automatico": "Vehículo", "standard": "Carro"}], {"automatico": "Vehículo"}]
+], 'revisar_claves', '4')
+def califica_revisar_claves(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[[1,2,3],[5,6,7],[7,8,9]]], [6, 18, 24]],
+    [[[[-31,24,-3],[-35,-61,47],[47,2,90]]], [-10, -49, 139]],
+    [[[[-1,-4,-5,3],[-5,-1,4],[47,2,90],[5,-7,-1,-5,-8],[1,2], [8,7,5]]], [-7, -2, 139, -16, 3, 20]]
+], 'suma_filas', '4')
+def califica_suma_filas(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[{"ola": "Del mar", "hola": [1,2,3], "curso": "Python", "ZDRF": [3,4,5]}], ([6, 12], ['Python'])],
+    [[{"RDF": [7,9,-1], "DCA": "Hola mundo", "SWECD": "Analitica", "QWSDE": "Delfos"}], ([15], ['Analitica', 'Delfos'])]
+], 'filtrado', '4')
+def califica_filtrado(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[10], [1, 2, 3, 5, 7]],
+    [[11], [1, 2, 3, 5, 7, 11]],
+    [[60], [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]]
+], 'encontrar_primos', '4')
+def califica_encontrar_primos(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[{"alberto": 10, "mariana": 10, "roberto": 8}], ['AL', 'MA', 'RO']],
+    [[{"Pepe": 8, "Antonio": 7, "Esmeralda": 8}], ['PE', 'AN', 'ES']],
+    [[{"Salmon": 9, "Brenda": 3, "Sofía": 10}], ['SA', 'BR', 'SO']]
+], 'obtener_nickname', '4')
+def califica_obtener_nickname(f, uuid, deseo_ayudar):
+    return f
+
+####################################################################################################
+#                                       Tarea 5
+####################################################################################################
+
+
+
+
+
+
+
+
+####################################################################################################
+#                                       Tarea 6
+####################################################################################################
+
 
 @template_iterable([
     [[10, 20], [10, 12, 14, 16, 18, 20]],
@@ -665,14 +832,7 @@ def califica_obtener_promedio2(f, uuid, deseo_ayudar):
 def califica_obtener_longitud_de_una_lista(f, uuid, deseo_ayudar):
     return f
 
-@template_iterable([
-        ([()], 0),
-        ([(1,2,3)], 3),
-        ([(1,2,3,4,5,6,7,8,9,10)], 10),
-        ([tuple(range(100))], 100)
-    ], 'obtener_longitud_de_una_tupla', 't5-')
-def califica_obtener_longitud_de_una_tupla(f, uuid, deseo_ayudar):
-    return f
+
 
 
 @template_iterable([
@@ -712,29 +872,7 @@ def califica_creacion_de_un_diccionario_con_clave_edad(f, uuid, deseo_ayudar):
 ####################################################################################################
 #                                       Tarea 6
 ####################################################################################################
-@template_sencillo(['a', 'b', 'c'], 'creacion_de_una_lista_con_tres_elementos', 't6-')
-def califica_creacion_de_una_lista_con_tres_elementos(f, uuid, deseo_ayudar):
-    return f
 
-@template_sencillo(('a', '1', 'b'), 'creacion_de_una_tupla_con_tres_elementos', 't6-')
-def califica_creacion_de_una_tupla_con_tres_elementos(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[[1,2,3,4,5,6]], 6],
-    [[['a', 'b', 'c', 'd', 'e', 'f']], 'f'],
-    [[[10, 11, 12, 13, 14, 15, 16, 17]], 15]
-], 'acceder_al_elemento_5', 't6-')
-def califica_acceder_al_elemento_5(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-            [[27], 26], 
-            [[60], 59],
-            [[101], 100],
-        ], 'acceder_al_ultimo_elemento_de_una_tupla_en_rango', 't6-')
-def califica_acceder_al_ultimo_elemento_de_una_tupla_en_rango(f, uuid, deseo_ayudar):
-        return f
 
 
 @template_sencillo({1,2,3,4,5}, 'conjunto_con_elementos_del_1_al_5', 't6-')
