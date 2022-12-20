@@ -7,6 +7,9 @@ http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github
 Tarea 3 - 10 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea3.ipynb&app=notebook
 
+Tarea 4 - 32 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea4.ipynb&app=notebook
+
 Ejercicios 1
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/ejercicios1.ipynb&app=notebook
 
