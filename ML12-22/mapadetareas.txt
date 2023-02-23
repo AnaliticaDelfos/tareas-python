@@ -1,8 +1,8 @@
 Tarea 1 - 5 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=ML12-22/tarea01.ipynb&app=notebook
 
-Tarea 2 - 25 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea2.ipynb&app=notebook
+Tarea 2 - 10 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=ML12-22/tarea02.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea3.ipynb&app=notebook
