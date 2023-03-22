@@ -5,16 +5,16 @@ Tarea 2 - 21 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/tarea2.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea3.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/tarea3.ipynb&app=notebook
 
 Tarea 4 - 32 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea4.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/tarea4.ipynb&app=notebook
 
 Ejercicios 1
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/ejercicios1.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/ejercicios1.ipynb&app=notebook
 
 Ejercicios 2
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/ejercicios2.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/ejercicios2.ipynb&app=notebook
 
 Ejercicios 3
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/ejercicios3.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/ejercicios3.ipynb&app=notebook
