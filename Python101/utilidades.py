@@ -218,3 +218,37 @@ def template_iterable(lista, nombre, tarea):
             helper(resultados, tarea, nombre, uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
         return contenedora
     return decoradora 
+
+
+def template_poo(lista: list, nombre, tarea):
+    """
+    Argumentos: 
+        lista: Lista de tuplas que contiene en primer lugar el tipo de dato a evaluar: propiedad o metodo;
+        en segundo lugar el atributo a buscar, tercer lugar los argumentos a usar y en cuarto lugar el valor esperado.
+        clase: La clase que se usará para construir objetos.
+
+    """
+    def decoradora(funcion):
+        def contenedora(c, uuid, deseo_ayudar):
+            obj = c()
+            error = False
+            resultados = []
+            excepcion = None
+            for item in lista:
+                try:
+                    f = getattr(obj, item[1])
+                    if item[0] == "metodo":
+                        resultado_obtenido = f(*item[2])
+                    else:
+                        resultado_obtenido = f
+                    resultado_esperado = item[3]
+                    estado = resultado_obtenido == resultado_esperado
+                    resultados.append(Resultado(item[2], resultado_esperado, resultado_obtenido, estado).__dict__)
+                except Exception as e:
+                    mensaje_error(e)
+                    error = True
+                    excepcion = str(e)
+                    break
+            helper(resultados, tarea, nombre, uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
+        return contenedora
+    return decoradora
