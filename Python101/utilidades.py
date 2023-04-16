@@ -15,7 +15,7 @@ def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, opinion, tarea
     resp = requests \
         .post("https://us-central1-cursos-delfos.cloudfunctions.net/get_grades", \
         json={"uuid": uuid, \
-        "id_curso": "gjnKxLIRMX5EFwRVgULs", \
+        "id_curso": "ieR9coOGN8QI3yjIU7sl", \
         "ejercicio": ejercicio, \
         "id_tarea": f'{tarea}', \
         "calificacion": calificacion, \
