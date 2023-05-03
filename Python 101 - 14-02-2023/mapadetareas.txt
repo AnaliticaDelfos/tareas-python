@@ -1,8 +1,8 @@
 Tarea 1 - 3 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/tarea1.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea1.ipynb&app=notebook
 
 Tarea 2 - 21 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python%20101%20-%2014-02-2023/tarea2.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea2.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Python101/tarea3.ipynb&app=notebook
