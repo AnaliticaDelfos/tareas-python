@@ -811,7 +811,7 @@ def califica_contar_vocales_y_numeros(f, uuid, deseo_ayudar):
     [[{"alumnos": [5, 10, 5, 10]}], 7.5],
     [[{"alumnos": [8, 7, 6, 5, 10]}], 7.2],
     [[{"alumnos": [2, .5, 10, 10, 10]}], 6.5],
-], 'obtener_promedio2', '4')
+], 'obtener_promedio2', 't6-')
 def califica_obtener_promedio2(f, uuid, deseo_ayudar):
     return f
 
@@ -828,7 +828,7 @@ def califica_obtener_promedio2(f, uuid, deseo_ayudar):
         ([[1,2,3]], 3),
         ([[1,2,3,4,5,6,7,8,9,10]], 10),
         ([list(range(100))], 100)
-    ], 'obtener_longitu_de_una_lista', '4')
+    ], 'obtener_longitu_de_una_lista', 't6-')
 def califica_obtener_longitud_de_una_lista(f, uuid, deseo_ayudar):
     return f
 
@@ -840,7 +840,7 @@ def califica_obtener_longitud_de_una_lista(f, uuid, deseo_ayudar):
         ([{"Uno": 1,"Dos": 2, "Tres": 3}], 3),
         ([{"Dia": "Martes"}], 1),
         ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], 2)
-    ], 'obtener_longitud_de_un_diccionario', '4')
+    ], 'obtener_longitud_de_un_diccionario', 't5-')
 def califica_obtener_longitud_de_un_diccionario(f, uuid, deseo_ayudar):
     return f
 
@@ -849,7 +849,7 @@ def califica_obtener_longitud_de_un_diccionario(f, uuid, deseo_ayudar):
         ([{"Uno": 1,"Dos": 2, "Tres": 3}], [{"Uno": 1,"Dos": 2, "Tres": 3}]),
         ([{"Dia": "Martes"}], [{"Dia": "Martes"}]),
         ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], [{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}])
-    ], 'creacion_de_una_lista_con_exactamente_un_elemento', '4')
+    ], 'creacion_de_una_lista_con_exactamente_un_elemento', 't5-')
 def califica_creacion_de_una_lista_con_exactamente_un_elemento(f, uuid, deseo_ayudar):
     return f
 
@@ -858,20 +858,14 @@ def califica_creacion_de_una_lista_con_exactamente_un_elemento(f, uuid, deseo_ay
         ([{"Uno": 1,"Dos": 2, "Tres": 3}], ({"Uno": 1,"Dos": 2, "Tres": 3},)),
         ([{"Dia": "Martes"}], ({"Dia": "Martes"},)),
         ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], ({"Curso": "Python de la a a la z", "Fecha": "17 de enero"},))
-    ], 'creacion_de_una_tupla_con_exactamente_un_elemento', '4')
+    ], 'creacion_de_una_tupla_con_exactamente_un_elemento', 't5-')
 def califica_creacion_de_una_tupla_con_exactamente_un_elemento(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-        ([], ('a', '1', 'b'))
-    ], 'creacion_de_una_tupla_con_exactamente_un_elemento', '4')
-def califica_creacion_de_una_tupla_con_tres_elementos(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
         ([27], {'edad': 27}), 
         ([60], {'edad': 60}) 
-    ], 'creacion_de_un_diccionario_con_clave_edad', '4')
+    ], 'creacion_de_un_diccionario_con_clave_edad', 't5-')
 def califica_creacion_de_un_diccionario_con_clave_edad(f, uuid, deseo_ayudar):
     return f
 
