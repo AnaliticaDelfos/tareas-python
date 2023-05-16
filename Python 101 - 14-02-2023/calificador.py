@@ -743,9 +743,9 @@ def califica_filtrado(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
-    [[10], [1, 2, 3, 5, 7]],
-    [[11], [1, 2, 3, 5, 7, 11]],
-    [[60], [1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]]
+    [[10], (1, 2, 3, 5, 7)],
+    [[11], (1, 2, 3, 5, 7, 11)],
+    [[60], (1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59)]
 ], 'encontrar_primos', '4')
 def califica_encontrar_primos(f, uuid, deseo_ayudar):
     return f
