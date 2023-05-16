@@ -1,4 +1,4 @@
-from utilidades import Resultado, mensaje_error, helper, template_sencillo, template_iterable, template_poo
+from utilidades import Resultado, mensaje_error, helper, template_sencillo, template_iterable
 
 
 def inversion(uuid, deseo_ayudar):
@@ -1092,6 +1092,8 @@ def califica_calcular_factorial(f, uuid, deseo_ayudar):
 def califica_pares_un_medio(f, uuid, deseo_ayudar):
     return f
 
+
+
 @template_iterable([
     [[[1,2,3,4,5,6]], (4.0, 3.0)],
     [[[3,4,5,1,7,3,2]], (3.0, 3.8)],
@@ -1102,10 +1104,3 @@ def califica_pares_un_medio(f, uuid, deseo_ayudar):
 def califica_promedios(f, uuid, deseo_ayudar):
     return f
 
-
-@template_poo([
-    ('metodo', 'mostrar_saludo', [], "Hola"),
-    ('propiedad', 'saludo', [], 'Hola')
-], "saludos", "8")
-def califica_clase_saludos(f, uuid, deseo_ayudar):
-    return f
