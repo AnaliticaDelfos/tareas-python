@@ -874,16 +874,6 @@ def califica_separar_numeros(f, uuid, deseo_ayudar):
 ####################################################################################################
 
 @template_iterable([
-    [[10, 20], list(range(10, 20))],
-    [[38, 40], list(range(38, 40))],
-    [[12, 22], list(range(12, 22))],
-    [[-2, 32], list(range(-2, 32))],
-    [[-29, 20], list(range(-29, 20))],
-], 'lista_en_rango_v_2', '5')
-def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
     [[3], """***
 ***
 ***"""],
@@ -891,10 +881,9 @@ def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
 ****
 ****
 ****"""]
-], 'cuadrado_de_asteriscos', '6')
+], 'cuadrado_de_asteriscos', '8')
 def califica_cuadrado_de_asteriscos(f, uuid, deseo_ayudar):
     return f
-
 
 @template_iterable([
     [[3, 4], """***
@@ -904,7 +893,7 @@ def califica_cuadrado_de_asteriscos(f, uuid, deseo_ayudar):
 [[4,3], """****
 ****
 ****"""]
-], 'rectangulo_de_asteriscos', '6')
+], 'rectangulo_de_asteriscos', '8')
 def califica_rectangulo_de_asteriscos(f, uuid, deseo_ayudar):
     return f
 
@@ -916,8 +905,22 @@ def califica_rectangulo_de_asteriscos(f, uuid, deseo_ayudar):
 **
 ***
 ****"""]
-], 'triangulo_de_asteriscos', '6')
+], 'triangulo_de_asteriscos', '8')
 def califica_triangulo_de_asteriscos(f, uuid, deseo_ayudar):
+    return f
+
+####################################################################################################
+#                                       Tarea 9
+####################################################################################################
+
+@template_iterable([
+    [[10, 20], list(range(10, 20))],
+    [[38, 40], list(range(38, 40))],
+    [[12, 22], list(range(12, 22))],
+    [[-2, 32], list(range(-2, 32))],
+    [[-29, 20], list(range(-29, 20))],
+], 'lista_en_rango_v_2', '5')
+def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
     return f
 
 
