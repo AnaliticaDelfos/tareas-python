@@ -313,8 +313,35 @@ def califica_en_minusculas(f, uuid, deseo_ayudar):
 #                                       Tarea 2
 ####################################################################################################
 
+@template_iterable([
+        [["Hola"], 'H'],
+        [["mundo",], 'm'],
+        [["me"], 'm'],
+        [["gusta"], 'g'],
+        [["este"], 'e'],
+        [["curso"], 'c'],
+        [["y las"], 'y'],
+        [["'t2-'s"], '\''],
+        [["están"], 'e'],
+        [["geniales"], 'g']
+    ], 'primer_caracter', '2')
+def califica_primer_caracter(f, uuid, deseo_ayudar):
+    return f
 
-
+@template_iterable([
+        [["Esta",], 't'],
+        [["'t2-'",], '-'],
+        [["está",], 't'],
+        [["curiosa",], 's'],
+        [["eso de",], 'd'],
+        [["usar",], 'a'],
+        [["índices",], 'e'],
+        [["negativos",], 'o'],
+        [["es",], 'e'],
+        [["nuevo",], 'v']
+    ], 'penultimo_caracter', '2')
+def califica_penultimo_caracter(f, uuid, deseo_ayudar):
+    return f
 
 @template_iterable([
         [[1,2,3], "a = 1, b = 2 y c = 3"],
@@ -322,7 +349,7 @@ def califica_en_minusculas(f, uuid, deseo_ayudar):
         [[7,8,9], "a = 7, b = 8 y c = 9"],
         [[10, 11, 12], "a = 10, b = 11 y c = 12"],
         [[13, 14, 15], "a = 13, b = 14 y c = 15"]
-    ], 'mostrar_numeros', 't2-')
+    ], 'mostrar_numeros', '2')
 def califica_mostrar_numeros(f, uuid, deseo_ayudar):
     return f
 
@@ -331,8 +358,57 @@ def califica_mostrar_numeros(f, uuid, deseo_ayudar):
         [["Estoy ", "aprendiendo"], "Estoy aprendiendo"],
         [["a ", "programar"], 'a programar'],
         [["en ", "Python"], 'en Python']
-    ], 'concatenar_cadenas', 't2-')
+    ], 'concatenar_cadenas', '2')
 def califica_concatenar_cadenas(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[10], 98.10000000000001],
+    [[34], 333.54],
+    [[54], 529.74],
+    [[98], 961.38],
+    [[8.3], 81.42300000000002],
+], 'peso_de_un_cuerpo', '2')
+def califica_peso_de_un_cuerpo(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[30, 25], 1.2],
+    [[456, 234], 1.9487179487179487],
+    [[89, 23], 3.869565217391304],
+    [[1567, 1268], 1.2358044164037856],
+    [[45, 87], 0.5172413793103449],
+], 'calculo_de_velocidad_constante', '2')
+def califica_calculo_de_velocidad_constante(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[30, 30, 100], 3030],
+    [[20, 10, 130], 1320],
+    [[45, 89, 78], 6987],
+    [[487, 65, 10], 1137],
+    [[1000, 10, 10], 1100],
+], 'calculo_de_velocidad_con_aceleracion', '2')
+def califica_calculo_de_velocidad_con_aceleracion(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[0, 10, 60, 10], 18600.0],
+    [[10, 20, 120, 5], 38410.0],
+    [[20, 30, 180, 100], 1625420.0],
+    [[0, 5, 30, 5], 2400.0],
+], 'calculo_de_posicion_de_un_cuerpo_en_movimiento_con_aceleracion_constante', '2')
+def califica_calculo_de_posicion_de_un_cuerpo_en_movimiento_con_aceleracion_constante(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[50.0, 1.60, 110.0, 1.90, 80.0, 1.50], 28.51923989432646],
+    [[55.0, 1.50, 130.0, 1.60, 85.0, 1.55], 36.86850237985123],
+    [[65.0, 1.65, 150.0, 1.50, 83.0, 1.62], 40.722685977705304],
+    [[30.0, 1.30, 87.0, 1.80, 40.0, 1.32], 22.52005742681733],
+    [[85.0, 1.80, 67.0, 1.40, 80.0, 1.56], 31.097117055603018],
+], 'promedio_inidice_masa_corporal', '2')
+def califica_promedio_inidice_masa_corporal(f, uuid, deseo_ayudar):
     return f
 
 ####################################################################################################
@@ -359,84 +435,6 @@ def califica_division_cuidadosa(f, uuid, deseo_ayudar):
             break
     helper(resultados, '3', 'division-cuidadosa', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
 
-@template_iterable([
-    [[10], 98.10000000000001],
-    [[34], 333.54],
-    [[54], 529.74],
-    [[98], 961.38],
-    [[8.3], 81.42300000000002],
-], 'peso_de_un_cuerpo', 't3-')
-def califica_peso_de_un_cuerpo(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[30, 25], 1.2],
-    [[456, 234], 1.9487179487179487],
-    [[89, 23], 3.869565217391304],
-    [[1567, 1268], 1.2358044164037856],
-    [[45, 87], 0.5172413793103449],
-], 'calculo_de_velocidad_constante', 't3-')
-def califica_calculo_de_velocidad_constante(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[30, 30, 100], 3030],
-    [[20, 10, 130], 1320],
-    [[45, 89, 78], 6987],
-    [[487, 65, 10], 1137],
-    [[1000, 10, 10], 1100],
-], 'calculo_de_velocidad_con_aceleracion', 't3-')
-def califica_calculo_de_velocidad_con_aceleracion(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[0, 10, 60, 10], 18600.0],
-    [[10, 20, 120, 5], 38410.0],
-    [[20, 30, 180, 100], 1625420.0],
-    [[0, 5, 30, 5], 2400.0],
-], 'calculo_de_posicion_de_un_cuerpo_en_movimiento_con_aceleracion_constante', 't3-')
-def califica_calculo_de_posicion_de_un_cuerpo_en_movimiento_con_aceleracion_constante(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[50.0, 1.60, 110.0, 1.90, 80.0, 1.50], 28.51923989432646],
-    [[55.0, 1.50, 130.0, 1.60, 85.0, 1.55], 36.86850237985123],
-    [[65.0, 1.65, 150.0, 1.50, 83.0, 1.62], 40.722685977705304],
-    [[30.0, 1.30, 87.0, 1.80, 40.0, 1.32], 22.52005742681733],
-    [[85.0, 1.80, 67.0, 1.40, 80.0, 1.56], 31.097117055603018],
-], 'promedio_inidice_masa_corporal', 't3-')
-def califica_promedio_inidice_masa_corporal(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-        [["Hola"], 'H'],
-        [["mundo",], 'm'],
-        [["me"], 'm'],
-        [["gusta"], 'g'],
-        [["este"], 'e'],
-        [["curso"], 'c'],
-        [["y las"], 'y'],
-        [["'t2-'s"], '\''],
-        [["están"], 'e'],
-        [["geniales"], 'g']
-    ], 'primer_caracter', 't3-')
-def califica_primer_caracter(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-        [["Esta",], 't'],
-        [["'t2-'",], '-'],
-        [["está",], 't'],
-        [["curiosa",], 's'],
-        [["eso de",], 'd'],
-        [["usar",], 'a'],
-        [["índices",], 'e'],
-        [["negativos",], 'o'],
-        [["es",], 'e'],
-        [["nuevo",], 'v']
-    ], 'penultimo_caracter', 't3-')
-def califica_penultimo_caracter(f, uuid, deseo_ayudar):
-    return f
 
 @template_iterable([
     [["Hola", "Hola"], "Son iguales"],
