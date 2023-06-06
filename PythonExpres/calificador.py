@@ -687,7 +687,7 @@ def califica_lista_en_rango(f, uuid, deseo_ayudar):
     [[[1,2,3]], 6],
     [[[10, 20, 30]], 60],
     [[[9,8,7]], 24]
-], 'obtener_suma_sencilla', '4')
+], 'obtener_suma_sencilla', '6')
 def califica_obtener_suma_sencilla(f, uuid, deseo_ayudar):
     return f
 
@@ -696,13 +696,13 @@ def califica_obtener_suma_sencilla(f, uuid, deseo_ayudar):
     [[[17, 18, 12, 12, 17]], 749088],
     [[[105, 148, 111, 143, 113]], 27873305460],
     [[[82, 56, 37, 153, 123]], 3197423376]
-], 'obtener_multiplicacion_sencilla', '4')
+], 'obtener_multiplicacion_sencilla', '6')
 def califica_obtener_multiplicacion_sencilla(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
     [[["abecedario", "tacos", "enchiladas", "sal"]], ('abecedario', 'tacos', 'enchiladas')]
-], 'obtener_palabras_mayores_a_3', '4')
+], 'obtener_palabras_mayores_a_3', '6')
 def califica_obtener_palabras_mayores_a_3(f, uuid, deseo_ayudar):
     return f
 
@@ -710,7 +710,7 @@ def califica_obtener_palabras_mayores_a_3(f, uuid, deseo_ayudar):
     [[10], 3628800],
     [[11], 39916800],
     [[12], 479001600],
-], 'obtener_factorial', '4')
+], 'obtener_factorial', '6')
 def califica_obtener_factorial(f, uuid, deseo_ayudar):
     return f
 
@@ -718,7 +718,7 @@ def califica_obtener_factorial(f, uuid, deseo_ayudar):
     [[110], 3025],
     [[123], 3844],
     [[254], 16129],
-], 'sumar_impares', '4')
+], 'sumar_impares', '6')
 def califica_sumar_impares(f, uuid, deseo_ayudar):
     return f
 
@@ -726,31 +726,40 @@ def califica_sumar_impares(f, uuid, deseo_ayudar):
     [[[3,7,5,1], 7], 1],
     [[[3,7,5,1], 1], 3],
     [[[3,7,5,1], 3], 0],
-], 'encontrar_indice', '4')
+], 'encontrar_indice', '6')
 def califica_encontrar_indice(f, uuid, deseo_ayudar):
     return f
 
-
-
 @template_iterable([
-    [[{"comida": "enchiladas", "Aguacate": "Verde", "agua": "Salada", "espinaca": "verdura"}], {"Aguacate": "Verde", "agua": "Salada"}],
-    [[{"automatico": "Vehículo", "standard": "Carro"}], {"automatico": "Vehículo"}]
-], 'revisar_claves', '4')
-def califica_revisar_claves(f, uuid, deseo_ayudar):
+    [[[("tacos", 300), ("enchiladas", 200), ("sopes", 150)]], 650],
+    [[[("Macbook Pro", 50), ("Macbook Air", 200), ("IPhone", 1000)]], 1250],
+    [[[("Asus ROG", 5), ("Black Shark 4 Pro", 2), ("Realme GT Neo", 3), ("Nubia Red Magic 6", 4), ("Lenovo Legion Phone Duel 2", 1)]], 15],
+    [[[("Sony MDR", 28), ("Cheelom", 34), ("Dinden", 3)]], 65],
+    [[[("XYZ", 278), ("AYX", 312), ("KJO", 123)]], 713],
+], 'suma_totales', '6')
+def califica_suma_totales(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
     [[[[1,2,3],[5,6,7],[7,8,9]]], [6, 18, 24]],
     [[[[-31,24,-3],[-35,-61,47],[47,2,90]]], [-10, -49, 139]],
     [[[[-1,-4,-5,3],[-5,-1,4],[47,2,90],[5,-7,-1,-5,-8],[1,2], [8,7,5]]], [-7, -2, 139, -16, 3, 20]]
-], 'suma_filas', '4')
+], 'suma_filas', '6')
 def califica_suma_filas(f, uuid, deseo_ayudar):
+    return f
+
+
+@template_iterable([
+    [[{"comida": "enchiladas", "Aguacate": "Verde", "agua": "Salada", "espinaca": "verdura"}], {"Aguacate": "Verde", "agua": "Salada"}],
+    [[{"automatico": "Vehículo", "standard": "Carro"}], {"automatico": "Vehículo"}]
+], 'revisar_claves', '6')
+def califica_revisar_claves(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
     [[{"ola": "Del mar", "hola": [1,2,3], "curso": "Python", "ZDRF": [3,4,5]}], ([6, 12], ['Python'])],
     [[{"RDF": [7,9,-1], "DCA": "Hola mundo", "SWECD": "Analitica", "QWSDE": "Delfos"}], ([15], ['Analitica', 'Delfos'])]
-], 'filtrado', '4')
+], 'filtrado', '6')
 def califica_filtrado(f, uuid, deseo_ayudar):
     return f
 
@@ -758,7 +767,7 @@ def califica_filtrado(f, uuid, deseo_ayudar):
     [[10], (1, 2, 3, 5, 7)],
     [[11], (1, 2, 3, 5, 7, 11)],
     [[60], (1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59)]
-], 'encontrar_primos', '4')
+], 'encontrar_primos', '6')
 def califica_encontrar_primos(f, uuid, deseo_ayudar):
     return f
 
@@ -766,9 +775,14 @@ def califica_encontrar_primos(f, uuid, deseo_ayudar):
     [[{"alberto": 10, "mariana": 10, "roberto": 8}], ['AL', 'MA', 'RO']],
     [[{"Pepe": 8, "Antonio": 7, "Esmeralda": 8}], ['PE', 'AN', 'ES']],
     [[{"Salmon": 9, "Brenda": 3, "Sofía": 10}], ['SA', 'BR', 'SO']]
-], 'obtener_nickname', '4')
+], 'obtener_nickname', '6')
 def califica_obtener_nickname(f, uuid, deseo_ayudar):
     return f
+
+
+####################################################################################################
+#                                       Tarea 7
+####################################################################################################
 
 
 @template_iterable([
@@ -863,16 +877,6 @@ def califica_triangulo_de_asteriscos(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
-    [[[("tacos", 300), ("enchiladas", 200), ("sopes", 150)]], 650],
-    [[[("Macbook Pro", 50), ("Macbook Air", 200), ("IPhone", 1000)]], 1250],
-    [[[("Asus ROG", 5), ("Black Shark 4 Pro", 2), ("Realme GT Neo", 3), ("Nubia Red Magic 6", 4), ("Lenovo Legion Phone Duel 2", 1)]], 15],
-    [[[("Sony MDR", 28), ("Cheelom", 34), ("Dinden", 3)]], 65],
-    [[[("XYZ", 278), ("AYX", 312), ("KJO", 123)]], 713],
-], 'suma_totales', '6')
-def califica_suma_totales(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
     [[10, 20], [10, 12, 14, 16, 18, 20]],
     [[100, 200], [100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200]],
     [[1, 2], [2]],
@@ -912,10 +916,6 @@ def califica_contar_vocales_y_numeros(f, uuid, deseo_ayudar):
 def califica_obtener_promedio2(f, uuid, deseo_ayudar):
     return f
 
-
-####################################################################################################
-#                                       Tarea 7 - Nueva
-####################################################################################################
 
 @template_poo([
     ('metodo', 'mostrar_saludo', [], "Hola"),
