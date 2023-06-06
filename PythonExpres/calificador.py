@@ -786,22 +786,52 @@ def califica_obtener_nickname(f, uuid, deseo_ayudar):
 
 
 @template_iterable([
-    [[10, 20], list(range(10, 20))],
-    [[38, 40], list(range(38, 40))],
-    [[12, 22], list(range(12, 22))],
-    [[-2, 32], list(range(-2, 32))],
-    [[-29, 20], list(range(-29, 20))],
-], 'lista_en_rango_v_2', '5')
-def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
+    [[10, 20], [10, 12, 14, 16, 18, 20]],
+    [[100, 200], [100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200]],
+    [[1, 2], [2]],
+    [[2, 4], [2, 4]],
+    [[3, 100], [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]],
+], 'pares_en_rango', '7')
+def califica_pares_en_rango(f, uuid, deseo_ayudar):
     return f
 
+
+@template_iterable([
+    [[[1,2,3,4,5,6,7,8,9,10]], [5,10]],
+    [[[10, 20, 30, 40, 50]], [10, 20, 30, 40, 50]],
+    [[[1]], []],
+    [[[33,44,55,66,77,88,99]], [55]],
+    [[[101, 105, 104, 100]], [105, 100]],
+], 'multiplos_de_5', '7')
+def califica_multiplos_de_5(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [["ae22"], (2,2)],
+    [["1bq22"], (0,3)],
+    [["aeiou"], (5,0)],
+    [["12345"], (0,5)],
+    [["12345aeiou"], (5,5)],
+], 'contar_vocales_y_numeros', '7')
+def califica_contar_vocales_y_numeros(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[{"alumnos": [10, 10]}], 10],
+    [[{"alumnos": [5, 10]}], 7.5],
+    [[{"alumnos": [5, 10, 5, 10]}], 7.5],
+    [[{"alumnos": [8, 7, 6, 5, 10]}], 7.2],
+    [[{"alumnos": [2, .5, 10, 10, 10]}], 6.5],
+], 'obtener_promedio2', '7')
+def califica_obtener_promedio2(f, uuid, deseo_ayudar):
+    return f
 
 @template_iterable([
     [[[1,2,3,4,3], 3], 2],
     [[[3,2,3,3,3], 3], 4],
     [[[3,2,8,3,7], 7], 1],
     [[[3,8,8,3,7], 8], 2],
-], 'encontrar_ocurrencias', '6')
+], 'encontrar_ocurrencias', '7')
 def califica_encontrar_ocurrencias(f, uuid, deseo_ayudar):
     return f
 
@@ -810,7 +840,7 @@ def califica_encontrar_ocurrencias(f, uuid, deseo_ayudar):
     [[["Manzana", "Plátano", "Manzana", "Fresa", "Fresa"]], {"Manzana": 2, "Plátano": 1, "Fresa": 2}],
     [[["Manzana", "Manzana", "Manzana", "Manzana", "Fresa"]], {"Manzana": 4, "Fresa": 1}],
     [[["Python", "C++", "Python", "C++"]], {"Python": 2, "C++": 2}],
-], 'contar_en_lista', '6')
+], 'contar_en_lista', '7')
 def califica_contar_en_lista(f, uuid, deseo_ayudar):
     return f
 
@@ -819,7 +849,7 @@ def califica_contar_en_lista(f, uuid, deseo_ayudar):
     [[[2,2,2,2,2], [2,2,2,2,2,4]], [2]],
     [[[-1,-2,-3], [-3,-2,-4]], [-2,-3]],
     [[[-10,20,-30], [10,20,30]], [20]],
-], 'elementos_comunes', '6')
+], 'elementos_comunes', '7')
 def califica_elementos_comunes(f, uuid, deseo_ayudar):
     return f
 
@@ -827,7 +857,7 @@ def califica_elementos_comunes(f, uuid, deseo_ayudar):
     [[{"manzanas": 3, "platanos": 2}], 5],
     [[{"tacos": 2, "sopes": 5, "tortas": 10}], 17],
     [[{"playeras": 5, "pantalones": 5, "chamarras": 5}], 15],
-], 'sumar_claves_de_diccionario', '6')
+], 'sumar_claves_de_diccionario', '7')
 def califica_sumar_claves_de_diccionario(f, uuid, deseo_ayudar):
     return f
 
@@ -835,8 +865,22 @@ def califica_sumar_claves_de_diccionario(f, uuid, deseo_ayudar):
     [[["Hola", ["Hola", "Adios"], 3, (19,), 5, 8]], (8,)],
     [[["8", ["8"], 8, (1,), 8]], (8,)],
     [[[6, 4, 9, 3, -8, 9]], (6,9)],
-], 'separar_numeros', '6')
+], 'separar_numeros', '7')
 def califica_separar_numeros(f, uuid, deseo_ayudar):
+    return f
+
+####################################################################################################
+#                                       Tarea 8
+####################################################################################################
+
+@template_iterable([
+    [[10, 20], list(range(10, 20))],
+    [[38, 40], list(range(38, 40))],
+    [[12, 22], list(range(12, 22))],
+    [[-2, 32], list(range(-2, 32))],
+    [[-29, 20], list(range(-29, 20))],
+], 'lista_en_rango_v_2', '5')
+def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
@@ -874,46 +918,6 @@ def califica_rectangulo_de_asteriscos(f, uuid, deseo_ayudar):
 ****"""]
 ], 'triangulo_de_asteriscos', '6')
 def califica_triangulo_de_asteriscos(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[10, 20], [10, 12, 14, 16, 18, 20]],
-    [[100, 200], [100, 102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 140, 142, 144, 146, 148, 150, 152, 154, 156, 158, 160, 162, 164, 166, 168, 170, 172, 174, 176, 178, 180, 182, 184, 186, 188, 190, 192, 194, 196, 198, 200]],
-    [[1, 2], [2]],
-    [[2, 4], [2, 4]],
-    [[3, 100], [4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100]],
-], 'pares_en_rango', '6')
-def califica_pares_en_rango(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[[1,2,3,4,5,6,7,8,9,10]], [5,10]],
-    [[[10, 20, 30, 40, 50]], [10, 20, 30, 40, 50]],
-    [[[1]], []],
-    [[[33,44,55,66,77,88,99]], [55]],
-    [[[101, 105, 104, 100]], [105, 100]],
-], 'multiplos_de_5', '6')
-def califica_multiplos_de_5(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [["ae22"], (2,2)],
-    [["1bq22"], (0,3)],
-    [["aeiou"], (5,0)],
-    [["12345"], (0,5)],
-    [["12345aeiou"], (5,5)],
-], 'contar_vocales_y_numeros', '6')
-def califica_contar_vocales_y_numeros(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-    [[{"alumnos": [10, 10]}], 10],
-    [[{"alumnos": [5, 10]}], 7.5],
-    [[{"alumnos": [5, 10, 5, 10]}], 7.5],
-    [[{"alumnos": [8, 7, 6, 5, 10]}], 7.2],
-    [[{"alumnos": [2, .5, 10, 10, 10]}], 6.5],
-], 'obtener_promedio2', '6')
-def califica_obtener_promedio2(f, uuid, deseo_ayudar):
     return f
 
 
@@ -973,9 +977,7 @@ def califica_clase_calculadora_basica(f, uuid, deseo_ayudar):
 def califica_distancias(f, uuid, deseo_ayudar):
     return f
 
-####################################################################################################
-#                                       Tarea 7 
-####################################################################################################
+
 
 @template_iterable([
         ([[]], 0),
