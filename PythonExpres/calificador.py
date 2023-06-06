@@ -415,27 +415,6 @@ def califica_promedio_inidice_masa_corporal(f, uuid, deseo_ayudar):
 #                                       Tarea 3
 ####################################################################################################
 
-def califica_division_cuidadosa(f, uuid, deseo_ayudar):
-    error = False
-    resultados = []
-    excepcion = None
-    for i in range(-2, 2):
-        for j in range(1, 6):
-            try:
-                resultado_resta = f(i, j)
-                resultado_real = i / j
-                estado = resultado_real==resultado_resta
-                resultados.append(Resultado((i, j), resultado_real, resultado_resta, estado).__dict__)
-            except Exception as e:
-                mensaje_error(e)
-                error = True
-                excepcion = str(e)
-                break
-        if error:
-            break
-    helper(resultados, '3', 'division-cuidadosa', uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
-
-
 @template_iterable([
     [["Hola", "Hola"], "Son iguales"],
     [['Hola', 'Hola'], "Son iguales"],
@@ -447,6 +426,16 @@ def califica_son_iguales(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
+    [[2], True],
+    [[201], False],
+    [[3333], False],
+    [[1234], True],
+    [[209872], True],
+], 'es_par', '3')
+def califica_es_par(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
     [[17], "Eres menor de edad"],
     [[18], "Eres mayor de edad"],
     [[12], "Eres menor de edad"],
@@ -454,6 +443,16 @@ def califica_son_iguales(f, uuid, deseo_ayudar):
     [[99], "Eres mayor de edad"],
 ], 'mayor_de_edad', '3')
 def califica_mayor_de_edad(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[2,2], 1.0],
+    [[4,2], 2.0],
+    [[10,5], 2.0],
+    [[23,0], "No puedo dividir entre cero"],
+    [[1567,0], "No puedo dividir entre cero"],
+], 'division_cuidadosa', '3')
+def califica_division_cuidadosa(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
@@ -1192,25 +1191,7 @@ def califica_obtener_promedio(f, uuid, deseo_ayudar):
 #                                       Tarea 3
 ####################################################################################################
 
-@template_iterable([
-    [[2], True],
-    [[201], False],
-    [[3333], False],
-    [[1234], True],
-    [[209872], True],
-], 'es_par', '3')
-def califica_es_par(f, uuid, deseo_ayudar):
-    return f
 
-@template_iterable([
-    [[2,2], 1.0],
-    [[4,2], 2.0],
-    [[10,5], 2.0],
-    [[23,0], "No puedo dividir entre cero"],
-    [[1567,0], "No puedo dividir entre cero"],
-], 'division_cuidadosa', '3')
-def califica_division_cuidadosa(f, uuid, deseo_ayudar):
-    return f
 
 
 
