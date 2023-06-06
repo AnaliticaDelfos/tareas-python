@@ -592,11 +592,22 @@ def califica_creacion_de_un_diccionario_con_clave_edad(f, uuid, deseo_ayudar):
 def califica_creacion_de_una_lista_con_tres_elementos(f, uuid, deseo_ayudar):
     return f
 
+####################################################################################################
+#                                       Tarea 5
+####################################################################################################
+
+
+@template_iterable([
+        ([], ('a', '1', 'b'))
+    ], 'creacion_de_una_tupla_con_exactamente_un_elemento', '5')
+def califica_creacion_de_una_tupla_con_tres_elementos(f, uuid, deseo_ayudar):
+    return f
+
 @template_iterable([
     [[[1,2,3,4,5,6]], 6],
     [[['a', 'b', 'c', 'd', 'e', 'f']], 'f'],
     [[[10, 11, 12, 13, 14, 15, 16, 17]], 15]
-], 'acceder_al_elemento_5', '4')
+], 'acceder_al_elemento_5', '5')
 def califica_acceder_al_elemento_5(f, uuid, deseo_ayudar):
     return f
     
@@ -604,10 +615,58 @@ def califica_acceder_al_elemento_5(f, uuid, deseo_ayudar):
             [[27], 26], 
             [[60], 59],
             [[101], 100],
-        ], 'acceder_al_ultimo_elemento_de_una_tupla_en_rango', '4')
+        ], 'acceder_al_ultimo_elemento_de_una_tupla_en_rango', '5')
 def califica_acceder_al_ultimo_elemento_de_una_tupla_en_rango(f, uuid, deseo_ayudar):
         return f
 
+@template_sencillo({
+    'estado': 'Activo',
+    'datos': {
+        'curso': 'Python de la A a la Z',
+        'tareas': 3
+    }
+}, 'creacion_de_diccionario_dentro_de_otro_diccionario', '5')
+def califica_creacion_de_diccionario_dentro_de_otro_diccionario(f, uuid, deseo_ayudar):
+    return f
+
+@template_sencillo([
+    {"pais": "México", "nombre oficial": "Estados Unidos Mexicanos"},
+    {"pais": "Estados Unidos", "nombre oficial": "Estados Unidos de América"}
+], 'creacion_de_lista_de_diccionarios', '5')
+def califica_creacion_de_lista_de_diccionarios(f, uuid, deseo_ayudar):
+    return f
+
+@template_sencillo({
+        "tarea1": [
+            10, 10, 8
+        ],
+        "tarea2": [
+            10, 8, 7
+        ]
+    }, 'creacion_de_diccionario_con_listas', '5')
+def califica_creacion_de_diccionario_con_listas(f, uuid, deseo_ayudar):
+    return f
+
+@template_sencillo({
+        "historial": ((3,5,1,6), (56,2,1,7), (62,4,78,3))
+    }, 'creacion_de_diccionario_con_tuplas', '5')
+def califica_creacion_de_diccionario_con_tuplas(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [['edad', 27], {'edad': 27}],
+    [['Nombre', "Pepito"], {'Nombre': 'Pepito'}],
+    [[1, 27], {1: 27}],
+    [["Calif", 100], {'Calif': 100}],
+], 'creacion_de_diccionario_a_partir_de_clave', '5')
+def califica_creacion_de_diccionario_a_partir_de_clave(f, uuid, deseo_ayudar):
+    return f
+
+@template_sencillo(
+    list(range(10001)), 'lista_hasta_10000', '5'
+)
+def califica_lista_hasta_10000(f, uuid, deseo_ayudar):
+    return f
 
 @template_iterable([
     [[10], list(range(10))],
@@ -615,9 +674,14 @@ def califica_acceder_al_ultimo_elemento_de_una_tupla_en_rango(f, uuid, deseo_ayu
     [[110], list(range(110))],
     [[2], list(range(2))],
     [[3], list(range(3))],
-], 'lista_en_rango', '4')
+], 'lista_en_rango', '5')
 def califica_lista_en_rango(f, uuid, deseo_ayudar):
     return f
+
+####################################################################################################
+#                                       Tarea 6
+####################################################################################################
+
 
 @template_iterable([
     [[[1,2,3]], 6],
@@ -706,63 +770,6 @@ def califica_encontrar_primos(f, uuid, deseo_ayudar):
 def califica_obtener_nickname(f, uuid, deseo_ayudar):
     return f
 
-####################################################################################################
-#                                       Tarea 5
-####################################################################################################
-
-
-@template_sencillo({
-    'estado': 'Activo',
-    'datos': {
-        'curso': 'Python de la A a la Z',
-        'tareas': 3
-    }
-}, 'creacion_de_diccionario_dentro_de_otro_diccionario', '5')
-def califica_creacion_de_diccionario_dentro_de_otro_diccionario(f, uuid, deseo_ayudar):
-    return f
-
-
-@template_sencillo([
-    {"pais": "México", "nombre oficial": "Estados Unidos Mexicanos"},
-    {"pais": "Estados Unidos", "nombre oficial": "Estados Unidos de América"}
-], 'creacion_de_lista_de_diccionarios', '5')
-def califica_creacion_de_lista_de_diccionarios(f, uuid, deseo_ayudar):
-    return f
-
-@template_sencillo({
-        "tarea1": [
-            10, 10, 8
-        ],
-        "tarea2": [
-            10, 8, 7
-        ]
-    }, 'creacion_de_diccionario_con_listas', '5')
-def califica_creacion_de_diccionario_con_listas(f, uuid, deseo_ayudar):
-    return f
-
-
-@template_sencillo({
-        "historial": ((3,5,1,6), (56,2,1,7), (62,4,78,3))
-    }, 'creacion_de_diccionario_con_tuplas', '5')
-def califica_creacion_de_diccionario_con_tuplas(f, uuid, deseo_ayudar):
-    return f
-
-
-@template_iterable([
-    [['edad', 27], {'edad': 27}],
-    [['Nombre', "Pepito"], {'Nombre': 'Pepito'}],
-    [[1, 27], {1: 27}],
-    [["Calif", 100], {'Calif': 100}],
-], 'creacion_de_diccionario_a_partir_de_clave', '5')
-def califica_creacion_de_diccionario_a_partir_de_clave(f, uuid, deseo_ayudar):
-    return f
-
-
-@template_sencillo(
-    list(range(10001)), 'lista_hasta_10000', '4'
-)
-def califica_lista_hasta_10000(f, uuid, deseo_ayudar):
-    return f
 
 @template_iterable([
     [[10, 20], list(range(10, 20))],
@@ -774,9 +781,6 @@ def califica_lista_hasta_10000(f, uuid, deseo_ayudar):
 def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
     return f
 
-####################################################################################################
-#                                       Tarea 6
-####################################################################################################
 
 @template_iterable([
     [[[1,2,3,4,3], 3], 2],
@@ -1010,12 +1014,6 @@ def califica_creacion_de_una_lista_con_exactamente_un_elemento(f, uuid, deseo_ay
         ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], ({"Curso": "Python de la a a la z", "Fecha": "17 de enero"},))
     ], 'creacion_de_una_tupla_con_exactamente_un_elemento', '4')
 def califica_creacion_de_una_tupla_con_exactamente_un_elemento(f, uuid, deseo_ayudar):
-    return f
-
-@template_iterable([
-        ([], ('a', '1', 'b'))
-    ], 'creacion_de_una_tupla_con_exactamente_un_elemento', '4')
-def califica_creacion_de_una_tupla_con_tres_elementos(f, uuid, deseo_ayudar):
     return f
 
 @template_iterable([
