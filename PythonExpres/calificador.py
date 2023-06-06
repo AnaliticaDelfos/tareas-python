@@ -913,21 +913,10 @@ def califica_triangulo_de_asteriscos(f, uuid, deseo_ayudar):
 #                                       Tarea 9
 ####################################################################################################
 
-@template_iterable([
-    [[10, 20], list(range(10, 20))],
-    [[38, 40], list(range(38, 40))],
-    [[12, 22], list(range(12, 22))],
-    [[-2, 32], list(range(-2, 32))],
-    [[-29, 20], list(range(-29, 20))],
-], 'lista_en_rango_v_2', '5')
-def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
-    return f
-
-
 @template_poo([
     ('metodo', 'mostrar_saludo', [], "Hola"),
     ('propiedad', 'saludo', [], 'Hola')
-], "saludos", "7")
+], "saludos", "9")
 def califica_clase_saludos(f, uuid, deseo_ayudar):
     return f
 
@@ -937,7 +926,7 @@ def califica_clase_saludos(f, uuid, deseo_ayudar):
     ('metodo', 'asignar_nombre', ["Pepe"], "Nombre asignado"),
     ('propiedad', 'raza', [], 'Pastor alemán'),
     ('propiedad', 'nombre', [], 'Pepe')
-], "perro", "7")
+], "perro", "9")
 def califica_clase_perro(f, uuid, deseo_ayudar):
     return f
 
@@ -952,11 +941,9 @@ def califica_clase_perro(f, uuid, deseo_ayudar):
     ('metodo', 'division', [1,-2], -.5),
     ('metodo', 'division', [1,2], .5),
     ('metodo', 'division', [1,0], "No se puede dividir entre cero"),
-
-], 'calculadora_basica', "7")
+], 'calculadora_basica', "9")
 def califica_clase_calculadora_basica(f, uuid, deseo_ayudar):
     return f
-
 
 @template_poo([
     ('propiedad', 'marca', [], 'Delfos'),
@@ -976,10 +963,23 @@ def califica_clase_calculadora_basica(f, uuid, deseo_ayudar):
     ('metodo', 'discreta', [[0,1], [0,0]], 0),
     ('metodo', 'discreta', [[1,1], [0,0]], 0),
 
-], 'distancias', "7")
+], 'distancias', "9")
 def califica_distancias(f, uuid, deseo_ayudar):
     return f
 
+####################################################################################################
+#                                       Extras
+####################################################################################################
+
+@template_iterable([
+    [[10, 20], list(range(10, 20))],
+    [[38, 40], list(range(38, 40))],
+    [[12, 22], list(range(12, 22))],
+    [[-2, 32], list(range(-2, 32))],
+    [[-29, 20], list(range(-29, 20))],
+], 'lista_en_rango_v_2', '5')
+def califica_lista_en_rango_v_2(f, uuid, deseo_ayudar):
+    return f
 
 
 @template_iterable([
@@ -1028,9 +1028,7 @@ def califica_creacion_de_una_tupla_con_exactamente_un_elemento(f, uuid, deseo_ay
 def califica_creacion_de_un_diccionario_con_clave_edad(f, uuid, deseo_ayudar):
     return f
 
-####################################################################################################
-#                                       Tarea 6
-####################################################################################################
+
 
 
 
