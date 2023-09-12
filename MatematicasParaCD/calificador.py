@@ -1309,9 +1309,61 @@ def ejercicio_8(f, uuid, deseo_ayudar):
 def ejercicio_9(f, uuid, deseo_ayudar):
     return f
 
+####################################################################################################
+#                              Tarea 2
+####################################################################################################
+
 @template_iterable([
-    [[[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]], np.array([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ,
-       -0.95892427, -0.2794155 ,  0.6569866 ,  0.98935825,  0.41211849])]
-], 'ejercicio_10', 't1-')
+    [[], np.ones((2,2)) *5]
+], 'ejercicio_10', 't2-')
 def ejercicio_10(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[], np.arange(20, 40, 2)]
+], 'ejercicio_11', 't2-')
+def ejercicio_11(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[18, 16, 17, 19, 14]], np.array([1.8, 1.6, 1.7, 1.9, 1.4])]
+], 'ejercicio_12', 't2-')
+def ejercicio_12(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[1,2,3]], np.array([[1],
+       [2],
+       [3]])]
+], 'ejercicio_13', 't2-')
+def ejercicio_13(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[1000,2000,3000]], np.array([1001, 2002, 3003])]
+], 'ejercicio_14', 't2-')
+def ejercicio_14(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[100,200,300,400,500,600,700,800,900]], np.array([[101, 202, 303],
+       [401, 502, 603],
+       [701, 802, 903]])]
+], 'ejercicio_15', 't2-')
+def ejercicio_15(f, uuid, deseo_ayudar):
+    return f
+
+
+@template_iterable([
+    [[], np.array(4.5)]
+], 'ejercicio_16', 't2-')
+def ejercicio_16(f, uuid, deseo_ayudar):
+    return f
+
+@template_iterable([
+    [[[[1,2,3],
+    [3,4,5],
+    [4,5,6]]], np.array([np.array([1, 2, 3]), np.array([4, 5, 6])])]
+], 'ejercicio_17', 't2-')
+def ejercicio_17(f, uuid, deseo_ayudar):
     return f

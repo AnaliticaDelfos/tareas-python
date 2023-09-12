@@ -4,7 +4,7 @@ http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github
 Tarea 1 - 6 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCD/tarea1.ipynb&app=notebook
 
-Tarea 2 - 9 Ejercicios
+Tarea 2 - 8 Ejercicios
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCD/tarea2.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
