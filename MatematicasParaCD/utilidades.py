@@ -152,8 +152,9 @@ def helper(resultados, tarea, nombre, uuid, **kwargs):
             mandar_a_firestore(uuid, nombre, calificacion, resultados, opinion, tarea)
             
     else:
-        type_error = kwargs['type_error']
-        print(type_error)
+        ...
+        # type_error = kwargs['type_error']
+        # print(type_error)
         # mandar_error_de_codigo(uuid, tarea, nombre, type_error)
         # print(kwargs['excepcion'])
 
