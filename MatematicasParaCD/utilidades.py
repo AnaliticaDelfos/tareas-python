@@ -2,6 +2,7 @@ import requests
 from datetime import datetime
 import numpy as np
 
+
 prod = True
 
 class Resultado:
@@ -13,15 +14,19 @@ class Resultado:
 
 def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, opinion, tarea):
     print(f"============> Enviando calificación <============\n")
-    resp = requests \
-        .post("https://us-central1-cursos-delfos.cloudfunctions.net/get_grades", \
-        json={"uuid": uuid, \
-        "id_curso": "Fa4kfw2RfaXsYsYs2StU", \
-        "ejercicio": ejercicio, \
-        "id_tarea": f'{tarea}', \
-        "calificacion": calificacion, \
-        "resultados": resultados, \
-        "edicion": "1", \
+    if prod:
+        url = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
+    else:
+        url = "http://127.0.0.1:8086"
+    resp = requests.post(
+        url, 
+        json={"uuid": uuid,
+        "id_curso": "Fa4kfw2RfaXsYsYs2StU",
+        "ejercicio": ejercicio,
+        "id_tarea": f'{tarea}',
+        "calificacion": calificacion,
+        "resultados": resultados,
+        "edicion": "1",
         "tipo": "jupyter"
         })
     if resp.status_code != 200:
@@ -31,7 +36,18 @@ def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, opinion, tarea
             Error {resp.json()}
         """)
     if resp.status_code == 200:
-        print(f"============> Calificación recibida <============\n")
+        print(f"\033[0;32m============> Calificación recibida <============\n")
+
+# def mandar_error_de_codigo(uuid, tarea, nombre_ejercicio, type_error):
+#     data = dict(uuid=uuid, id_tarea=tarea, ejercicio=nombre_ejercicio, type_error=type_error)
+#     print(data)
+#     if prod:
+#         print("Acá")
+#         url = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
+#     else:
+#         print("Aquí")
+#         url = "http://127.0.0.1:8086"
+#     requests.post(url, json=data)
 
 def deseo_ayudar():
     while True:
@@ -98,47 +114,47 @@ def helper(resultados, tarea, nombre, uuid, **kwargs):
             for resultado in aciertos_arr:
                 if resultado['argumentos']:
                     if len(resultado['argumentos']) == 1:
-                        print(f"Valores de entrada: {resultado['argumentos'][0]}. \
-                        Valor esperado: {resultado['esperado']}. \
-                        Valor obtenido: {resultado['obtenido']}\n")
+                        print(f"\033[0;34m Valores de entrada: {resultado['argumentos'][0]}. \
+                        \033[0;35m Valor esperado: {resultado['esperado']}. \
+                        \033[0;36m Valor obtenido: {resultado['obtenido']}\n\033[00m")
                     else:
-                        print(f"Valores de entrada: {resultado['argumentos']}. \
-                        Valor esperado: {resultado['esperado']}. \
-                        Valor obtenido: {resultado['obtenido']}\n")
+                        print(f"\033[0;34mValores de entrada: {resultado['argumentos']}. \
+                        \033[0;35mValor esperado: {resultado['esperado']}. \
+                        \033[0;36mValor obtenido: {resultado['obtenido']}\n")
                 else:
-                    print(f"Valores de entrada: N/A. \
-                    Valor esperado: {resultado['esperado']}. \
-                    Valor obtenido: {resultado['obtenido']}\n")
+                    print(f"\033[0;34mValores de entrada: N/A. \
+                    \033[0;35mValor esperado: {resultado['esperado']}. \
+                    \033[0;36mValor obtenido: {resultado['obtenido']}\n")
              
             if errores == 0:
                 print("======> No hubo errores :D <======\n")
             else:
-                print("======> Casos con error <======\n")
+                print("\033[0;31m======> Casos con error <======\n\033[00m")
                 for resultado in errores_arr:
                     if resultado['argumentos']:
                         if len(resultado['argumentos']) == 1:
-                            print(f"Valores de entrada: {resultado['argumentos'][0]}. \
-                            Valor esperado: {resultado['esperado']}. \
-                            Valor obtenido: {resultado['obtenido']}\n")
+                            print(f"\033[0;34mValores de entrada: {resultado['argumentos'][0]}. \
+                            \033[0;35mValor esperado: {resultado['esperado']}. \
+                            \033[0;36mValor obtenido: {resultado['obtenido']}\n")
                         else:
-                            print(f"Valores de entrada: {resultado['argumentos']}. \
-                            Valor esperado: {resultado['esperado']}. \
-                            Valor obtenido: {resultado['obtenido']}\n")
+                            print(f"\033[0;34mValores de entrada: {resultado['argumentos']}. \
+                            \033[0;35mValor esperado: {resultado['esperado']}. \
+                            \033[0;36mValor obtenido: {resultado['obtenido']}\n")
                     else:
-                        print(f"Valores de entrada: N/A. \
-                        Valor esperado: {resultado['esperado']}. \
-                        Valor obtenido: {resultado['obtenido']}\n")
+                        print(f"\033[0;34mValores de entrada: N/A. \
+                        \033[0;35mValor esperado: {resultado['esperado']}. \
+                        \033[0;36mValor obtenido: {resultado['obtenido']}\n")
             if kwargs['deseo']:
                 opinion = deseo_ayudar()
             else:
                 opinion = None
             resultados = list(map(convertir_a_tupla, resultados))
-            if prod:
-                mandar_a_firestore(uuid, nombre, calificacion, resultados, opinion, tarea)
-            else:
-                print("Sandbox")
+            mandar_a_firestore(uuid, nombre, calificacion, resultados, opinion, tarea)
+            
     else:
-        ...
+        type_error = kwargs['type_error']
+        print(type_error)
+        # mandar_error_de_codigo(uuid, tarea, nombre, type_error)
         # print(kwargs['excepcion'])
 
 def mensaje_error(error):
@@ -163,6 +179,7 @@ def template_sencillo(esperado, nombre, tarea, argumentos=[]):
             error = False
             resultados = []
             excepcion = None
+            type_error = None
             try:
                 resultado_obtenido = funcion(f, uuid, deseo_ayudar)(*argumentos)
                 resultado_esperado = esperado
@@ -172,6 +189,7 @@ def template_sencillo(esperado, nombre, tarea, argumentos=[]):
                 mensaje_error(e)
                 error = True
                 excepcion = str(e)
+                type_error = type(e).__name__
 
             helper(resultados, tarea, nombre, uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
         return contenedora
@@ -214,6 +232,7 @@ def template_iterable(lista, nombre, tarea):
                     mensaje_error(e)
                     error = True
                     excepcion = str(e)
+                    type_error = type(e).__name__
                     break
 
             helper(resultados, tarea, nombre, uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
@@ -249,6 +268,7 @@ def template_poo(lista: list, nombre, tarea):
                     mensaje_error(e)
                     error = True
                     excepcion = str(e)
+                    type_error = type(e).__name__
                     break
             helper(resultados, tarea, nombre, uuid, error=error, deseo=deseo_ayudar, excepcion=excepcion)
         return contenedora
