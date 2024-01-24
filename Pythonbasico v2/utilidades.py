@@ -2,7 +2,7 @@ import requests
 import mensajes
 from controlador import Controlador
 
-prod = False
+prod = True
 errores = []
 ID_CURSO = "cwf7r5LS3tieZt5qJIYD"
 
