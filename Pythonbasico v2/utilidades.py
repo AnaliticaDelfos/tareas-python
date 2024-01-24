@@ -4,7 +4,7 @@ from controlador import Controlador
 
 prod = True
 errores = []
-ID_CURSO = "cwf7r5LS3tieZt5qJIYD"
+ID_CURSO = "LZMe1kQTwcMzdH4idfX8"
 
 
 def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, tarea):
