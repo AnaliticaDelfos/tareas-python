@@ -65,7 +65,7 @@ def convertir_a_tupla(r):
     return {'esperado': esperado, 'obtenido': obtenido, 'argumentos': argumentos, 'estado': estado}
 
 def helper(resultados, tarea, nombre, uuid, **kwargs):
-    print(Controlador.obtener_errores())
+    # print(Controlador.obtener_errores())
     global errores
     if not kwargs['error']:
         assert uuid != None, "Ingresa tu correo"
