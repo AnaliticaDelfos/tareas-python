@@ -8,7 +8,7 @@ ID_CURSO = "cwf7r5LS3tieZt5qJIYD"
 
 
 def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, tarea):
-    print(mensajes.mensaje_enviando_calificacion())
+    # print(mensajes.mensaje_enviando_calificacion())
     global prod
     if prod:
         ruta = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
