@@ -80,7 +80,7 @@ def template_iterable(lista, nombre, tarea):
                 Controlador.ignorar_traceback()
             Controlador.calificando()
 
-            helper(resultados, tarea, nombre, uuid, error=error, excepcion=excepcion, exception_type=type(excepcion_type))
+            helper(resultados, tarea, nombre, uuid, error=error, excepcion=excepcion, exception_type=excepcion_type)
         return contenedora
     return decoradora 
 
@@ -118,6 +118,6 @@ def template_poo(lista: list, nombre, tarea):
                     excepcion = str(e)
                     excepcion_type = type(e)
                     break
-            helper(resultados, tarea, nombre, uuid, error=error, excepcion=excepcion, exception_type=type(excepcion_type))
+            helper(resultados, tarea, nombre, uuid, error=error, excepcion=excepcion, exception_type=excepcion_type)
         return contenedora
     return decoradora

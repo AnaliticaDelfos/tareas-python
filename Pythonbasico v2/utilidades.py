@@ -2,7 +2,7 @@ import requests
 import mensajes
 from controlador import Controlador
 
-prod = True
+prod = False
 errores = []
 ID_CURSO = "LZMe1kQTwcMzdH4idfX8"
 
@@ -65,8 +65,8 @@ def convertir_a_tupla(r):
     return {'esperado': esperado, 'obtenido': obtenido, 'argumentos': argumentos, 'estado': estado}
 
 def helper(resultados, tarea, nombre, uuid, **kwargs):
-    # print(Controlador.obtener_errores())
     global errores
+    errores =  Controlador.obtener_errores()
     if not kwargs['error']:
         assert uuid != None, "Ingresa tu correo"
         assert uuid != "CAMBIA ESTO POR TU CORREO", "Ingresa tu correo"
@@ -79,17 +79,17 @@ def helper(resultados, tarea, nombre, uuid, **kwargs):
             else:
                 errores_arr.append(resultado)
         total = len(resultados)
-        errores = len(errores_arr)
+        errores_len = len(errores_arr)
         aciertos = len(aciertos_arr)
         if total != 0:
             calificacion = (aciertos / total) * 100
-            print(mensajes.mensaje_resumen_errores_aciertos(calificacion, aciertos, errores))
+            print(mensajes.mensaje_resumen_errores_aciertos(calificacion, aciertos, errores_len))
             
             print(mensajes.mensaje_casos_existosos())
             
             for resultado in aciertos_arr:
                 print(mensajes.mensaje_de_resultados(resultado['esperado'], resultado['obtenido'], resultado.get('argumentos')))
-            if errores == 0:
+            if errores_len == 0:
                 print("======> No hubo errores :D <======\n")
             else:
                 print("\033[0;31m======> Casos con error <======\n\033[00m")
@@ -100,6 +100,7 @@ def helper(resultados, tarea, nombre, uuid, **kwargs):
             
     else:
         errores.append(kwargs['exception_type'])
+        print("##############", kwargs)
         mandar_a_firestore(uuid, nombre, None, None, tarea)
         mensajes.mensaje_error(f"{kwargs['excepcion']}")
 
