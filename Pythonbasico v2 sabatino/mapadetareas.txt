@@ -1,0 +1,44 @@
+Tarea 0 - 3 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea0.ipynb&app=notebook
+
+Tarea 1 - 10 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea1_0.ipynb&app=notebook
+
+Tarea 2 - 9 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea2_0.ipynb&app=notebook
+
+Tarea 3 - 10 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea3_0.ipynb&app=notebook
+
+Tarea 4 - 10 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea4_0.ipynb&app=notebook
+
+Tarea 5 - 10 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea5_0.ipynb&app=notebook
+
+Tarea 6 - 12 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea6_0.ipynb&app=notebook
+
+Tarea 7 - 9 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea7_0.ipynb&app=notebook
+
+Tarea 8 - 3 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea8_0.ipynb&app=notebook
+
+Tarea 9 - 4 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea9_0.ipynb&app=notebook
+
+Tarea 10 - 4 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea10_0.ipynb&app=notebook
+
+Tarea 10 - 4 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2%20sabatino/tarea11_0.ipynb&app=notebook
+
+Ejercicios 1
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
+
+Ejercicios 2
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios2.ipynb&app=notebook
+
+Ejercicios 3
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios3.ipynb&app=notebook
