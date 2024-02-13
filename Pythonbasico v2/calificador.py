@@ -41,7 +41,7 @@ def califica_ejercicio_2(f, uuid):
     return f
 
 @template_iterable([
-    [[1, 2], 3],
+    [[1, 2], 2],
 ], 'ejercicio_3', '1')
 def califica_ejercicio_3(f, uuid):
     return f
@@ -65,7 +65,7 @@ def califica_ejercicio_6(f, uuid):
     return f
 
 @template_iterable([
-    [[1, 2], 3],
+    [[1, 2], 5],
 ], 'ejercicio_7', '1')
 def califica_ejercicio_7(f, uuid):
     return f
