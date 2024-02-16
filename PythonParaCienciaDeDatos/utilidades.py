@@ -3,7 +3,7 @@ import mensajes
 from controlador import Controlador
 import numpy as np
 
-prod = False
+prod = True
 errores = []
 ID_CURSO = "F0c9JTBB7UUbDkafnbKa"
 

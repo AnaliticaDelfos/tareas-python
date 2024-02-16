@@ -1,38 +1,38 @@
 Tarea 0 - 3 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea0.ipynb&app=notebook
 
-Tarea 1 - 10 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea1_0.ipynb&app=notebook
+Tarea 1 - 9 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea1.ipynb&app=notebook
 
-Tarea 2 - 9 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea2_0.ipynb&app=notebook
+Tarea 2 - 8 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea2.ipynb&app=notebook
 
-Tarea 3 - 10 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea3_0.ipynb&app=notebook
+Tarea 3 - 5 Ejercicios
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea3.ipynb&app=notebook
 
 Tarea 4 - 10 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea4_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea4.ipynb&app=notebook
 
 Tarea 5 - 10 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea5_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea5.ipynb&app=notebook
 
 Tarea 6 - 12 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea6_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea6.ipynb&app=notebook
 
 Tarea 7 - 9 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea7_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea7.ipynb&app=notebook
 
 Tarea 8 - 3 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea8_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea8.ipynb&app=notebook
 
 Tarea 9 - 4 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea9_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea9.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea10_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea10.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Pythonbasico%20v2/tarea11_0.ipynb&app=notebook
+http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaCienciaDeDatos/tarea11.ipynb&app=notebook
 
 Ejercicios 1
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
