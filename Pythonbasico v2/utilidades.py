@@ -99,7 +99,7 @@ def helper(resultados, tarea, nombre, uuid, **kwargs):
             mandar_a_firestore(uuid, nombre, calificacion, resultados, tarea)
             
     else:
-        errores.append(str(kwargs['exception_type']))
+        # errores.append(str(kwargs['exception_type']))
         mandar_a_firestore(uuid, nombre, None, None, tarea)
         mensajes.mensaje_error(f"{kwargs['excepcion']}")
 
