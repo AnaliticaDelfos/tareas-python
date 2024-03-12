@@ -623,13 +623,13 @@ def califica_ejercicio_64(f, uuid):
     return f
 
 @template_iterable([
-        ([()], 0),
+        ([tuple()], 0),
         ([(1,2,3)], 3),
         ([(1,2,3,4,5,6,7,8,9,10)], 10),
         ([tuple(range(100))], 100)
     ], 'ejercicio_65', '7')
 def califica_ejercicio_65(f, uuid):
-    return 
+    return f
 
 @template_iterable([
         ([{}], 0),
