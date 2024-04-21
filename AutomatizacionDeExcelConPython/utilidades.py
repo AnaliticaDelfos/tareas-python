@@ -15,6 +15,7 @@ def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
     else:
         correo = 'estudiante@analiticadelfos.com'
         ruta = "http://127.0.0.1:8086"
+    print(correo)
     resp = requests \
         .post(ruta, \
         json={"uuid": correo, \
