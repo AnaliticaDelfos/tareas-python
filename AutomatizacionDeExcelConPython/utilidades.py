@@ -9,6 +9,8 @@ correo = os.environ.get("JUPYTERHUB_USER")
 def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
     global correo
     if correo:
+        if correo == 'delfos':
+            correo = 'estudiante@analiticadelfos.com'
         ruta = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
     else:
         correo = 'estudiante@analiticadelfos.com'
