@@ -8,7 +8,6 @@ correo = os.environ.get("JUPYTERHUB_USER")
 
 def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
     global correo
-    print("Enviando información y correo")
     if correo:
         if correo == 'delfos':
             correo = 'estudiante@analiticadelfos.com'
@@ -16,7 +15,6 @@ def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
     else:
         correo = 'estudiante@analiticadelfos.com'
         ruta = "http://127.0.0.1:8086"
-    print(correo)
     resp = requests \
         .post(ruta, \
         json={"uuid": correo, \
