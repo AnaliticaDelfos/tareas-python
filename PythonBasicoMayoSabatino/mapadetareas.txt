@@ -1,38 +1,38 @@
 Tarea 0 - 3 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea0.ipynb&app=notebook
 
 Tarea 1 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea1_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea1_0.ipynb&app=notebook
 
 Tarea 2 - 9 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea2_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea2_0.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea3_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea3_0.ipynb&app=notebook
 
 Tarea 4 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea4_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea4_0.ipynb&app=notebook
 
 Tarea 5 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea5_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea5_0.ipynb&app=notebook
 
 Tarea 6 - 12 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea6_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea6_0.ipynb&app=notebook
 
 Tarea 7 - 9 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea7_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea7_0.ipynb&app=notebook
 
 Tarea 8 - 3 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea8_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea8_0.ipynb&app=notebook
 
 Tarea 9 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea9_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea9_0.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea10_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea10_0.ipynb&app=notebook
 
 Tarea 11 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayo/tarea11_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonBasicoMayoSabatino/tarea11_0.ipynb&app=notebook
 
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook

@@ -38,16 +38,15 @@ def mandar_a_firestore(uuid, ejercicio, calificacion, resultados, opinion, tarea
     if resp.status_code == 200:
         print(f"\033[0;32m============> Calificación recibida <============\n")
 
-# def mandar_error_de_codigo(uuid, tarea, nombre_ejercicio, type_error):
-#     data = dict(uuid=uuid, id_tarea=tarea, ejercicio=nombre_ejercicio, type_error=type_error)
-#     print(data)
-#     if prod:
-#         print("Acá")
-#         url = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
-#     else:
-#         print("Aquí")
-#         url = "http://127.0.0.1:8086"
-#     requests.post(url, json=data)
+def mandar_error_de_codigo(uuid, tarea, nombre_ejercicio, type_error):
+    data = dict(uuid=uuid, id_tarea=tarea, ejercicio=nombre_ejercicio, type_error=type_error)
+    print(data)
+    if prod:
+        print("Acá")
+        url = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
+    else:
+        print("Aquí")
+    requests.post(url, json=data)
 
 def deseo_ayudar():
     while True:
