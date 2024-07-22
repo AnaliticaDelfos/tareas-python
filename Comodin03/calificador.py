@@ -29,57 +29,60 @@ def califica_ejercicio_0_3(f):
 
 
 @template_iterable([
-    [[1, 2], 3],
-    [[-1, -2], -3],
-    [[0, 0], 0]
+    [[1], 101],
+    [[0], 100],
+    [[-1], 99]
 ], 'ejercicio_1', '1')
 def califica_ejercicio_1(f):
     return f
 
 @template_iterable([
-    [[1, 2, 3], 0],
-    [[0, 0, 0], 0],
-    [[2, 2, 3], 1]
+    [[1, 2], -1],
+    [[2, 1], 1],
+    [[-1, 2], -3],
+    [[1, -2], 3]
 ], 'ejercicio_2', '1')
 def califica_ejercicio_2(f):
     return f
 
 @template_iterable([
-    [[1, 2, 3], 7],
-    [[1, 2, -3], -5],
-    [[-1, 2, 3], 5]
+    [[1, 2], 12],
+    [[-1, 2], 8],
+    [[1, -2], 8]
 ], 'ejercicio_3', '1')
 def califica_ejercicio_3(f):
     return f
 
 @template_iterable([
-    [[1, 2], 2],
-    [[2, 1], .5],
-    [[1, -2], -2],
-    [[2, -1], -.5]
+    [[1, 2], .5],
+    [[-1, 2], -.5],
+    [[1, -2], -.5]
 ], 'ejercicio_4', '1')
 def califica_ejercicio_4(f):
     return f
 
 @template_iterable([
-    [[1, 2], 1],
-    [[-1, 2], 1],
-    [[1, -2], 1]
+    [[1, 2, 3], 5],
+    [[-1, 2, 3], 7],
+    [[1, -2, 3], -7],
+    [[1, 2, -3], -7],
 ], 'ejercicio_5', '1')
 def califica_ejercicio_5(f):
     return f
 
 @template_iterable([
-    [[1], 1],
-    [[2], 8],
-    [[-1], -1],
-    [[-2], -8]
+    [[1, 2], 1],
+    [[2, 1], 2],
+    [[3, 3], 27],
+    [[3, 2], 9],
+    [[-1, 2], 1]
 ], 'ejercicio_6', '1')
 def califica_ejercicio_6(f):
     return f
 
 @template_iterable([
     [[1, 2], 3],
+    [[2, 1], 5],
     [[-1, 2], 3],
     [[1, -2], -1]
 ], 'ejercicio_7', '1')
@@ -87,9 +90,10 @@ def califica_ejercicio_7(f):
     return f
 
 @template_iterable([
-    [[1, 2], 2.5],
-    [[-1, 2], 1.5],
-    [[1, -2], -1.5]
+    [[1, 2], -1.5],
+    [[2, 1], 0],
+    [[-1, 2], -2.5],
+    [[1, -2], 2.5]
 ], 'ejercicio_8', '1')
 def califica_ejercicio_8(f):
     return f
@@ -107,7 +111,8 @@ def califica_ejercicio_9(f):
 @template_iterable([
     [[4], 2.0],
     [[9], 3.0],
-    [[100], 10.0]
+    [[100], 10.0],
+    [[25], 5.0]
 ], 'ejercicio_10', '1')
 def califica_ejercicio_10(f):
     return f
@@ -118,12 +123,67 @@ def califica_ejercicio_10(f):
 ####################################################################################################
 
 @template_iterable([
-    [[1, 2], 1],
-    [[-3, 5], 64],
-    [[2, -3], 25],
-    [[-10, -9], 1]
+    [[5, 11], 6],
+    [[-5, 11], 6],
+    [[5, -11], 3.74]
 ], 'ejercicio_11', '2')
 def califica_ejercicio_11(f):
+    return f
+
+@template_iterable([
+    [[2, 4], 4],
+    [[-2, 4], -4],
+    [[2, -4], -4]
+], 'ejercicio_12', '2')
+def califica_ejercicio_12(f):
+    return f
+
+@template_iterable([
+    [[20, 5, 15], 5],
+    [[-20, 5, 15], 245],
+    [[20, -5, 15], -5],
+    [[20, 5, -15], 245]
+], 'ejercicio_13', '2')
+def califica_ejercicio_13(f):
+    return f
+
+@template_iterable([
+    [[2, 1], 21],
+    [[-2, 1], 21],
+    [[2, -1], 11],
+], 'ejercicio_14', '2')
+def califica_ejercicio_14(f):
+    return f
+
+@template_iterable([
+    [[1, 4.5], 3],
+], 'ejercicio_15', '2')
+def califica_ejercicio_15(f):
+    return f
+
+@template_iterable([
+    [[2, 15], 5],
+    [[-2, 15], 5],
+    [[2, -15], -2.5],
+], 'ejercicio_16', '2')
+def califica_ejercicio_16(f):
+    return f
+
+@template_iterable([
+     [[1, 1], 4],
+    [[2, -2], 16],
+    [[-2, 2], 16]
+], 'ejercicio_17', '2')
+def califica_ejercicio_17(f):
+    return f
+
+@template_iterable([
+    [[1, 1, 1], 1],
+    [[2, 2, -2], 2],
+    [[2, -2, 2], 2],
+    [[-2, 2, 2], -2]
+], 'ejercicio_18', '2')
+def califica_ejercicio_18(f):
     return f
 
 @template_iterable([
@@ -132,74 +192,15 @@ def califica_ejercicio_11(f):
     [[-4, 1, 1], -41.666],
     [[1, -1, 1], 2.666]
     [[5, 1, -1], -24.333]
-], 'ejercicio_12', '2')
-def califica_ejercicio_12(f):
-    return f
-
-@template_iterable([
-    [[1, 1, 1], 1],
-    [[2, 2, -2], 2],
-    [[2, -2, 2], 2],
-    [[-2, 2, 2], -2]
-], 'ejercicio_13', '2')
-def califica_ejercicio_13(f):
-    return f
-
-@template_iterable([
-    [[1, 1], 4],
-    [[2, -2], 16],
-    [[-2, 2], 16]
-], 'ejercicio_14', '2')
-def califica_ejercicio_14(f):
-    return f
-
-@template_iterable([
-    [[2, 2, 5, 5], 1],
-    [[1, 1, -2, 2], -0.33],
-    [[-1, 1, 2, 2], 0.33],
-    [[1, -1, 2, 2], 3]
-    [[1, 1, 2, -2], -3]
-], 'ejercicio_15', '2')
-def califica_ejercicio_15(f):
-    return f
-
-@template_iterable([
-    [[2, 1, 2], 0.2],
-    [[-20, 1, 2], -2],
-    [[20,-1, 2], 0.666],
-    [[20, 1, -2], -0.666]
-], 'ejercicio_16', '2')
-def califica_ejercicio_16(f):
-    return f
-
-@template_iterable([
-    [[5, 5], 5],
-    [[-5, 5], 5],
-    [[5, -5], -5]
-], 'ejercicio_17', '2')
-def califica_ejercicio_17(f):
-    return f
-
-@template_iterable([
-    [[1, 2, 2], 0.5],
-    [[-1, 2, 1], 3],
-    [[1, -2, 1], -3],
-    [[1, 2, -1 ], -1]
-], 'ejercicio_18', '2')
-def califica_ejercicio_18(f):
-    return f
-
-@template_iterable([
-    [[1, 2, 3], -1],
-    [[10, 10, 5], 50],
-    [[-10, 5, 3], -20],
-    [[10, 5, -3], 80]
 ], 'ejercicio_19', '2')
 def califica_ejercicio_19(f):
     return f
 
 @template_iterable([
-    [[5], 10]
+    [[1, 2], 1],
+    [[-3, 5], 64],
+    [[2, -3], 25],
+    [[-10, -9], 1]
 ], 'ejercicio_20', '2')
 def califica_ejercicio_20(f):
     return f
@@ -209,63 +210,75 @@ def califica_ejercicio_20(f):
 ####################################################################################################
 
 @template_iterable([
-    [[3], 9],
-    [[-3], -9]
+    [[4], 2.1],
+    [[45], 4.5],
+    [[1], 0.0]
 ], 'ejercicio_21', '3')
 def califica_ejercicio_21(f):
     return f
 
 @template_iterable([
-    [[3], 255],
-    [[-3], -231]
+    [[25], 4.0],
+    [[20], 3.7],
+    [[-20], -3.7],
+    [[0], 0.0],
+    [[1], 0.9],
 ], 'ejercicio_22', '3')
 def califica_ejercicio_22(f):
     return f
 
 @template_iterable([
-    [[1], 3.37],
-    [[-1], -3.37]
+    [[0], 0.0],
+    [[0.5], 0.6],
+    [[-0.5], -0.6],
+    [[0.8], 1.1]
 ], 'ejercicio_23', '3')
 def califica_ejercicio_23(f):
     return f
 
 @template_iterable([
-    [[5, 2], 21.16],
-    [[-5, 2], 21.16],
-    [[5, -2], -21.16],
-    [[-5, -2], -21.16]
+    [[-7], 7.0],
+    [[-1], 1.0],
+    [[-100], 100.0],
+    [[100], 100.0],
+    [[-150], 150.0]
 ], 'ejercicio_24', '3')
 def califica_ejercicio_24(f):
     return f
 
 @template_iterable([
-    [[2, 4], -4.38],
-    [[-2, 4], 4.38],
-    [[-2, -4], -4.38],
-    [[2, -4], 4.38]
+    [[30, 5], 5],
+    [[60, 90], 30],
+    [[10, 20], 10],
+    [[-10, -20], 10],
+    [[-10, 20], 10]
 ], 'ejercicio_25', '3')
 def califica_ejercicio_25(f):
     return f
 
 @template_iterable([
-    [[4], 50.27],
-    [[-4], 50.27]
+    [[16, 9], 144],
+    [[10, 25], 50],
+    [[-10, 25], 50],
+    [[-10, -50], 50]
 ], 'ejercicio_26', '3')
 def califica_ejercicio_26(f):
     return f
 
 @template_iterable([
-    [[4, 5], 57.4],
-    [[-4, 5], 1.3],
-    [[4, -5], 51.8],
-    [[-4, -5], -1.2],
+    [[360], 57.3],
+    [[180], 28.7],
+    [[100], 16.0],
+    [[1], 0.16],
+    [[0], 0.0]
 ], 'ejercicio_27', '3')
 def califica_ejercicio_27(f):
     return f
 
 @template_iterable([
-    [[20], 3],
-    [[35], 3.3]
+    [[10], 3.4],
+    [[1], 0.0],
+    [[2], 1.0]
 ], 'ejercicio_28', '3')
 def califica_ejercicio_28(f):
     return f
@@ -293,86 +306,90 @@ def califica_ejercicio_30(f):
 ####################################################################################################
 
 @template_iterable([
-    [["Del", "fos"], "Delfos"],
-    [["HOLA", "MUNDO"], "HOLAMUNDO"],
-    [["del", "fos"], "delfos"],
-    [["Hola","mundo"], 'Holamundo']
+    [["hola mundo"], 'Hola Mundo'],
+    [["buenos días"], 'Buenos Días'],
+    [["Analítica delfos"], 'Analítica Delfos']
 ], 'ejercicio_31', '4')
 def califica_ejercicio_31(f):
     return f
 
 @template_iterable([
-    [["Hola"], "HolaHolaHola"],
-    [["Delfos"], 'DelfosDelfosDelfos'],
-    [["Python"], 'PythonPythonPython']
+    [["Hola crayola", "ola"], 2],
+    [["Bello camello", "ello"], 2],
+    [["Hola mundo", "mundo"], 1]
 ], 'ejercicio_32', '4')
 def califica_ejercicio_32(f):
     return f
 
 @template_iterable([
-    [["D", "Delfos"], True],
-    [["Hola", "Hola mundo"], True],
-    [["hola", "Hola mundo"], False],
-    [["d", "Delfos"], False]
+    [["Bienvenido sea", "ido"], 7],
+    [["Hola mundo", "un"], 6],
+    [["Pepe pecas", "ca"], 8],
+    [["Delfos", "os"], 4]
 ], 'ejercicio_33', '4')
 def califica_ejercicio_33(f):
     return f
 
 @template_iterable([
-    [["Python básico"], 13],
-    [["Analítica Delfos"], 16],
-    [["hola"], 4],
-    [["Hola mundo"], 10]
+    [["Python 101"], False],
+    [["101"], True],
+    [["Hola mundo"], False],
+    [["1000"], True]
 ], 'ejercicio_34', '4')
 def califica_ejercicio_34(f):
     return f
 
 @template_iterable([
-    [["holA MuNDo"], "Hola mundo"],
-    [["pRoGRAmaR"], "Programar"],
-    [["delfos"], "Delfos"]
+    [["Hola mundo"], False],
+    [["hola mundo"], True],
+    [["python"], True],
+    [["Python"], False]
 ], 'ejercicio_35', '4')
 def califica_ejercicio_35(f):
     return f
 
 @template_iterable([
-    [["Python BÁSICO"], "python básico"],
-    [["DELFOS"], "delfos"],
-    [["Hola mundo"], "hola mundo"]
+    [["Rusa"], False],
+    [["DELFOS"], True],
+    [["python"], False],
+    [["PYTHON"], True]
 ], 'ejercicio_36', '4')
 def califica_ejercicio_36(f):
     return f
 
 @template_iterable([
-    [["holA MUNdo"], "HOLA MUNDO"],
-    [["cÓDIgoS"], "CÓDIGOS"],
-    [["Hola mundo"], "HOLA MUNDO"],
-    [["Hola MUNdO"], "HOLA MUNDO"]
+    [["Hola Mundo"], True],
+    [["Buenos Días"], True],
+    [["Python"], True],
+    [["hola mundo"], False],
+    [["Hola mundo"], False]
 ], 'ejercicio_37', '4')
 def califica_ejercicio_37(f):
     return f
 
 @template_iterable([
-    [["Buen Día"], "bUEN dÍA"],
-    [["Programación"], "pROGRAMACIÓN"],
-    [["Hola mundo"], "hOLA mUNDO"]
+    [["Tururú"], False],
+    [["    "], True],
+    [[" "], True],
+    [[""], False]
 ], 'ejercicio_38', '4')
 def califica_ejercicio_38(f):
     return f
 
 @template_iterable([
-    [["Black&White"], False],
-    [["estudiante@analiticadelfos.com"], False],
-    [["Hola"], True],
-    [["Python101"], True]
+    [["Bienvenidos", "Bien"], True],
+    [["Bienvenidos", "idos"], False],
+    [["Hola mundo", "Hola"], True],
+    [["hola mundo", "hola"], False]
 ], 'ejercicio_39', '4')
 def califica_ejercicio_39(f):
     return f
 
 @template_iterable([
-    [["Python101"], False],
-    [["Hola mundo"], False],
-    [["HolaMundo"], True]
+    [["Bienvenidos", "Bien"], False],
+    [["Bienvenidos", "idos"], True],
+    [["Hola mundo", "Hola"], False],
+    [["hola mundo", "mundo"], True]
 ], 'ejercicio_40', '4')
 def califica_ejercicio_40(f):
     return f
@@ -383,12 +400,36 @@ def califica_ejercicio_40(f):
 ####################################################################################################
 
 @template_iterable([
+    [[3.4141592], 3.1416]
+], 'ejercicio_41', '5')
+def califica_ejercicio_41(f):
+    return f
+
+@template_iterable([
+    [[67], '0b1000011']
+], 'ejercicio_42', '5')
+def califica_ejercicio_42(f):
+    return f
+
+@template_iterable([
+    [[5.26], '0x1.50a3d70a3d70ap+2']
+], 'ejercicio_43', '5')
+def califica_ejercicio_43(f):
+    return f
+
+@template_iterable([
+    [[94], '0o136']
+], 'ejercicio_44', '5')
+def califica_ejercicio_44(f):
+    return f
+
+@template_iterable([
     [[5], "5.0 <class 'float'>"],
     [[100], "100.0 <class 'float'>"],
     [[-5], "-5.0 <class 'float'>"],
     [[0], "0.0 <class 'float'>"]
-], 'ejercicio_41', '5')
-def califica_ejercicio_41(f):
+], 'ejercicio_45', '5')
+def califica_ejercicio_45(f):
     return f
 
 @template_iterable([
@@ -396,8 +437,8 @@ def califica_ejercicio_41(f):
     [[-1.999], "-1 <class 'int'>"],
     [[0.5], "0 <class 'int'>"],
     [[827.6], "827 <class 'int'>"]
-], 'ejercicio_42', '5')
-def califica_ejercicio_42(f):
+], 'ejercicio_46', '5')
+def califica_ejercicio_46(f):
     return f
 
 @template_iterable([
@@ -406,8 +447,8 @@ def califica_ejercicio_42(f):
     [["hola mundo"], True],
     [["BIENVENIDO"], True],
     [[""], False]
-], 'ejercicio_43', '5')
-def califica_ejercicio_43(f):
+], 'ejercicio_47', '5')
+def califica_ejercicio_47(f):
     return f
 
 @template_iterable([
@@ -415,8 +456,8 @@ def califica_ejercicio_43(f):
     [[100], True],
     [[0], False],
     [[-5], True]
-], 'ejercicio_44', '5')
-def califica_ejercicio_44(f):
+], 'ejercicio_48', '5')
+def califica_ejercicio_48(f):
     return f
 
 @template_iterable([
@@ -424,8 +465,8 @@ def califica_ejercicio_44(f):
     [[7.25], True],
     [[-1.5], True],
     [[0.0], False]
-], 'ejercicio_45', '5')
-def califica_ejercicio_45(f):
+], 'ejercicio_49', '5')
+def califica_ejercicio_49(f):
     return f
 
 @template_iterable([
@@ -433,42 +474,6 @@ def califica_ejercicio_45(f):
     [[5.0], True],
     [[0.0], True],
     [[5.6], False]
-], 'ejercicio_46', '5')
-def califica_ejercicio_46(f):
-    return f
-
-@template_iterable([
-    [[1.3], '0x1.4cccccccccccdp+0'],
-    [[0.5], '0x1.0000000000000p-1'],
-    [[1.0], '0x1.0000000000000p+0'],
-    [[2.5], '0x1.4000000000000p+1']
-], 'ejercicio_47', '5')
-def califica_ejercicio_47(f):
-    return f
-
-@template_iterable([
-    [[1], '0b1'],
-    [[100], '0b1100100'],
-    [[-10], '-0b1010'],
-    [[5], '0b101']
-], 'ejercicio_48', '5')
-def califica_ejercicio_48(f):
-    return f
-
-@template_iterable([
-    [[3.141592], 3.14],
-    [[2.81728], 2.82],
-    [[2.512598], 2.51],
-    [[3.333333], 3.33]
-], 'ejercicio_49', '5')
-def califica_ejercicio_49(f):
-    return f
-
-@template_iterable([
-    [[5], '0o5'],
-    [[25], '0o5'],
-    [[100], '0o144'],
-    [[34], '0o42']
 ], 'ejercicio_50', '5')
 def califica_ejercicio_50(f):
     return f
@@ -478,51 +483,51 @@ def califica_ejercicio_50(f):
 ####################################################################################################
 
 @template_iterable([
-    [[5, 5], False],
-    [['Hola', 'Hola'], False],
-    [[1, 1.2], True],
-    [["Mi nombre es", "Soy"], True],
-    [[1.0, 1], True]
+    [[5, 5], True],
+    [['Hola', 'Hola'], True],
+    [[1, 1.2], False],
+    [["Mi nombre es", "Soy"], False],
+    [[1.0, 1], False],
 ], 'ejercicio_51', '6')
 def califica_ejercicio_51(f):
     return f
 
 @template_iterable([
-    [[2], False],
-    [[20.1], False],
-    [["Hola"], False],
-    [[""], True],
-    [[0], True],
+    [[16, 4], 20],
+    [[-15, 3], -13],
+    [[87, -19], -1],
+    [[-35, 73], -35],
+    [[15, -97], 97],
 ], 'ejercicio_52', '6')
 def califica_ejercicio_52(f):
     return f
 
 @template_iterable([
-    [[64], -65],
-    [[32], -33],
-    [[110100], -110101],
-    [[-5], 4],
-    [[-99], 98],
+    [[10, 11], 20480],
+    [[1, 0], 1],
+    [[-1, 0], 0],
+    [[-5, 1], -10],
+    [[1, 5], 32],
 ], 'ejercicio_53', '6')
 def califica_ejercicio_53(f):
     return f
 
 @template_iterable([
-    [[3, 6.5], True],
-    [[6.5, 3], False],
-    [[-3.3, 1], True],
-    [[1. -2.5], False],
-    [[1, 2], True]
+    [[3.5, 3.5], True],
+    [[2, 3.5], True],
+    [[4, 1.2], False],
+    [[2, 1], False],
+    [[1, 2], True],
 ], 'ejercicio_54', '6')
 def califica_ejercicio_54(f):
     return f
 
 @template_iterable([
-    [[1.2, 1.2], False],
-    [[1, 1], False],
-    [[3.5, 2], True],
-    [[6, 3.2], True],
-    [[2, 1], True]
+    [[5, 2], 25],
+    [[2, 5], 32],
+    [[1.3, 6], 4.826809000000001],
+    [[6, 2.1], 43.06432315864736],
+    [[1.1, 2.2], 1.2332863005546628],
 ], 'ejercicio_55', '6')
 def califica_ejercicio_55(f):
     return f
@@ -545,29 +550,29 @@ def califica_ejercicio_57(f):
     return f
 
 @template_iterable([
-    [[0], 'Buen día'],
-    [[10], 'Buen día'],
-    [[12], 'Buen día'],
-    [[-2], 'Formato incorrecto'],
-    [[11], 'Formato incorrecto']
+    [[15], 'Acceso denegado'],
+    [[10], 'Acceso denegado'],
+    [[18], 'Pase'],
+    [[100], 'Pase'],
+    [[-2], 'Acceso denegado'],
 ], 'ejercicio_58', '6')
 def califica_ejercicio_58(f):
     return f
 
 @template_iterable([
-    [[5], 'Suerte para la otra'],
-    [[1], 'Suerte para la otra'],
-    [[6], 'Aprobado'],
-    [[10], 'Aprobado']
+    [[1.5], 'Adelante'],
+    [[1.4], "No es seguro el acceso"],
+    [[1.35], "No es seguro el acceso"],
+    [[1.6], 'Adelante']
 ], 'ejercicio_59', '6')
 def califica_ejercicio_59(f):
     return f
 
 @template_iterable([
-    [[1,2,3], "Menos que 50"],
-    [[1,30,30], "Más que 50"],
-    [[40, 1, 1], "Menos que 50"],
-    [[20, 20, 25], "Más que 50"]
+    [[1.5, 30], "Más que 30"],
+    [[7.5, 2], "Menos que 30"],
+    [[6, 7], "Más que 30"],
+    [[2.5, 4.6], "Menos que 30"]
 ], 'ejercicio_60', '6')
 def califica_ejercicio_60(f):
     return f
@@ -577,13 +582,13 @@ def califica_ejercicio_60(f):
 ####################################################################################################
 
 @template_iterable([
-    [[5], [[1,2,3,4,5]]]
+    [[], ["Hola", "mundo"]]
 ], 'ejercicio_61', '7')
 def califica_ejercicio_61(f):
     return f
 
 @template_iterable([
-    [[], ('a', 'b', 'c')]
+    [[], (1,2,3,[4,5])]
 ], 'ejercicio_62', '7')
 def califica_ejercicio_62(f):
     return f
@@ -598,25 +603,22 @@ def califica_ejercicio_63(f):
     return f
 
 @template_iterable([
-    ([1], (1,)),
-    ([1.5], (2.25)),
-    ([2], (4,)),
-    ([-5], (25,))
+    ([], {})
     ], 'ejercicio_64', '7')
 def califica_ejercicio_64(f):
     return f
 
 @template_iterable([
-    ([], [])
+    (["Lu"], ["La", "Le", "Li", "Lo", "Lu"] )
     ], 'ejercicio_65', '7')
 def califica_ejercicio_65(f):
     return f
 
 @template_iterable([
-    ([{}], 0),
-    ([{"Uno": 1,"Dos": 2, "Tres": 3}], 3),
-    ([{"Dia": "Martes"}], 1),
-    ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], 2)
+        ([{}], 0),
+        ([{"Uno": 1,"Dos": 2, "Tres": 3}], 3),
+        ([{"Dia": "Martes"}], 1),
+        ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], 2)
     ], 'ejercicio_66', '7')
 def califica_ejercicio_66(f):
     return f
@@ -629,22 +631,22 @@ def califica_ejercicio_67(f):
     return f
 
 @template_iterable([
-    ([], ()),
+        ([], ()),
     ], 'ejercicio_68', '7')
 def califica_ejercicio_68(f):
     return f
 
 @template_iterable([
-    [[0, "Perro"], ["Perro", "Canario", "Gato", "Pez"]],
-    [[1, "Perro"], ["Canario","Perro", "Gato", "Pez"]],
-    [[2, "Conejo"], ["Canario", "Gato", "Conejo", "Pez"]],
-    [[3, "Conejo"], ["Canario", "Gato", "Pez", "Conejo"]], 
+    [[0, "Morado"], ["Morado", "Azul", "Verde", "Amarillo"]],
+    [[1, "Morado"], ["Azul", "Morado", "Verde", "Amarillo"]],
+    [[2, "Rosa"], ["Azul", "Verde", "Rosa", "Amarillo"]],
+    [[3, "Rosa"], ["Azul", "Verde", "Amarillo", "Rosa"]], 
     ], 'ejercicio_69', '7')
 def califica_ejercicio_69(f):
     return f
 
 @template_iterable([
-    ([], [1, (2, 3), 4])
+    ([], ("Hola", "mundo"))
     ], 'ejercicio_70', '7')
 def califica_ejercicio_70(f):
     return f
@@ -655,69 +657,12 @@ def califica_ejercicio_70(f):
 
 
 @template_iterable([
-    ([1], [2, 3, 4, 5]),
-    ([2], [1, 3, 4, 5]),
-    ([3], [1, 2, 4, 5]),
-    ([4], [1, 2, 3, 5]),
-    ([5], [1, 2, 3, 4])
-    ], 'ejercicio_71', '8')
-def califica_ejercicio_71(f):
-    return f
-
-@template_iterable([
-    [[0], "Tacos"],
-    [[1], "Enchiladas"],
-    [[2], "Chilaquiles"],
-    [[3], "Chilaquiles"]
-], 'ejercicio_72', '8')
-def califica_ejercicio_72(f):
-    return f
-
-@template_iterable([
-    [["Azul"], 0], 
-    [["Amarillo"], 1],
-    [["Verde"], 2]
-], 'ejercicio_73', '8')
-def califica_ejercicio_73(f):
-        return f
-
-@template_iterable([
-    [[], [99, 85, 81, 63, 48, 44, 27, 21, 11, 5, 4, 2, 1]]
-], 'ejercicio_74', '8')
-def califica_ejercicio_74(f):
-    return f
-
-@template_iterable([
-    [[], ['e', 'd', 'c', 'b', 'a']]
-], 'ejercicio_75', '8')
-def califica_ejercicio_75(f):
-    return f
-
-@template_iterable([
-    [[], {"Clave-1":[0,1,2,3,4,5,6,7,8,9,10]}]
-], 'ejercicio_76', '8')
-def califica_ejercicio_76(f):
-    return f
-
-@template_iterable([
-    [[], [{'Potencia de 9': 729}]]
-], 'ejercicio_77', '8')
-def califica_ejercicio_77(f):
-    return f
-
-@template_iterable([
-    [[], list(range(0, 351))]
-], 'ejercicio_78', '8')
-def califica_ejercicio_78(f):
-    return f
-
-@template_iterable([
     ([1, 2], {"Clave-1": 1, "Clave-2": 2}),
     ([2, 1], {"Clave-1": 2, "Clave-2": 1}),
     ([5000, 1500], {"Clave-1": 5000, "Clave-2": 1500}),
     ([1500, 5000], {"Clave-1": 1500, "Clave-2": 5000}),
-], 'ejercicio_79', '8')
-def califica_ejercicio_79(f):
+], 'ejercicio_71', '8')
+def califica_ejercicio_71(f):
     return f
 
 @template_iterable([
@@ -725,6 +670,64 @@ def califica_ejercicio_79(f):
     [[2], 7],
     [[3], 3],
     [[4], 4]
+], 'ejercicio_72', '8')
+def califica_ejercicio_72(f):
+    return f
+
+@template_iterable([
+    [[], [1, 2, 4, 5, 11, 21, 27, 44, 48, 63, 81, 85, 99]]
+], 'ejercicio_73', '8')
+def califica_ejercicio_73(f):
+        return f
+
+@template_iterable([
+    [[], [7, 6.3, 58, 1.2, 1]]
+], 'ejercicio_74', '8')
+def califica_ejercicio_74(f):
+    return f
+
+@template_iterable([
+    [[0], "Tacos"],
+    [[1], "Enchiladas"],
+    [[2], "Chilaquiles"],
+    [[3], "Chilaquiles"],
+], 'ejercicio_75', '8')
+def califica_ejercicio_75(f):
+    return f
+
+@template_iterable([
+    [["Auto"], 0], 
+    [["Bicicleta"], 1],
+    [["Moto"], 2],
+    [["Triciclo"], 3]
+], 'ejercicio_76', '8')
+def califica_ejercicio_76(f):
+    return f
+
+@template_iterable([
+    [[], list(range(30, 91))]
+], 'ejercicio_77', '8')
+def califica_ejercicio_77(f):
+    return f
+
+@template_iterable([
+    [[], [{'Potencia de 5': 125}]]
+], 'ejercicio_78', '8')
+def califica_ejercicio_78(f):
+    return f
+
+@template_iterable([
+    [[], {'Clave-1': ('a', 'e', 'i', 'o', 'u')}]
+], 'ejercicio_79', '8')
+def califica_ejercicio_79(f):
+    return f
+
+@template_iterable([
+    ([1], [2, 3, 4, 5]),
+    ([2], [1, 3, 4, 5]),
+    ([3], [1, 2, 4, 5]),
+    ([4], [1, 2, 3, 5]),
+    ([5], [1, 2, 3, 4])
 ], 'ejercicio_80', '8')
 def califica_ejercicio_80(f):
     return f
@@ -735,37 +738,35 @@ def califica_ejercicio_80(f):
 
 
 @template_iterable([
-    [[[1,2,3]], (1,2,3)],
-    [[["a", "b", "c"]], ('a', 'b', 'c')],
-    [[[1.1, 2.1, 3.1]], (1.1, 2.1, 3.1)]
+    [[[1,2,3]], []],
+    [[["a", "b", "c"]], []],
+    [[[1.1, 2.1, 3.1]], []]
 ], 'ejercicio_81', '9')
 def califica_ejercicio_81(f):
     return f
 
 @template_iterable([
-    [[[1,2,3]], [1, 2, 3, 'Python', 'básico']],
-    [[["a", "b", "c"]], ['a', 'b', 'c', 'Python', 'básico']],
-    [[[1.1, 2.1, 3.1]], [1.1, 2.1, 3.1, 'Python', 'básico']]
+    [[["Lunes", "Día", "Semana", "Mes", "Agosto" ]], ["Lunes", "Semana", "Agosto"]]
 ], 'ejercicio_82', '9')
 def califica_ejercicio_82(f):
     return f
 
 @template_iterable([
-    [[["Uva", "Hola", "Amarillo", "Rico", "Oso" ]], ["Hola", "Amarillo", "Rico"]]
+    [[{"Marca": "Ford", "Modelo": "Sedan", "Año": 2019}], ['Ford', 'Sedan', 2019]]
 ], 'ejercicio_83', '9')
 def califica_ejercicio_83(f):
     return f
 
 @template_iterable([
-    [[{"Marca": "Ford", "Modelo": "Sedan", "Año": 2019}], ['Ford', 'Sedan', 2019]]
+    [[{'Ana': 23, 'Juan': 15, 'Martha': 33, 'Alicia': 21, 'Pedro': 38, 'Eric': 32, 'Elena': 89}], ['Ana', 'Juan', 'Martha', 'Alicia', 'Pedro', 'Eric', 'Elena']],
 ], 'ejercicio_84', '9')
 def califica_ejercicio_84(f):
     return f
 
 @template_iterable([
-    [[[1,2,3]], []],
-    [[["a", "b", "c"]], []],
-    [[[1.1, 2.1, 3.1]], []]
+    [[[1,2,3]], (1,2,3)],
+    [[["a", "b", "c"]], ('a', 'b', 'c')],
+    [[[1.1, 2.1, 3.1]], (1.1, 2.1, 3.1)]
 ], 'ejercicio_85', '9')
 def califica_ejercicio_85(f):
     return f
@@ -777,25 +778,27 @@ def califica_ejercicio_86(f):
     return f
 
 @template_iterable([
-    [[{'Ana': 23, 'Juan': 15, 'Martha': 33, 'Alicia': 21, 'Pedro': 38, 'Eric': 32, 'Elena': 89}], ['Ana', 'Juan', 'Martha', 'Alicia', 'Pedro', 'Eric', 'Elena']]
+    [[], tuple(range(34, 57))]
 ], 'ejercicio_87', '9')
 def califica_ejercicio_87(f):
     return f
 
 @template_iterable([
-    [[], tuple(range(51))]
+    [[[1,2,3]], [1, 2, 3, 'Python', 'básico']],
+    [[["a", "b", "c"]], ['a', 'b', 'c', 'Python', 'básico']],
+    [[[1.1, 2.1, 3.1]], [1.1, 2.1, 3.1, 'Python', 'básico']]
 ], 'ejercicio_88', '9')
 def califica_ejercicio_88(f):
     return f
 
 @template_iterable([
-    [[]], [[0, 2, 4, 6, 8, 10]]
+    [[]], [[20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52]]
 ], 'ejercicio_89', '9')
 def califica_ejercicio_89(f):
     return f
 
 @template_iterable([
-    [[[2,2,98,5,8,55,5,41,35,2,88,6,6,21,1]], 1]
+    [[[2,2,98,5,8,55,5,41,35,2,88,6,6,21,1]], 98]
 ], 'ejercicio_90', '9')
 def califica_ejercicio_90(f):
     return f
