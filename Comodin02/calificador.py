@@ -187,7 +187,7 @@ def califica_ejercicio_18(f):
     [[2, 1, 2], 0.1333],
     [[-20, 1, 2], -1.333],
     [[20,-1, 2], 0.444],
-    [[20, 1, -2], -0.444]
+    [[20, 1, -2], -0.444],
     [[150, 15, 20], 2]
 ], 'ejercicio_19', '2')
 def califica_ejercicio_19(f):
@@ -197,7 +197,7 @@ def califica_ejercicio_19(f):
     [[2, 2, 5, 5], 1],
     [[1, 1, -2, 2], -0.33],
     [[-1, 1, 2, 2], 0.33],
-    [[1, -1, 2, 2], 3]
+    [[1, -1, 2, 2], 3],
     [[1, 1, 2, -2], -3]
 ], 'ejercicio_20', '2')
 def califica_ejercicio_20(f):
@@ -272,7 +272,7 @@ def califica_ejercicio_27(f):
     [[8], 1490.8],
     [[-8], 1490.8],
     [[0], 1.0],
-    [[1], 1.55],
+    [[1], 1.55]
 ], 'ejercicio_28', '3')
 def califica_ejercicio_28(f):
     return f
@@ -311,7 +311,7 @@ def califica_ejercicio_31(f):
 @template_iterable([
     [["0.5"], "0.5 <class 'float'>"],
     [["3.1416"], "3.1416 <class 'float'>"],
-    [["1.0"], "1.0 <class 'float'>"]
+    [["1.0"], "1.0 <class 'float'>"],
     [["12.6"], "0.5 <class 'float'>"]
 ], 'ejercicio_32', '4')
 def califica_ejercicio_32(f):
@@ -502,8 +502,8 @@ def califica_ejercicio_52(f):
     [[11001, 10110], 0],
     [[10, 11], 0],
     [[-5, 9], -1],
-    [[3, 14], 0]
-    [[9, 12], 0],
+    [[3, 14], 0],
+    [[9, 12], 0]
 ], 'ejercicio_53', '6')
 def califica_ejercicio_53(f):
     return f
@@ -513,7 +513,7 @@ def califica_ejercicio_53(f):
     [[3.5, 3.5], True],
     [[2.0, 2], True],
     [[-2.5, 2], False],
-    [[-1, -1], True],
+    [[-1, -1], True]
 ], 'ejercicio_54', '6')
 def califica_ejercicio_54(f):
     return f
@@ -556,7 +556,7 @@ def califica_ejercicio_57(f):
     [[10], 'Buen día'],
     [[12], 'Buen día'],
     [[-2], 'Formato incorrecto'],
-    [[11], 'Formato incorrecto'],
+    [[11], 'Formato incorrecto']
 ], 'ejercicio_58', '6')
 def califica_ejercicio_58(f):
     return f
@@ -587,7 +587,7 @@ def califica_ejercicio_60(f):
     [[0, "Morado"], ["Morado", "Azul", "Verde", "Amarillo"]],
     [[1, "Morado"], ["Azul", "Morado", "Verde", "Amarillo"]],
     [[2, "Rosa"], ["Azul", "Verde", "Rosa", "Amarillo"]],
-    [[3, "Rosa"], ["Azul", "Verde", "Amarillo", "Rosa"]],
+    [[3, "Rosa"], ["Azul", "Verde", "Amarillo", "Rosa"]]
 ], 'ejercicio_61', '7')
 def califica_ejercicio_61(f):
     return f
@@ -608,10 +608,10 @@ def califica_ejercicio_63(f):
     return f
 
 @template_iterable([
-    ([()], 0),
-    ([(1,2,3)], 3),
-    ([(1,2,3,4,5,6,7,8,9,10)], 10),
-    ([tuple(range(100))], 100)
+    [[()], 0],
+    [[(1,2,3)], 3],
+    [[(1,2,3,4,5,6,7,8,9,10)], 10],
+    [[tuple(range(100))], 100]
     ], 'ejercicio_64', '7')
 def califica_ejercicio_64(f):
     return f
@@ -623,38 +623,38 @@ def califica_ejercicio_65(f):
     return f
 
 @template_iterable([
-    ([27, "Ana"], {'Edad': 27, 'Nombre':'Ana'}), 
-    ([60, "Juan"], {'Edad': 60, 'Nombre':'Juan'}) 
+    [[27, "Ana"], {'Edad': 27, 'Nombre':'Ana'}], 
+    [[60, "Juan"], {'Edad': 60, 'Nombre':'Juan'}] 
     ], 'ejercicio_66', '7')
 def califica_ejercicio_66(f):
     return f
 
 @template_iterable([
-    ([{}], 0),
-    ([{"Uno": 1,"Dos": 2, "Tres": 3}], 3),
-    ([{"Dia": "Martes"}], 1),
-    ([{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], 2)
+    [[{}], 0],
+    [[{"Uno": 1,"Dos": 2, "Tres": 3}], 3],
+    [[{"Dia": "Martes"}], 1],
+    [[{"Curso": "Python de la a a la z", "Fecha": "17 de enero"}], 2]
     ], 'ejercicio_67', '7')
 def califica_ejercicio_67(f):
     return f
 
 @template_iterable([
-    ([1], {}),
+    [[1], {}]
     ], 'ejercicio_68', '7')
 def califica_ejercicio_68(f):
     return f
 
 @template_iterable([
-    ([], (1, [2,3], 4)) 
+    [[], (1, [2,3], 4)]
     ], 'ejercicio_69', '7')
 def califica_ejercicio_69(f):
     return f
 
 @template_iterable([
-    (["Pera"], ["Piña", "Manzana", "Uva", "Pera"]),
-    (["Sandía"], ["Piña", "Manzana", "Uva", "Sandía"]),
-    (["Fresa"], ["Piña", "Manzana", "Uva", "Fresa"]),
-    (["Mango"], ["Piña", "Manzana", "Uva", "Mango"]),
+    [["Pera"], ["Piña", "Manzana", "Uva", "Pera"]],
+    [["Sandía"], ["Piña", "Manzana", "Uva", "Sandía"]],
+    [["Fresa"], ["Piña", "Manzana", "Uva", "Fresa"]],
+    [["Mango"], ["Piña", "Manzana", "Uva", "Mango"]]
     ], 'ejercicio_70', '7')
 def califica_ejercicio_70(f):
     return f
