@@ -195,7 +195,7 @@ def califica_ejercicio_19(f):
     return f
 
 @template_iterable([
-    [[1, 2], 3]
+    [[1, 2], 3],
     [[-1, 2], 2.645]
 ], 'ejercicio_20', '2')
 def califica_ejercicio_20(f):
