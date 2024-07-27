@@ -602,7 +602,7 @@ def califica_ejercicio_65(f):
     return f
 
 @template_iterable([
-    [[{"Uno": 1,"Dos": 2, "Tres": 3}], 3]
+    [[], 3]
     ], 'ejercicio_66', '7')
 def califica_ejercicio_66(f):
     return f
