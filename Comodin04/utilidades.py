@@ -1,3 +1,4 @@
+"""COMODIN = 4"""
 import requests
 import os
 import mensajes
