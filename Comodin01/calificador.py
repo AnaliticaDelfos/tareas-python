@@ -509,7 +509,7 @@ def califica_ejercicio_53(f):
     [[3, 6.5], True],
     [[6.5, 3], False],
     [[-3.3, 1], True],
-    [[1. -2.5], False]
+    [[1, -2.5], False]
 ], 'ejercicio_54', '6')
 def califica_ejercicio_54(f):
     return f
