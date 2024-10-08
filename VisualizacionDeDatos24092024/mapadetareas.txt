@@ -1,0 +1,44 @@
+Tarea 0 - 3 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea0.ipynb&app=notebook
+
+Tarea 1 - 10 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea1_0.ipynb&app=notebook
+
+Tarea 2 - 9 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea2_0.ipynb&app=notebook
+
+Tarea 3 - 10 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea3_0.ipynb&app=notebook
+
+Tarea 4 - 10 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea4_0.ipynb&app=notebook
+
+Tarea 5 - 10 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea5_0.ipynb&app=notebook
+
+Tarea 6 - 12 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea6_0.ipynb&app=notebook
+
+Tarea 7 - 9 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea7_0.ipynb&app=notebook
+
+Tarea 8 - 3 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea8_0.ipynb&app=notebook
+
+Tarea 9 - 4 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea9_0.ipynb&app=notebook
+
+Tarea 10 - 4 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea10_0.ipynb&app=notebook
+
+Tarea 10 - 4 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=VisualizacionDeDatos24092024/tarea11_0.ipynb&app=notebook
+
+Ejercicios 1
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
+
+Ejercicios 2
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios2.ipynb&app=notebook
+
+Ejercicios 3
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios3.ipynb&app=notebook
