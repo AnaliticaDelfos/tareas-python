@@ -29,10 +29,10 @@ Tarea 9 - 4 Ejercicios
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCienciaDeDatos21092024/tarea9_0.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCienciaDeDatos21092024/tarea10_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCienciaDeDatos21092024/tarea10.ipynb&app=notebook
 
-Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCienciaDeDatos21092024/tarea11_0.ipynb&app=notebook
+Tarea 11 - 4 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MatematicasParaCienciaDeDatos21092024/tarea11.ipynb&app=notebook
 
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
