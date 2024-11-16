@@ -2,6 +2,7 @@ from models.resultado import Resultado
 import mensajes
 from utilidades import helper
 from controlador import Controlador
+import numpy as np
 
 def template_sencillo(esperado, nombre, tarea, argumentos=[]):
     """
@@ -64,7 +65,6 @@ def template_iterable(lista, nombre, tarea):
             excepcion = None
             excepcion_type = None
             Controlador.calificando()
-            
             for tupla in lista:
                 try:
                     resultado_obtenido = funcion(f)(*tupla[0])
@@ -84,6 +84,53 @@ def template_iterable(lista, nombre, tarea):
         return contenedora
     return decoradora 
 
+def template_iterable_numpy(lista, nombre, tarea):
+    """
+    Argumentos:
+        lista: Una lista que incluye en primer lugar una lista de elementos a evaluar
+                y en segundo lugar el valor esperado
+        nombre: El nombre de la función como cadena de caracteres
+        tarea: el sufijo que representa la tarea actual
+
+    Ejemplo: 
+    @template_iterable([
+        [["Hola"], 'H'],
+        [["mundo",], 'm'],
+        [["me"], 'm'],
+        [["gusta"], 'g'],
+        [["este"], 'e'],
+        [["curso"], 'c'],
+        [["y las"], 'y'],
+        [["tareas"], 't'],
+        [["están"], 'e'],
+        [["geniales"], 'g']
+    ], 'primer_caracter', tarea)
+    """
+    def decoradora(funcion):
+        def contenedora(f):
+            error = False
+            resultados = []
+            excepcion = None
+            excepcion_type = None
+            Controlador.calificando()
+            for tupla in lista:
+                try:
+                    resultado_obtenido = funcion(f)(*tupla[0])
+                    resultado_esperado = tupla[1]
+                    estado = np.allclose(resultado_obtenido, resultado_esperado)
+                    resultados.append(Resultado(tupla[0], resultado_esperado.tolist(), resultado_obtenido.tolist(), estado).__dict__)
+                except Exception as e:
+                    mensajes.mensaje_error(e)
+                    error = True
+                    excepcion = str(e)
+                    excepcion_type = type(e)
+                    break
+                Controlador.ignorar_traceback()
+            Controlador.calificando()
+
+            helper(resultados, tarea, nombre, error=error, excepcion=excepcion, exception_type=excepcion_type)
+        return contenedora
+    return decoradora 
 
 def template_poo(lista: list, nombre, tarea):
     """

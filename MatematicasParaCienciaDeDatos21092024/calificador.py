@@ -1,4 +1,4 @@
-from templates import template_iterable, template_poo, template_sencillo
+from templates import template_iterable, template_poo, template_sencillo, template_iterable_numpy
 
 ####################################################################################################
 #                                       Tarea de prueba
@@ -1854,3 +1854,165 @@ def califica_pares_un_medio(f):
 def califica_promedios(f):
     return f
 
+####################################################################################################
+#                                       Tarea 10m
+####################################################################################################
+
+import numpy as np
+
+@template_iterable_numpy([
+    [[], np.zeros((1, 3))]
+], 'ejercicio_91', '10')
+def califica_ejercicio_91m(f):
+    return f
+
+@template_iterable_numpy([
+    [[], np.ones((3, 3))]
+], 'ejercicio_92', '10')
+def califica_ejercicio_92m(f):
+    return f
+
+@template_iterable_numpy([
+    [[], np.array([[13,  4, 52, 43, 42],
+       [36, 44, 42, 98, 56]]) + 1]
+], 'ejercicio_93', '10')
+def califica_ejercicio_93m(f):
+    return f
+
+@template_iterable_numpy([
+    [[], np.array([222,  98, 189])]
+], 'ejercicio_94', '10')
+def califica_ejercicio_94m(f):
+    return f
+
+@template_iterable_numpy([
+    [[], np.array(509)]
+], 'ejercicio_95', '10')
+def califica_ejercicio_95m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[0, 1, 2, 3, 4, 5]], np.array([[0, 1, 2],
+       [3, 4, 5]])],
+    [[[47, 41, 68, 16, 96, 32]], np.array([[47, 41, 68],
+       [16, 96, 32]])]
+], 'ejercicio_96', '10')
+def califica_ejercicio_96m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[0, 1, 2]], np.array([1., 1., 1.])],
+    [[[[1,2], [2,4]]], np.array([1., 1.])]
+], 'ejercicio_97', '10')
+def califica_ejercicio_97m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[1,2]], np.array([1, 4])],
+    [[[[1,2], [4,7]]], np.array([[ 1,  4],
+       [16, 49]])]
+], 'ejercicio_98', '10')
+def califica_ejercicio_98m(f):
+    return f
+
+
+@template_iterable_numpy([
+    [[[[42, 19,  4],
+ [67, 45, 94],
+ [38, 24, 14]]], np.array([67, 45])]
+], 'ejercicio_99', '10')
+def califica_ejercicio_99m(f):
+    return f
+
+@template_iterable_numpy([
+    [[], np.ones((2,2)) *5]
+], 'ejercicio_100', '11')
+def califica_ejercicio_100m(f):
+    return f
+
+@template_iterable_numpy([
+    [[], np.arange(20, 40, 2)]
+], 'ejercicio_101', '11')
+def califica_ejercicio_101m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[18, 16, 17, 19, 14]], np.array([1.8, 1.6, 1.7, 1.9, 1.4])]
+], 'ejercicio_102', '11')
+def califica_ejercicio_102m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[1,2,3]], np.array([[1],
+       [2],
+       [3]])]
+], 'ejercicio_103', '11')
+def califica_ejercicio_103m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[1000,2000,3000]], np.array([1001, 2002, 3003])]
+], 'ejercicio_104', '11')
+def califica_ejercicio_104m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[100,200,300,400,500,600,700,800,900]], np.array([[101, 202, 303],
+       [401, 502, 603],
+       [701, 802, 903]])]
+], 'ejercicio_105', '11')
+def califica_ejercicio_105m(f):
+    return f
+
+
+@template_iterable_numpy([
+    [[], np.array(4.5)]
+], 'ejercicio_106', '11')
+def califica_ejercicio_106m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[[1,2,3],
+    [3,4,5],
+    [4,5,6]]], np.array([np.array([1, 2, 3]), np.array([4, 5, 6])])]
+], 'ejercicio_107', '11')
+def califica_ejercicio_107m(f):
+    return f
+
+@template_iterable_numpy([
+    [[[[1,2,3,4], [1,2,3,4]]], np.array([[-202.306, -204.612,  103.   ,  105.   ],
+       [-202.306, -204.612,  103.   ,  105.   ]])],
+    [[[[-8, 12,  3,  3, 14, 17,  1,  8],
+       [12,  3,  7, 12,  2, -9, -5,  6]]], 
+        np.array([[-181.552, -227.672, -206.918, -206.918,  116.   ,  120.   ,
+                     101.   ,  109.   ],
+                [-227.672, -206.918, -216.142, -227.672,  102.   ,   90.   ,
+          94.   ,  107.   ]])],
+    [[[[18,  1,  8, -5, -6],
+       [10, 10, 15, -7,  9],
+       [12, 12,  5, -5,  2],
+       [-7, -5, -7,  4, -2]]], np.array([[-241.508, -202.306,  109.   ,   94.   ,   93.   ],
+       [-223.06 , -223.06 ,  117.   ,   92.   ,  110.   ],
+       [-227.672, -227.672,  106.   ,   94.   ,  102.   ],
+       [-183.858, -188.47 ,   92.   ,  105.   ,   98.   ]])],
+], 'ejercicio_108', '11')
+def califica_ejercicio_108m(f):
+    return f
+
+
+@template_iterable_numpy([
+    [[[1,2,3]], np.array([[1.    , 2.    , 3.    ],
+       [3.1416, 6.2832, 9.4248],
+       [1.    , 4.    , 9.    ],
+       [1.    , 1.41  , 1.73  ]])],
+    [[[3,4,5]], np.array([[ 3.    ,  4.    ,  5.    ],
+       [ 9.4248, 12.5664, 15.708 ],
+       [ 9.    , 16.    , 25.    ],
+       [ 1.73  ,  2.    ,  2.24  ]])],
+    [[[6,7,8]], np.array([[ 6.    ,  7.    ,  8.    ],
+       [18.8496, 21.9912, 25.1328],
+       [36.    , 49.    , 64.    ],
+       [ 2.45  ,  2.65  ,  2.83  ]])]
+], 'ejercicio_109', '11')
+def califica_ejercicio_109m(f):
+    return f
