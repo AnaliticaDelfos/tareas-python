@@ -4,7 +4,7 @@ import os
 import mensajes
 from controlador import Controlador
 errores = []
-ID_CURSO = "cSRBH1ibLko8vPflUXBk"
+ID_CURSO = "0oBqwe3ZMeGONUQzb89S"
 correo = os.environ.get("JUPYTERHUB_USER")
 
 def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
