@@ -8,30 +8,33 @@ ID_CURSO = "ehE6T1Au2mX1uTqQUaUW"
 correo = os.environ.get("JUPYTERHUB_USER")
 
 def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
-    global correo
-    if correo:
-        if correo == 'delfos':
+    if Controlador.validar_fecha(tarea):
+        global correo
+        if correo:
+            if correo == 'delfos':
+                correo = 'estudiante@analiticadelfos.com'
+            ruta = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
+        else:
             correo = 'estudiante@analiticadelfos.com'
-        ruta = "https://us-central1-cursos-delfos.cloudfunctions.net/get_grades"
+            ruta = "http://127.0.0.1:8086"
+        resp = requests \
+            .post(ruta, \
+            json={"uuid": correo, \
+            "id_curso": ID_CURSO, \
+            "ejercicio": ejercicio, \
+            "id_tarea": f'{tarea}', \
+            "calificacion": calificacion, \
+            "resultados": resultados, \
+            "edicion": "1", \
+            "tipo": "jupyter",
+            "errores": errores
+            })
+        if resp.status_code != 200:
+            print(mensajes.mensaje_de_error_en_servidor(resp))
+        if resp.status_code == 200:
+            print(mensajes.mensaje_de_calificacion_recibida())
     else:
-        correo = 'estudiante@analiticadelfos.com'
-        ruta = "http://127.0.0.1:8086"
-    resp = requests \
-        .post(ruta, \
-        json={"uuid": correo, \
-        "id_curso": ID_CURSO, \
-        "ejercicio": ejercicio, \
-        "id_tarea": f'{tarea}', \
-        "calificacion": calificacion, \
-        "resultados": resultados, \
-        "edicion": "1", \
-        "tipo": "jupyter",
-        "errores": errores
-        })
-    if resp.status_code != 200:
-        print(mensajes.mensaje_de_error_en_servidor(resp))
-    if resp.status_code == 200:
-        print(mensajes.mensaje_de_calificacion_recibida())
+        print(mensajes.mensaje_expiro_tarea())
 
 def deseo_ayudar():
     while True:

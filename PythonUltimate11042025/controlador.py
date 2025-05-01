@@ -1,4 +1,5 @@
 import traceback
+from datetime import datetime, timezone, timedelta
 
 class Controlador:
     __errores = []
@@ -36,3 +37,17 @@ class Controlador:
     @staticmethod
     def limpiar_errores():
         Controlador.__errores.clear()
+        
+    @staticmethod
+    def validar_fecha(tarea):
+        fechas = {
+            "0": datetime(2025, 5, 2, 23, 59, 59, tzinfo=timezone.utc),
+            "1": datetime(2025, 5, 2, 23, 59, 59, tzinfo=timezone.utc),
+            "2": datetime(2025, 5, 2, 23, 59, 59, tzinfo=timezone.utc),
+            "3": datetime(2025, 5, 2, 23, 59, 59, tzinfo=timezone.utc),
+            "4": datetime(2025, 5, 12, 23, 59, 59, tzinfo=timezone.utc),
+            "5": datetime(2025, 5, 12, 23, 59, 59, tzinfo=timezone.utc),
+            "6": datetime(2025, 5, 12, 23, 59, 59, tzinfo=timezone.utc),
+            "7": datetime(2025, 5, 12, 23, 59, 59, tzinfo=timezone.utc),
+        }
+        return datetime.now(tz=timezone.utc) - timedelta(hours=6) < fechas[tarea] 

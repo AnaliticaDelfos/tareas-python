@@ -52,3 +52,6 @@ def mensaje_informacion_descriptiva_tarea_enviada(tarea, nombre):
     return f"""===============================================================================\n
 ============> Calificando: tarea {tarea} - ejercicio {nombre} <============\n
 ===============================================================================\n"""
+
+def mensaje_expiro_tarea():
+    return "\033[0;32m============> La tarea enviada posterior a la fecha indicada <============\n"
