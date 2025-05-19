@@ -47,7 +47,7 @@ class Controlador:
             "3": datetime(2025, 6, 2, 23, 59, 59, tzinfo=timezone.utc),
             "4": datetime(2025, 6, 9, 23, 59, 59, tzinfo=timezone.utc),
             "5": datetime(2025, 6, 9, 23, 59, 59, tzinfo=timezone.utc),
-            "6": datetime(2025, 6, 19, 20, 59, 59, tzinfo=timezone.utc),
-            "7": datetime(2025, 6, 19, 20, 59, 59, tzinfo=timezone.utc),
+            "6": datetime(2025, 6, 19, 23, 59, 59, tzinfo=timezone.utc),
+            "7": datetime(2025, 6, 19, 23, 59, 59, tzinfo=timezone.utc),
         }
         return datetime.now(tz=timezone.utc) - timedelta(hours=6) < fechas[tarea] 
