@@ -138,12 +138,12 @@ def template_pandas(lista: list, nombre, tarea):
             excepcion_type = None
             Controlador.calificando()
             try:
-                resultado_obtenido = funcion(f)(*lista[1])
-                if type(lista[0]) == pd.Series or type(lista[0]) == pd.DataFrame:
-                    estado = lista[0].equals(resultado_obtenido)
+                resultado_obtenido = funcion(f)(*lista[0])
+                if type(lista[1]) == pd.Series or type(lista[1]) == pd.DataFrame:
+                    estado = lista[1].equals(resultado_obtenido)
                 else:
-                    estado = lista[0] == resultado_obtenido
-                resultados.append(Resultado(None, lista[0], resultado_obtenido, estado).__dict__)
+                    estado = lista[1] == resultado_obtenido
+                resultados.append(Resultado(None, lista[1], resultado_obtenido, estado).__dict__)
             except Exception as e:
                 mensajes.mensaje_error(e)
                 error = True
