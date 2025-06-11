@@ -13,10 +13,10 @@ http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://gith
 Tarea 4 - 10 Ejercicios
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcel052025/tarea4_0.ipynb&app=notebook
 
-Tarea 5 - 10 Ejercicios
+Tarea 5 - 5 Ejercicios
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcel052025/tarea5_0.ipynb&app=notebook
 
-Tarea 6 - 12 Ejercicios
+Tarea 6 - 5 Ejercicios
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcel052025/tarea6_0.ipynb&app=notebook
 
 Tarea 7 - 9 Ejercicios
