@@ -32,7 +32,7 @@ Ejercicios 1
 http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
 
 Ejercicios 2
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios2.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios2.ipynb&app=notebook
 
 Ejercicios 3
-http://tareas.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios3.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios3.ipynb&app=notebook
