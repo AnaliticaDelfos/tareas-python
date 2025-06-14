@@ -1519,7 +1519,7 @@ def califica_triangulo_de_asteriscos(f):
 @template_poo([
     ('metodo', 'mostrar_saludo', [], "Hola"),
     ('propiedad', 'saludo', [], 'Hola')
-], "ejercicio_101", "10")
+], "ejercicio_71", "8")
 def califica_clase_saludos(f):
     return f
 
@@ -1529,7 +1529,7 @@ def califica_clase_saludos(f):
     ('metodo', 'asignar_nombre', ["Pepe"], "Nombre asignado"),
     ('propiedad', 'raza', [], 'Pastor alemán'),
     ('propiedad', 'nombre', [], 'Pepe')
-], "perro", "9")
+], "ejercicio_72", "8")
 def califica_clase_perro(f):
     return f
 
@@ -1544,7 +1544,7 @@ def califica_clase_perro(f):
     ('metodo', 'division', [1,-2], -.5),
     ('metodo', 'division', [1,2], .5),
     ('metodo', 'division', [1,0], "No se puede dividir entre cero"),
-], 'calculadora_basica', "9")
+], 'ejercicio_73', "8")
 def califica_clase_calculadora_basica(f):
     return f
 
@@ -1566,7 +1566,7 @@ def califica_clase_calculadora_basica(f):
     ('metodo', 'discreta', [[0,1], [0,0]], 0),
     ('metodo', 'discreta', [[1,1], [0,0]], 0),
 
-], 'distancias', "9")
+], 'ejercicio_74', "8")
 def califica_distancias(f):
     return f
 
