@@ -1570,6 +1570,45 @@ def califica_clase_calculadora_basica(f):
 def califica_distancias(f):
     return f
 
+@template_poo([
+    ('metodo', 'asignar_nombre', ["Annabel"], None),
+    ('propiedad', 'nombre', [], 'Annabel'),
+    ('metodo', 'asignar_salario_base', [10000], None),
+    ('metodo', 'mostrar_informacion', [], "Nombre: Annabel. Salario: $10000"),
+    ('metodo', 'calcular_salario', [], 10000),
+    ('metodo', 'es_gerente', [], False),
+], "ejercicio_81", "9")
+def califica_clase_empleado(f):
+    return f
+
+@template_poo([
+    ('metodo', 'asignar_nombre', ["Annabel"], None),
+    ('propiedad', 'nombre', [], 'Annabel'),
+    ('metodo', 'asignar_salario_base', [10000], None),
+    ('metodo', 'mostrar_informacion', [], "Nombre: Annabel. Salario: $10000"),
+    ('metodo', 'calcular_salario', [], 10000),
+    ('metodo', 'es_gerente', [], False),
+    ('metodo', 'agregar_lenguaje', ["Python"], None),
+    ('metodo', 'agregar_lenguaje', ["Java"], None),
+    ('metodo', 'agregar_lenguaje', ["JavaScript"], None),
+    ('metodo', 'ver_lenguajes', [], ["Python", "Java", "JavaScript"])
+], "ejercicio_81", "9")
+def califica_clase_desarrollador(f):
+    return f
+
+@template_poo([
+    ('metodo', 'asignar_nombre', ["Annabel"], None),
+    ('propiedad', 'nombre', [], 'Annabel'),
+    ('metodo', 'asignar_salario_base', [10000], None),
+    ('metodo', 'mostrar_informacion', [], "Nombre: Annabel. Salario: $10000"),
+    ('metodo', 'asignar_bono', [1000], None),
+    ('metodo', 'es_gerente', [], True),
+    ('metodo', 'obtener_bono', [], 1000),
+    ('metodo', 'calcular_salario', [], 10000+1000),
+], "ejercicio_81", "9")
+def califica_clase_gerente(f):
+    return f
+
 ####################################################################################################
 #                                       Extras
 ####################################################################################################
