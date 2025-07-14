@@ -48,8 +48,8 @@ class Controlador:
             "4": datetime(2025, 5, 9, 23, 59, 59, tzinfo=timezone.utc),
             "5": datetime(2025, 5, 9, 23, 59, 59, tzinfo=timezone.utc),
             "6": datetime(2025, 6, 6, 23, 59, 59, tzinfo=timezone.utc),
-            "7": datetime(2025, 6, 6, 23, 59, 59, tzinfo=timezone.utc),
-            "8": datetime(2025, 6, 20, 23, 59, 59, tzinfo=timezone.utc),
-            "9": datetime(2025, 6, 28, 23, 59, 59, tzinfo=timezone.utc),
+            "7": datetime(2025, 7, 6, 23, 59, 59, tzinfo=timezone.utc),
+            "8": datetime(2025, 7, 20, 23, 59, 59, tzinfo=timezone.utc),
+            "9": datetime(2025, 7, 28, 23, 59, 59, tzinfo=timezone.utc),
         }
         return datetime.now(tz=timezone.utc) - timedelta(hours=6) < fechas[tarea] 
