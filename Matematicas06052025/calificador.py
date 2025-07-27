@@ -1915,7 +1915,6 @@ def califica_ejercicio_97m(f):
 def califica_ejercicio_98m(f):
     return f
 
-
 @template_iterable_numpy([
     [[[[42, 19,  4],
  [67, 45, 94],
@@ -1923,6 +1922,10 @@ def califica_ejercicio_98m(f):
 ], 'ejercicio_99', '10')
 def califica_ejercicio_99m(f):
     return f
+
+####################################################################################################
+#                                       Tarea 11m
+####################################################################################################
 
 @template_iterable_numpy([
     [[], np.ones((2,2)) *5]
@@ -2015,4 +2018,48 @@ def califica_ejercicio_108m(f):
        [ 2.45  ,  2.65  ,  2.83  ]])]
 ], 'ejercicio_109', '11')
 def califica_ejercicio_109m(f):
+    return f
+
+####################################################################################################
+#                                       Tarea 12m
+####################################################################################################
+
+@template_iterable([[[], 7]], 'ejercicio_110', '12')
+def califica_ejercicio_110m(f):
+    return f
+
+@template_iterable([[[], 1]], 'ejercicio_111', '12')
+def califica_ejercicio_111m(f):
+    return f
+
+@template_iterable([[[], 54]], 'ejercicio_112', '12')
+def califica_ejercicio_112m(f):
+    return f
+
+@template_iterable([[[], 8.15]], 'ejercicio_113', '12')
+def califica_ejercicio_113m(f):
+    return f
+
+@template_iterable([[[], 0]], 'ejercicio_114', '12')
+def califica_ejercicio_114m(f):
+    return f
+
+@template_iterable([[[], 0]], 'ejercicio_115', '12')
+def califica_ejercicio_115m(f):
+    return f
+
+@template_iterable([[[], 2]], 'ejercicio_116', '12')
+def califica_ejercicio_116m(f):
+    return f
+
+@template_iterable([[[], 0.8]], 'ejercicio_117', '12')
+def califica_ejercicio_117m(f):
+    return f
+
+@template_iterable([[[], -2]], 'ejercicio_118', '12')
+def califica_ejercicio_118m(f):
+    return f
+
+@template_iterable([[[], 0.5]], 'ejercicio_119', '12')
+def califica_ejercicio_119m(f):
     return f
