@@ -2063,3 +2063,36 @@ def califica_ejercicio_118m(f):
 @template_iterable([[[], 0.5]], 'ejercicio_119', '12')
 def califica_ejercicio_119m(f):
     return f
+
+####################################################################################################
+#                                       Tarea 13m
+####################################################################################################
+
+@template_iterable([[[], 10.0]], 'ejercicio_120', '13')
+def califica_ejercicio_120m(f):
+    return f
+
+
+@template_iterable([[[], 7]], 'ejercicio_121', '13')
+def califica_ejercicio_121m(f):
+    return f
+
+
+@template_iterable([[[], -2]], 'ejercicio_122', '13')
+def califica_ejercicio_122m(f):
+    return f
+
+
+@template_iterable([[[], 2]], 'ejercicio_123', '13')
+def califica_ejercicio_123m(f):
+    return f
+
+
+@template_iterable([[[], -4]], 'ejercicio_124', '13')
+def califica_ejercicio_124m(f):
+    return f
+
+
+@template_iterable([[[], 1100]], 'ejercicio_125', '13')
+def califica_ejercicio_125m(f):
+    return f
