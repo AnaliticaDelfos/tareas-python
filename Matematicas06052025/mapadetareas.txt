@@ -34,6 +34,12 @@ http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://gith
 Tarea 11 - 4 Ejercicios
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Matematicas06052025/tarea11.ipynb&app=notebook
 
+Tarea 12 - 10 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Matematicas06052025/tarea12.ipynb&app=notebook
+
+Tarea 13 - 6 Ejercicios
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=Matematicas06052025/tarea13.ipynb&app=notebook
+
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
 
