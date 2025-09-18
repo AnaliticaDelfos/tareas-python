@@ -5,7 +5,7 @@ import mensajes
 from controlador import Controlador
 import pandas as pd
 errores = []
-ID_CURSO = "UF2IcVLYmE6mnKZBQxfp"
+ID_CURSO = "w9vQx0SUbSv02UDpXNIA"
 correo = os.environ.get("JUPYTERHUB_USER")
 
 def __convert_from_type_to_dict(resultados):
