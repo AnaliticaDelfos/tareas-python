@@ -71,8 +71,16 @@ def template_iterable(lista, nombre, tarea):
             for tupla in lista:
                 try:
                     resultado_obtenido = funcion(f)(*tupla[0])
+                    if type(resultado_obtenido) == np.int64:
+                        resultado_obtenido = int(resultado_obtenido)
+                    elif type(resultado_obtenido) == np.float64:
+                        resultado_obtenido = float(resultado_obtenido)
                     resultado_esperado = tupla[1]
-                    estado = resultado_obtenido == resultado_esperado
+                    if type(resultado_esperado) == np.int64:
+                        resultado_esperado = int(resultado_esperado)
+                    elif type(resultado_esperado) == np.float64:
+                        resultado_esperado = float(resultado_esperado)
+                    estado = bool(resultado_obtenido == resultado_esperado)
                     resultados.append(Resultado(tupla[0], resultado_esperado, resultado_obtenido, estado).__dict__)
                 except Exception as e:
                     mensajes.mensaje_error(e)
