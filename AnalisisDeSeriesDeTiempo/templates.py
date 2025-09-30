@@ -150,8 +150,18 @@ def template_pandas(lista: list, nombre, tarea):
                 resultado_obtenido = funcion(f)(*lista[0])
                 if type(lista[1]) == pd.Series or type(lista[1]) == pd.DataFrame:
                     estado = lista[1].equals(resultado_obtenido)
+                    if type(lista[1].index) == pd.DatetimeIndex:
+                        lista[1].index = lista[1].index.strftime("Y%/M%/d%")
+                    lista[1] = lista[1].to_json()
                 else:
                     estado = lista[1] == resultado_obtenido
+                if type(lista[0]) == pd.Series or type(lista[0]) == pd.DataFrame:
+                    if type(lista[0].index) == pd.DatetimeIndex:
+                        lista[0].index = lista[0].index.strftime("Y%/M%/d%")
+                    lista[0] = lista[0].to_json()
+                
+                if type(resultado_obtenido) == pd.Series or type(resultado_obtenido) == pd.DataFrame:
+                    resultado_obtenido = resultado_obtenido.to_json()
                 resultados.append(Resultado(None, lista[1], resultado_obtenido, estado).__dict__)
             except Exception as e:
                 mensajes.mensaje_error(e)

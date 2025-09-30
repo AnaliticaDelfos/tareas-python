@@ -2311,3 +2311,73 @@ def califica_ejercicio_ts_19(f):
 ], 'ejercicio_ts_20', '4')
 def califica_ejercicio_ts_20(f):
     return f
+
+###############################################################
+#                              Tarea 5
+###############################################################
+
+fechas_ts_21 = pd.date_range("2023-01-01", periods=5, freq="D")
+y_real_ts_21 = pd.Series([100, 102, 98, 101, 105], index=fechas_ts_21)
+y_pred_ts_21 = pd.Series([99, 101, 100, 102, 106], index=fechas_ts_21)
+
+@template_pandas([
+    [y_real_ts_21, y_pred_ts_21], 1.2
+], 'ejercicio_ts_21', '5')
+def califica_ejercicio_ts_21(f):
+    return f
+
+
+@template_pandas([
+    [
+        y_real_ts_21, y_pred_ts_21
+    ], 1.6
+], 'ejercicio_ts_22', '5')
+def califica_ejercicio_ts_22(f):
+    return f
+
+
+@template_pandas([
+    [
+        y_real_ts_21, y_pred_ts_21
+    ], 1.26
+], 'ejercicio_ts_23', '5')
+def califica_ejercicio_ts_23(f):
+    return f
+
+data_ts_24 = {
+    "fecha": pd.date_range("2023-01-01", periods=90, freq="D"),
+    "real": range(90),
+    "pred": [x + (1 if x % 7 == 0 else 0) for x in range(90)]
+}
+df_ts_24 = pd.DataFrame(data_ts_24)
+
+i_ts_24 = pd.DatetimeIndex(["2023-01-31", "2023-02-28", "2023-03-31"], freq="ME")
+r_ts_24 = pd.Series([.16, .14, .13], i_ts_24)
+
+@template_pandas([
+    [df_ts_24], 
+    r_ts_24
+], 'ejercicio_ts_24', '5')
+def califica_ejercicio_ts_24(f):
+    return f
+
+i_ts_25 = pd.DatetimeIndex(["2023-03-31"], freq="QE-DEC", name="fecha")
+
+r_ts_25 = pd.DataFrame({
+    "MSE": [.14],
+    "MAE": [.14],
+    "RMSE": [.38]
+}, index=i_ts_25)
+
+
+data_ts_25 = {
+    "fecha": pd.date_range("2023-01-01", periods=90, freq="D"),
+    "real": range(90),
+    "pred": [x + (1 if x % 7 == 0 else 0) for x in range(90)]
+}
+df_ts_25 = pd.DataFrame(data_ts_25)
+@template_pandas([
+    [df_ts_25], r_ts_25  
+], 'ejercicio_ts_25', '5')
+def califica_ejercicio_ts_25(f):
+    return f
