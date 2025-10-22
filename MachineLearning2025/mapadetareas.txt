@@ -1,38 +1,38 @@
 Tarea 0 - 3 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea0.ipynb&app=notebook
 
 Tarea 1 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea1_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea1_0.ipynb&app=notebook
 
 Tarea 2 - 9 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea2_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea2_0.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea3_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea3_0.ipynb&app=notebook
 
 Tarea 4 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea4_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea4_0.ipynb&app=notebook
 
 Tarea 5 - 5 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea5_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea5_0.ipynb&app=notebook
 
 Tarea 6 - 5 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea6_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea6_0.ipynb&app=notebook
 
 Tarea 7 - 9 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea7_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea7_0.ipynb&app=notebook
 
 Tarea 8 - 3 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea8_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea8_0.ipynb&app=notebook
 
 Tarea 9 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea9_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea9_0.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea10_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea10_0.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AnalisisDeSeriesDeTiempo/tarea11_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=MachineLearning2025/tarea11_0.ipynb&app=notebook
 
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook

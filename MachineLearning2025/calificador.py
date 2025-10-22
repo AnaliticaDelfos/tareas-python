@@ -2419,3 +2419,72 @@ def califica_ejercicio_ml_4(f):
 ], 'ejercicio_ml_5', '1')
 def califica_ejercicio_ml_5(f):
     return f
+
+###############################################################
+#                              Tarea 2
+###############################################################
+
+@template_iterable([
+    [[[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1], [3, 5]], 1],
+], 'ejercicio_ml_6', '2')
+def califica_ejercicio_ml_6(f):
+    return f
+
+@template_iterable([
+    [[[[1], [2], [3], [4]], [0, 0, 1, 1], [3]], .62],
+], 'ejercicio_ml_7', '2')
+def califica_ejercicio_ml_7(f):
+    return f
+
+@template_iterable([
+    [[[[1], [2], [3], [4]], [0, 0, 1, 1]], 1.0],
+], 'ejercicio_ml_8', '2')
+def califica_ejercicio_ml_8(f):
+    return f
+
+@template_numpy([
+    [[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1]], np.array([0.68, 0.68])
+], 'ejercicio_ml_9', '3')
+def califica_ejercicio_ml_9(f):
+    return f
+
+@template_numpy([
+    [[[1], [2], [3], [4]], [0, 0, 1, 1], [[1.5], [2.5], [3.5]]], np.array([0.28, 0.5 , 0.72])
+], 'ejercicio_ml_10', '3')
+def califica_ejercicio_ml_10(f):
+    return f
+
+###############################################################
+#                              Tarea 3
+###############################################################
+
+
+@template_iterable([
+    [[[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1], [3, 5]], 1],
+], 'ejercicio_ml_11', '3')
+def califica_ejercicio_ml_11(f):
+    return f
+
+@template_iterable([
+    [[[[1], [2], [3], [4]], [0, 0, 1, 1], [3]], 0.0],
+], 'ejercicio_ml_12', '3')
+def califica_ejercicio_ml_12(f):
+    return f
+
+@template_iterable([
+    [[[[1], [2], [3], [4]], [0, 0, 1, 1]], 1.0],
+], 'ejercicio_ml_13', '3')
+def califica_ejercicio_ml_13(f):
+    return f
+
+@template_numpy([
+    [[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1], [[2, 2], [3, 5]]], np.array([-2.,  2.])
+], 'ejercicio_ml_14', '3')
+def califica_ejercicio_ml_14(f):
+    return f
+
+@template_numpy([
+    [[[1], [2], [3], [4]], [0, 0, 1, 1], [[1.5], [3.5]]], np.array([0, 1])
+], 'ejercicio_ml_15', '3')
+def califica_ejercicio_ml_15(f):
+    return f
