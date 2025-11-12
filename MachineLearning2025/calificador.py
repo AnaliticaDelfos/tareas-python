@@ -2488,3 +2488,49 @@ def califica_ejercicio_ml_14(f):
 ], 'ejercicio_ml_15', '3')
 def califica_ejercicio_ml_15(f):
     return f
+
+
+###############################################################
+#                              Tarea 4
+###############################################################
+
+
+@template_numpy([
+    [[[1, 2], [2, 3], [3, 4]]], np.array([[-1.22, -1.22],
+       [ 0.  ,  0.  ],
+       [ 1.22,  1.22]]),
+], 'ejercicio_ml_16', '4')
+def califica_ejercicio_ml_16(f):
+    return f
+
+@template_numpy([
+    [[[1], [2], [3], [4]], (-1, 1)], np.array([[-1.  ],
+       [-0.33],
+       [ 0.33],
+       [ 1.  ]]),
+], 'ejercicio_ml_17', '4')
+def califica_ejercicio_ml_17(f):
+    return f
+
+@template_numpy([
+    [[[1, -10], [2, -5], [3, 0]]], np.array([[ 0.33, -1.  ],
+       [ 0.67, -0.5 ],
+       [ 1.  ,  0.  ]]),
+], 'ejercicio_ml_18', '4')
+def califica_ejercicio_ml_18(f):
+    return f
+
+@template_numpy([
+    [[[1], [2], [100], [3]]], np.array([[-0.06],
+       [-0.02],
+       [ 3.82],
+       [ 0.02]])
+], 'ejercicio_ml_19', '4')
+def califica_ejercicio_ml_19(f):
+    return f
+
+@template_numpy([
+    [[[1], [2], [3], [4]]], 0.67
+], 'ejercicio_ml_20', '4')
+def califica_ejercicio_ml_20(f):
+    return f
