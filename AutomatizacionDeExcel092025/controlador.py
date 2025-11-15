@@ -41,11 +41,11 @@ class Controlador:
     @staticmethod
     def validar_fecha(tarea):
         fechas = {
-            "0": datetime(2025, 11, 11, 23, 59, 59, tzinfo=timezone.utc),
-            "1": datetime(2025, 11, 11, 23, 59, 59, tzinfo=timezone.utc),
-            "2": datetime(2025, 11, 18, 23, 59, 59, tzinfo=timezone.utc),
-            "3": datetime(2025, 11, 25, 23, 59, 59, tzinfo=timezone.utc),
-            "4": datetime(2025, 11, 25, 23, 59, 59, tzinfo=timezone.utc),
+            "0": datetime(2025, 11, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "1": datetime(2025, 11, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "2": datetime(2025, 11, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "3": datetime(2025, 11, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "4": datetime(2025, 11, 30, 23, 59, 59, tzinfo=timezone.utc),
             "5": datetime(2025, 11, 1, 23, 59, 59, tzinfo=timezone.utc),
             "6": datetime(2025, 11, 8, 23, 59, 59, tzinfo=timezone.utc),
             "7": datetime(2025, 11, 15, 23, 59, 59, tzinfo=timezone.utc),
