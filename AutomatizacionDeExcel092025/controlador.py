@@ -41,13 +41,13 @@ class Controlador:
     @staticmethod
     def validar_fecha(tarea):
         fechas = {
-            "0": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "1": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "2": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "3": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "4": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "5": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "6": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
-            "7": datetime(2025, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "0": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "1": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "2": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "3": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "4": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "5": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "6": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
+            "7": datetime(2026, 12, 30, 23, 59, 59, tzinfo=timezone.utc),
         }
         return datetime.now(tz=timezone.utc) - timedelta(hours=6) < fechas[tarea]
