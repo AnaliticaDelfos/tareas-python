@@ -2581,7 +2581,7 @@ def califica_ejercicio_ml_20(f):
 @template_iterable([
     [[10, 34.456], 344.56],
     [[-10, 34.456], -344.56],
-], 'ejercicio_pyg_1', '1')
+], 'ejercicio_pyg_5', '1')
 def califica_ejercicio_pyg_1(f):
     return f
 
@@ -2589,7 +2589,7 @@ def califica_ejercicio_pyg_1(f):
 @template_iterable([
     [[3, 4.5], 3.75],
     [[0, 4.5], 2.25],
-], 'ejercicio_pyg_2', '1')
+], 'ejercicio_pyg_6', '1')
 def califica_ejercicio_pyg_2(f):
     return f
 
@@ -2598,7 +2598,7 @@ def califica_ejercicio_pyg_2(f):
     [["Pepe"], 'Hola, Pepe'],
     [["Wolfeschlegelsteinhausenbergerdorff"],
         'Hola, Wolfeschlegelsteinhausenbergerdorff'],
-], 'ejercicio_pyg_3', '1')
+], 'ejercicio_pyg_7', '1')
 def califica_ejercicio_pyg_3(f):
     return f
 
@@ -2606,7 +2606,7 @@ def califica_ejercicio_pyg_3(f):
 @template_iterable([
     [[120], 7200],
     [[8], 480],
-], 'ejercicio_pyg_4', '1')
+], 'ejercicio_pyg_8', '1')
 def califica_ejercicio_pyg_4(f):
     return f
 
@@ -2614,7 +2614,7 @@ def califica_ejercicio_pyg_4(f):
 @template_iterable([
     [[3, 4], 12],
     [[348.2, 12.09], 4209.74],
-], 'ejercicio_pyg_5', '1')
+], 'ejercicio_pyg_9', '1')
 def califica_ejercicio_pyg_5(f):
     return f
 
@@ -2623,7 +2623,7 @@ def califica_ejercicio_pyg_5(f):
     [[10], 'positivo'],
     [[0], 'negativo o cero'],
     [[-9], 'negativo o cero'],
-], 'ejercicio_pyg_6', '2')
+], 'ejercicio_pyg_10', '2')
 def califica_ejercicio_pyg_6(f):
     return f
 
@@ -2632,7 +2632,7 @@ def califica_ejercicio_pyg_6(f):
     [[10], 'par'],
     [[0], 'par'],
     [[-9], 'impar'],
-], 'ejercicio_pyg_7', '2')
+], 'ejercicio_pyg_11', '2')
 def califica_ejercicio_pyg_7(f):
     return f
 
@@ -2641,7 +2641,7 @@ def califica_ejercicio_pyg_7(f):
     [[1, 2], 2],
     [[-129, 3], 3],
     [[0, 0], 0],
-], 'ejercicio_pyg_8', '2')
+], 'ejercicio_pyg_12', '2')
 def califica_ejercicio_pyg_8(f):
     return f
 
@@ -2650,7 +2650,7 @@ def califica_ejercicio_pyg_8(f):
     [[90], 90],
     [[900], 810],
     [[901], 810.9],
-], 'ejercicio_pyg_9', '2')
+], 'ejercicio_pyg_13', '2')
 def califica_ejercicio_pyg_9(f):
     return f
 
@@ -2658,6 +2658,6 @@ def califica_ejercicio_pyg_9(f):
 @template_iterable([
     [[18], 'acceso permitido'],
     [[17], 'acceso denegado']
-], 'ejercicio_pyg_10', '2')
+], 'ejercicio_pyg_14', '2')
 def califica_ejercicio_pyg_10(f):
     return f
