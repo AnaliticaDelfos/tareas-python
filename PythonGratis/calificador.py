@@ -28,8 +28,8 @@ def califica_ejercicio_0_3(f):
     return f
 
 
-@template_numpy([
-    [[1, 2, 3, 4]], np.array([1.15, 2.3,  3.45, 4.6]),
+@template_iterable([
+    [[[1,2,3,4,5,6,7,3.124,.4938]], 31.62],
 ], 'ejercicio_0_4', '0')
 def califica_ejercicio_0_4(f):
     return f
@@ -2619,6 +2619,11 @@ def califica_ejercicio_pyg_5(f):
     return f
 
 
+###############################################################
+#                              Tarea 2
+###############################################################
+
+
 @template_iterable([
     [[10], 'positivo'],
     [[0], 'negativo o cero'],
@@ -2660,4 +2665,194 @@ def califica_ejercicio_pyg_9(f):
     [[17], 'acceso denegado']
 ], 'ejercicio_pyg_14', '2')
 def califica_ejercicio_pyg_10(f):
+    return f
+
+
+
+###############################################################
+#                              Tarea 3
+###############################################################
+
+
+@template_iterable([
+    [[10], 'dentro del rango'],
+    [[20], 'dentro del rango'],
+    [[2], 'fuera del rango'],
+    [[100], 'fuera del rango'],
+], 'ejercicio_pyg_15', '3')
+def califica_ejercicio_pyg_11(f):
+    return f
+
+
+@template_iterable([
+    [[17, True], 'descuento disponible'],
+    [[17, False], 'descuento disponible'],
+    [[18, False], 'sin descuento'],
+    [[21, True], 'descuento disponible'],
+], 'ejercicio_pyg_16', '3')
+def califica_ejercicio_pyg_12(f):
+    return f
+
+
+@template_iterable([
+    [["admin", "1234"], 'acceso concedido'],
+    [["admin", "124"], 'acceso denegado'],
+    [["admi", "1234"], 'acceso denegado'],
+], 'ejercicio_pyg_17', '3')
+def califica_ejercicio_pyg_13(f):
+    return f
+
+
+@template_iterable([
+    [[19], 'temperatura agradable'],
+    [[20], 'temperatura agradable'],
+    [[25], 'temperatura agradable'],
+    [[-1], 'temperatura no agradable'],
+    [[-10], 'temperatura no agradable'],
+    [[34], 'temperatura no agradable'],
+], 'ejercicio_pyg_18', '3')
+def califica_ejercicio_pyg_14(f):
+    return f
+
+
+@template_iterable([
+    [[20, True], 'puede entrar'],
+    [[20, False], 'no puede entrar'],
+    [[21, False], 'puede entrar'],
+    [[21, True], 'puede entrar'],
+], 'ejercicio_pyg_19', '3')
+def califica_ejercicio_pyg_15(f):
+    return f
+
+###############################################################
+#                              Tarea 4
+###############################################################
+
+@template_iterable([
+    [[[1,2,3,4,5,6]], 6],
+    [[[9,8,5,0,2]], 5],
+    [[[]], 0],
+], 'ejercicio_pyg_20', '4')
+def califica_ejercicio_pyg_16(f):
+    return f
+
+
+@template_iterable([
+    [[["Ana", "Luis"]], 'Ana'],
+    [[[2,3,4]], 2]
+], 'ejercicio_pyg_21', '4')
+def califica_ejercicio_pyg_17(f):
+    return f
+
+
+@template_iterable([
+    [[[100, 200, 300]], 300],
+    [[[0]], 0]
+], 'ejercicio_pyg_22', '4')
+def califica_ejercicio_pyg_18(f):
+    return f
+
+
+@template_iterable([
+    [[[1,2,3], "hola"], [1, 2, 3, 'hola']],
+    [[[1,2,3], ["hola"]], [1, 2, 3, ['hola']]]
+], 'ejercicio_pyg_23', '4')
+def califica_ejercicio_pyg_19(f):
+    return f
+
+
+@template_iterable([
+    [[[4,5,1,3]], 13]
+], 'ejercicio_pyg_24', '4')
+def califica_ejercicio_pyg_20(f):
+    return f
+
+
+###############################################################
+#                              Tarea 5
+###############################################################
+
+@template_iterable([
+    [[[1,2,3,4,5]], 55],
+    [[[-1,2,-3,4,-5]], 55],
+    [[[-1,2,-3,4,-5,100]], 10055],
+], 'ejercicio_pyg_25', '5')
+def califica_ejercicio_pyg_21(f):
+    return f
+
+
+@template_iterable([
+    [[[3,2,8,1,0,12,11]], 2],
+    [[[30,21,18,1,0,12,11]], 5]
+], 'ejercicio_pyg_26', '5')
+def califica_ejercicio_pyg_22(f):
+    return f
+
+
+@template_iterable([
+    [[[2,3,4]], [4, 6, 8]],
+    [[[4,7,1,2]], [8, 14, 2, 4]]
+], 'ejercicio_pyg_27', '5')
+def califica_ejercicio_pyg_23(f):
+    return f
+
+
+@template_iterable([
+    [[[1,2,3,1,2,5,4,6,7]], [2, 2, 4, 6]],
+    [[[20, 30, 12,12,13]], [20, 30, 12, 12]]
+], 'ejercicio_pyg_28', '5')
+def califica_ejercicio_pyg_24(f):
+    return f
+
+
+@template_iterable([
+    [[[20,4,5,6,7,8]], 20],
+    [[[20,4,5,6,70,8]], 70],
+], 'ejercicio_pyg_29', '5')
+def califica_ejercicio_pyg_25(f):
+    return f
+
+
+###############################################################
+#                              Tarea 6
+###############################################################
+
+@template_iterable([
+    [[[1,2,3,1,2,3], 3], 2],
+    [[[1,2,3,3,1,2,3], 3], 3],
+    [[[1,2,3,3,1,2,3], 23], 0],
+], 'ejercicio_pyg_30', '6')
+def califica_ejercicio_pyg_26(f):
+    return f
+
+
+@template_iterable([
+    [[[1,4,3,6,4,2,1]], [1, 4, 3, 6, 2]],
+    [[[4,3,4,3,2,1,2,5,3]], [4, 3, 2, 1, 5]]
+], 'ejercicio_pyg_31', '6')
+def califica_ejercicio_pyg_27(f):
+    return f
+
+
+@template_iterable([
+    [[["a", "b", "c"]], ['c', 'b', 'a']],
+    [[[3,2,1]], [1, 2, 3]]
+], 'ejercicio_pyg_32', '6')
+def califica_ejercicio_pyg_28(f):
+    return f
+
+
+@template_iterable([
+    [[[1,2,3,3,3,3,4,4,4,4]], 3],
+    [[[2,3,2,1,4]], 3]
+], 'ejercicio_pyg_33', '6')
+def califica_ejercicio_pyg_29(f):
+    return f
+
+
+@template_iterable([
+    [[[1,2,3]], [1, 3, 6]],
+    [[[6,5,4,3,1]], [6, 11, 15, 18, 19]],
+], 'ejercicio_pyg_34', '6')
+def califica_ejercicio_pyg_30(f):
     return f
