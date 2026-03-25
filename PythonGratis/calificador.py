@@ -28,8 +28,8 @@ def califica_ejercicio_0_3(f):
     return f
 
 
-@template_iterable([
-    [[[1,2,3,4,5,6,7,3.124,.4938]], 31.62],
+@template_numpy([
+    [[1,2,3,4,5,6,7,3.124,.4938]], 31.62,
 ], 'ejercicio_0_4', '0')
 def califica_ejercicio_0_4(f):
     return f
