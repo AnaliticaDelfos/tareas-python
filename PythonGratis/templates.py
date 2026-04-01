@@ -190,10 +190,12 @@ def template_numpy(lista: list, nombre, tarea):
             Controlador.calificando()
             try:
                 resultado_obtenido: np.ndarray = funcion(f)(*lista[0])
+                if resultado_obtenido == np.ndarray:
+                    resultado_obtenido = resultado_obtenido.tolist()
                 estado = bool(np.all(resultado_obtenido == lista[1]))
                 if type(lista[1]) == np.ndarray:
                     lista[1] = lista[1].tolist()
-                resultados.append(Resultado(None, lista[1], resultado_obtenido.tolist(), estado).__dict__)
+                resultados.append(Resultado(None, lista[1], resultado_obtenido, estado).__dict__)
             except Exception as e:
                 mensajes.mensaje_error(e)
                 error = True
