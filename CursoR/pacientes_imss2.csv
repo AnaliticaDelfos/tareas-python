@@ -1,0 +1,11 @@
+﻿id_paciente,nombre,edad,sexo,diagnostico,glucosa_mgdl,hospitalizado,fecha_ingreso
+101,Juan Pérez,45,M,Hipertensión,110,FALSO,2026-01-10
+102,María García,62,F,Diabetes,145,VERDADERO,2026-01-12
+103,Carlos López,38,M,Sano,88,FALSO,2026-01-15
+104,Ana Martínez,55,F,Hipertensión,120,FALSO,2026-01-20
+105,Luis Rodríguez,71,M,Diabetes,160,VERDADERO,2026-01-22
+106,Elena Sánchez,29,F,Sano,92,FALSO,2026-02-01
+107,Jorge Ramírez,48,M,Obesidad,105,FALSO,2026-02-05
+108,Sofía Torres,65,F,Hipertensión,135,VERDADERO,2026-02-10
+109,Miguel Hernández,52,M,Diabetes,150,VERDADERO,2026-02-15
+110,Lucía Flores,41,F,Sano,85,FALSO,2026-02-20
