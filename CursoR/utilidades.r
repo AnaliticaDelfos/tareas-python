@@ -100,7 +100,7 @@ guardar_15 <- function(df) {
     }
     response <- POST(
         url = "https://calificar-r-435015279585.us-central1.run.app",
-        body = list(JPY_SESSION_NAME = "Notebook14", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        body = list(JPY_SESSION_NAME = "Notebook15", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
         encode = "json" # Automatically sets Content-Type to application/json
     )
     print("Calificación guardada")
