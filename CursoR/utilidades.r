@@ -14,5 +14,6 @@ guardar_11 <- function(df) {
         body = list(JPY_SESSION_NAME = Sys.getenv("JPY_SESSION_NAME"), usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
         encode = "json" # Automatically sets Content-Type to application/json
     )
+    print("Guardado")
     content(response, "parsed")
 }
