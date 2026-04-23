@@ -4,7 +4,7 @@ library(tidyverse)
 guardar_11 <- function(df) {
     datos <- read_csv("cohorte_estudio.csv")
     cabeza <- datos |> head()
-    son_iguales <- cabeza == df
+    son_iguales <- all.equal(cabeza, df)
     calificacion <- 0
     if (son_iguales) {
         calificacion <- 1
