@@ -66,7 +66,7 @@ guardar_14 <- function(df) {
     pacientes_hospitalizados <- datos |> 
         filter(hospitalizado == TRUE) |> 
         select(nombre, glucosa_mgdl)  |> 
-        arrange(desc(glucosa_mgdl))
+        arrange(glucosa_mgdl)
     son_iguales <- all.equal(pacientes_hospitalizados, df)
     calificacion <- 0
     if (son_iguales) {
