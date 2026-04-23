@@ -40,3 +40,23 @@ guardar_12 <- function(df) {
     print("Calificación guardada")
     content(response, "parsed")
 }
+
+guardar_13 <- function(df) {
+    datos <- read_csv("cohorte_estudio.csv")
+    pacientes_criticos <- datos |> filter(glucosa_mgdl > 140) |> select(nombre, glucosa_mgdl)
+    son_iguales <- all.equal(pacientes_criticos, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    }else{
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = Sys.getenv("JPY_SESSION_NAME"), usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
