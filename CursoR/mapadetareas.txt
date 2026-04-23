@@ -28,11 +28,19 @@ http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://gith
 Tarea 9 - 4 Ejercicios
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook10.ipynb&app=notebook
 
-Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonUltimate11042025/tarea10_0.ipynb&app=notebook
 
-Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonUltimate11042025/tarea11_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook11.ipynb&app=notebook
+
+
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook12.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook13.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook14.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook15.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook16.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook17.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook18.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook19.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook20.ipynb&app=notebook
 
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
