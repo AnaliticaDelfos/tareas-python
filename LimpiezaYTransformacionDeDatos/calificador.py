@@ -27,9 +27,8 @@ def califica_ejercicio_0_2(f):
 def califica_ejercicio_0_3(f):
     return f
 
-
-@template_iterable([
-    [[[1,2,3,4,5,6,7,3.124,.4938]], 31.62],
+@template_numpy([
+    [[1,2,3,4]], np.array([1.15, 2.3,  3.45, 4.6 ]),
 ], 'ejercicio_0_4', '0')
 def califica_ejercicio_0_4(f):
     return f
@@ -2160,9 +2159,9 @@ def califica_ejercicio_ts_3(f):
 
 
 @template_iterable([
-    [[[1, 2, 3, 4]], 2.5],
-    [[[3, 2, 4, 1, 5]], 3.0],
-    [[[10, 34, 23, 41]], 27.0]
+    [[[1,2,3,4]], 2.5],
+    [[[3,2,4,1,5]], 3.0],
+    [[[10,34,23,41]], 27.0]
 ], 'ejercicio_ts_4', '1')
 def califica_ejercicio_ts_4(f):
     return f
@@ -2180,10 +2179,9 @@ def califica_ejercicio_ts_5(f):
 #                              Tarea 2
 ###############################################################
 
-
 @template_iterable([
     [[2, 3, 4], 80.0],
-    [[2, 3, 5], 242.0],
+    [[2,3,5], 242.0],
     [[4, 7, 9], 26902404.0],
     [[2, 7, 9], 13451202.0]
 ], 'ejercicio_ts_6', '2')
@@ -2231,7 +2229,6 @@ def califica_ejercicio_ts_10(f):
 #                              Tarea 3
 ###############################################################
 
-
 @template_numpy([
     [np.array([1.2, 3.4, 5.6, 7.8])], 4.5
 ], 'ejercicio_ts_11', '3')
@@ -2240,7 +2237,7 @@ def califica_ejercicio_ts_11(f):
 
 
 @template_numpy([
-    [[np.array([10, 20, 30, 40, 50])]], np.array([0., 0.25, 0.5, 0.75, 1.])
+    [[np.array([10, 20, 30, 40, 50])]], np.array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ], 'ejercicio_ts_12', '3')
 def califica_ejercicio_ts_12(f):
     return f
@@ -2270,10 +2267,8 @@ def califica_ejercicio_ts_15(f):
 #                              Tarea 4
 ###############################################################
 
-
 @template_pandas([
-    [pd.DataFrame({"ventas": [100.25, 200.50, 300.75, 400.00]}),
-     "ventas"], 250.38
+    [pd.DataFrame({"ventas": [100.25, 200.50, 300.75, 400.00]}), "ventas"], 250.38
 ], 'ejercicio_ts_16', '4')
 def califica_ejercicio_ts_16(f):
     return f
@@ -2281,8 +2276,7 @@ def califica_ejercicio_ts_16(f):
 
 @template_pandas([
     [
-        pd.DataFrame({"x": [1, 2, 3, 4, 5], "y": [
-                     10, 20, 30, 40, 50]}), ["x", "y"]
+        pd.DataFrame({"x": [1, 2, 3, 4, 5], "y": [10, 20, 30, 40, 50]}), ["x", "y"]
     ], pd.Series({"x": 1.58, "y": 15.81})
 ], 'ejercicio_ts_17', '4')
 def califica_ejercicio_ts_17(f):
@@ -2302,7 +2296,7 @@ def califica_ejercicio_ts_18(f):
 
 
 @template_pandas([
-    [pd.DataFrame({"a": [10, 20, 30], "b": [5, 15, 25]}), ["a", "b"]],
+    [pd.DataFrame({"a": [10, 20, 30], "b": [5, 15, 25]}), ["a", "b"]], 
     pd.DataFrame({
         "a": [-1.0, 0.0, 1.0],
         "b": [-1.0, 0.0, 1.0]
@@ -2313,8 +2307,7 @@ def califica_ejercicio_ts_19(f):
 
 
 @template_pandas([
-    [pd.DataFrame({"x": [1, 2, 3, 4, 5], "y": [2, 4, 6, 8, 10]}),
-     "x", "y"], 1.0
+    [pd.DataFrame({"x": [1, 2, 3, 4, 5], "y": [2, 4, 6, 8, 10]}), "x", "y"], 1.0
 ], 'ejercicio_ts_20', '4')
 def califica_ejercicio_ts_20(f):
     return f
@@ -2323,11 +2316,9 @@ def califica_ejercicio_ts_20(f):
 #                              Tarea 5
 ###############################################################
 
-
 fechas_ts_21 = pd.date_range("2023-01-01", periods=5, freq="D")
 y_real_ts_21 = pd.Series([100, 102, 98, 101, 105], index=fechas_ts_21)
 y_pred_ts_21 = pd.Series([99, 101, 100, 102, 106], index=fechas_ts_21)
-
 
 @template_pandas([
     [y_real_ts_21, y_pred_ts_21], 1.2
@@ -2353,7 +2344,6 @@ def califica_ejercicio_ts_22(f):
 def califica_ejercicio_ts_23(f):
     return f
 
-
 data_ts_24 = {
     "fecha": pd.date_range("2023-01-01", periods=90, freq="D"),
     "real": range(90),
@@ -2361,18 +2351,15 @@ data_ts_24 = {
 }
 df_ts_24 = pd.DataFrame(data_ts_24)
 
-i_ts_24 = pd.DatetimeIndex(
-    ["2023-01-31", "2023-02-28", "2023-03-31"], freq="ME")
+i_ts_24 = pd.DatetimeIndex(["2023-01-31", "2023-02-28", "2023-03-31"], freq="ME")
 r_ts_24 = pd.Series([.16, .14, .13], i_ts_24)
 
-
 @template_pandas([
-    [df_ts_24],
+    [df_ts_24], 
     r_ts_24
 ], 'ejercicio_ts_24', '5')
 def califica_ejercicio_ts_24(f):
     return f
-
 
 i_ts_25 = pd.DatetimeIndex(["2023-03-31"], freq="QE-DEC", name="fecha")
 
@@ -2389,10 +2376,8 @@ data_ts_25 = {
     "pred": [x + (1 if x % 7 == 0 else 0) for x in range(90)]
 }
 df_ts_25 = pd.DataFrame(data_ts_25)
-
-
 @template_pandas([
-    [df_ts_25], r_ts_25
+    [df_ts_25], r_ts_25  
 ], 'ejercicio_ts_25', '5')
 def califica_ejercicio_ts_25(f):
     return f
@@ -2405,13 +2390,11 @@ def califica_ejercicio_ts_25(f):
 #                              Tarea 1
 ###############################################################
 
-
 @template_iterable([
     [[[1, 2, 3, 4], [2, 4, 5, 7], 5], 8.5],
 ], 'ejercicio_ml_1', '1')
 def califica_ejercicio_ml_1(f):
     return f
-
 
 @template_iterable([
     [[[[1, 2], [2, 3], [3, 4]], [3, 5, 7.6]], .99],
@@ -2419,20 +2402,17 @@ def califica_ejercicio_ml_1(f):
 def califica_ejercicio_ml_2(f):
     return f
 
-
 @template_iterable([
     [[[[1, 2], [2, 3], [3, 5]], [4, 7, 10]], [3.0, -0.0]],
 ], 'ejercicio_ml_3', '1')
 def califica_ejercicio_ml_3(f):
     return f
 
-
 @template_iterable([
     [[[[1], [2], [3]], [2, 4, 5]], .06],
 ], 'ejercicio_ml_4', '1')
 def califica_ejercicio_ml_4(f):
     return f
-
 
 @template_iterable([
     [[[[1, 2], [2, 3], [3, 4]], [3, 6, 9], [[4, 5], [5, 6]]], [12.0, 15.0]],
@@ -2444,13 +2424,11 @@ def califica_ejercicio_ml_5(f):
 #                              Tarea 2
 ###############################################################
 
-
 @template_iterable([
     [[[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1], [3, 5]], 1],
 ], 'ejercicio_ml_6', '2')
 def califica_ejercicio_ml_6(f):
     return f
-
 
 @template_iterable([
     [[[[1], [2], [3], [4]], [0, 0, 1, 1], [3]], .62],
@@ -2458,13 +2436,11 @@ def califica_ejercicio_ml_6(f):
 def califica_ejercicio_ml_7(f):
     return f
 
-
 @template_iterable([
     [[[[1], [2], [3], [4]], [0, 0, 1, 1]], 1.0],
 ], 'ejercicio_ml_8', '2')
 def califica_ejercicio_ml_8(f):
     return f
-
 
 @template_numpy([
     [[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1]], np.array([0.68, 0.68])
@@ -2472,10 +2448,8 @@ def califica_ejercicio_ml_8(f):
 def califica_ejercicio_ml_9(f):
     return f
 
-
 @template_numpy([
-    [[[1], [2], [3], [4]], [0, 0, 1, 1], [
-        [1.5], [2.5], [3.5]]], np.array([0.28, 0.5, 0.72])
+    [[[1], [2], [3], [4]], [0, 0, 1, 1], [[1.5], [2.5], [3.5]]], np.array([0.28, 0.5 , 0.72])
 ], 'ejercicio_ml_10', '2')
 def califica_ejercicio_ml_10(f):
     return f
@@ -2491,13 +2465,11 @@ def califica_ejercicio_ml_10(f):
 def califica_ejercicio_ml_11(f):
     return f
 
-
 @template_iterable([
     [[[[1], [2], [3], [4]], [0, 0, 1, 1], [3]], 0.0],
 ], 'ejercicio_ml_12', '3')
 def califica_ejercicio_ml_12(f):
     return f
-
 
 @template_iterable([
     [[[[1], [2], [3], [4]], [0, 0, 1, 1]], 1.0],
@@ -2505,14 +2477,11 @@ def califica_ejercicio_ml_12(f):
 def califica_ejercicio_ml_13(f):
     return f
 
-
 @template_numpy([
-    [[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1],
-        [[2, 2], [3, 5]]], np.array([-2.,  2.])
+    [[[1, 2], [2, 3], [3, 4], [4, 5]], [0, 0, 1, 1], [[2, 2], [3, 5]]], np.array([-2.,  2.])
 ], 'ejercicio_ml_14', '3')
 def califica_ejercicio_ml_14(f):
     return f
-
 
 @template_numpy([
     [[[1], [2], [3], [4]], [0, 0, 1, 1], [[1.5], [3.5]]], np.array([0, 1])
@@ -2527,41 +2496,37 @@ def califica_ejercicio_ml_15(f):
 
 @template_numpy([
     [[[1, 2], [2, 3], [3, 4]]], np.array([[-1.22, -1.22],
-                                          [0.,  0.],
-                                          [1.22,  1.22]]),
+       [ 0.  ,  0.  ],
+       [ 1.22,  1.22]]),
 ], 'ejercicio_ml_16', '4')
 def califica_ejercicio_ml_16(f):
     return f
 
-
 @template_numpy([
-    [[[1], [2], [3], [4]], (-1, 1)], np.array([[-1.],
-                                               [-0.33],
-                                               [0.33],
-                                               [1.]]),
+    [[[1], [2], [3], [4]], (-1, 1)], np.array([[-1.  ],
+       [-0.33],
+       [ 0.33],
+       [ 1.  ]]),
 ], 'ejercicio_ml_17', '4')
 def califica_ejercicio_ml_17(f):
     return f
 
-
 @template_numpy([
-    [[[1, -10], [2, -5], [3, 0]]], np.array([[0.33, -1.],
-                                             [0.67, -0.5],
-                                             [1.,  0.]]),
+    [[[1, -10], [2, -5], [3, 0]]], np.array([[ 0.33, -1.  ],
+       [ 0.67, -0.5 ],
+       [ 1.  ,  0.  ]]),
 ], 'ejercicio_ml_18', '4')
 def califica_ejercicio_ml_18(f):
     return f
 
-
 @template_numpy([
     [[[1], [2], [100], [3]]], np.array([[-0.06],
-                                        [-0.02],
-                                        [3.82],
-                                        [0.02]])
+       [-0.02],
+       [ 3.82],
+       [ 0.02]])
 ], 'ejercicio_ml_19', '4')
 def califica_ejercicio_ml_19(f):
     return f
-
 
 @template_numpy([
     [[[1], [2], [3], [4]]], 0.67
@@ -2569,290 +2534,119 @@ def califica_ejercicio_ml_19(f):
 def califica_ejercicio_ml_20(f):
     return f
 
+
 ####################################################################################################
-#                              Python gratuito
+#                              Limpieza y transformación de datos
 ####################################################################################################
 
 ###############################################################
 #                              Tarea 1
 ###############################################################
 
+serie_lytd_1 = pd.Series([10, 20, 30])
 
-@template_iterable([
-    [[10, 34.456], 344.56],
-    [[-10, 34.456], -344.56],
-], 'ejercicio_pyg_5', '1')
-def califica_ejercicio_pyg_1(f):
+@template_pandas([
+    [[10, 20, 30]], serie_lytd_1  
+], 'ejercicio_lytd_1', '1')
+def califica_ejercicio_lytd_1(f):
     return f
 
+datos_lytd_2 = {
+        "nombre": ["Ana", "Luis"],
+        "edad": [20, 25]
+    }
 
-@template_iterable([
-    [[3, 4.5], 3.75],
-    [[0, 4.5], 2.25],
-], 'ejercicio_pyg_6', '1')
-def califica_ejercicio_pyg_2(f):
+respuesta_lytd_2 = pd.DataFrame(datos_lytd_2)
+
+@template_pandas([
+    [["Ana", "Luis"], [20, 25]], respuesta_lytd_2  
+], 'ejercicio_lytd_2', '1')
+def califica_ejercicio_lytd_2(f):
     return f
 
+respuesta_lytd_3 = pd.Series([100, 200, 300], index=["a", "b", "c"])
 
-@template_iterable([
-    [["Pepe"], 'Hola, Pepe'],
-    [["Wolfeschlegelsteinhausenbergerdorff"],
-        'Hola, Wolfeschlegelsteinhausenbergerdorff'],
-], 'ejercicio_pyg_7', '1')
-def califica_ejercicio_pyg_3(f):
+@template_pandas([
+    [[100, 200, 300], ["a", "b", "c"]], respuesta_lytd_3  
+], 'ejercicio_lytd_3', '1')
+def califica_ejercicio_lytd_3(f):
     return f
 
+respuesta_lytd_4 = pd.DataFrame({
+    "ciudad": ["CDMX", "Guadalajara"],
+    "poblacion": [9000000, 1500000]
+})
 
-@template_iterable([
-    [[120], 7200],
-    [[8], 480],
-], 'ejercicio_pyg_8', '1')
-def califica_ejercicio_pyg_4(f):
+respuesta_lytd_4 = respuesta_lytd_4.set_index("ciudad")
+print(respuesta_lytd_4)
+
+@template_pandas([
+    [["CDMX", "Guadalajara"], [9000000, 1500000]], respuesta_lytd_4
+], 'ejercicio_lytd_4', '1')
+def califica_ejercicio_lytd_4(f):
     return f
 
+datos_lytd_5 = {
+            "producto": ["Laptop", "Mouse"],
+            "precio": [20000, 300]
+        }
 
-@template_iterable([
-    [[3, 4], 12],
-    [[348.2, 12.09], 4209.74],
-], 'ejercicio_pyg_9', '1')
-def califica_ejercicio_pyg_5(f):
+respuesta_lytd_5 = pd.DataFrame(datos_lytd_5)
+
+@template_pandas([
+    [datos_lytd_5], respuesta_lytd_5
+], 'ejercicio_lytd_5', '1')
+def califica_ejercicio_lytd_5(f):
     return f
 
+respuesta_lytd_6 = pd.Series(
+    [20000, 300, 800], index=["Laptop", "Mouse", "Teclado"]
+)
 
-###############################################################
-#                              Tarea 2
-###############################################################
-
-
-@template_iterable([
-    [[10], 'positivo'],
-    [[0], 'negativo o cero'],
-    [[-9], 'negativo o cero'],
-], 'ejercicio_pyg_10', '2')
-def califica_ejercicio_pyg_6(f):
+@template_pandas([
+    [["Laptop", "Mouse", "Teclado"], [20000, 300, 800]], respuesta_lytd_6
+], 'ejercicio_lytd_6', '2')
+def califica_ejercicio_lytd_6(f):
     return f
 
+datos_lytd_7 = {
+        "nombre": ["Ana", "Luis", "Pepe"],
+        "calif1": [10, 9, 8],
+        "calif2": [10, 7, 10]
+    }
 
-@template_iterable([
-    [[10], 'par'],
-    [[0], 'par'],
-    [[-9], 'impar'],
-], 'ejercicio_pyg_11', '2')
-def califica_ejercicio_pyg_7(f):
+respuesta_lytd_7 = df = pd.DataFrame(datos_lytd_7)
+
+respuesta_lytd_7["promedio"] = (df["calif1"] + df["calif2"]) / 2
+
+@template_pandas([
+    [["Ana", "Luis", "Pepe"], [10, 9, 8], [10, 7, 10]], respuesta_lytd_7
+], 'ejercicio_lytd_7', '2')
+def califica_ejercicio_lytd_7(f):
     return f
 
+respuesta_lytd_8 = pd.DataFrame({
+    "capital": ["CDMX", "Paris"], "poblacion": [9000000, 2100000]}, index=["México", "Francia"])
 
-@template_iterable([
-    [[1, 2], 2],
-    [[-129, 3], 3],
-    [[0, 0], 0],
-], 'ejercicio_pyg_12', '2')
-def califica_ejercicio_pyg_8(f):
+@template_pandas([
+    [["México", "Francia"], ["CDMX", "Paris"], [9000000, 2100000]], respuesta_lytd_8
+], 'ejercicio_lytd_8', '2')
+def califica_ejercicio_lytd_8(f):
     return f
 
+respuesta_lytd_9 = pd.DataFrame({
+    "A": [1,2,3,4],
+    "B": [5,6,7,8]
+})
 
-@template_iterable([
-    [[90], 90],
-    [[900], 810],
-    [[901], 810.9],
-], 'ejercicio_pyg_13', '2')
-def califica_ejercicio_pyg_9(f):
+@template_pandas([
+    [[1,2,3,4], [5,6,7,8]], respuesta_lytd_9
+], 'ejercicio_lytd_9', '2')
+def califica_ejercicio_lytd_9(f):
     return f
 
-
-@template_iterable([
-    [[18], 'acceso permitido'],
-    [[17], 'acceso denegado']
-], 'ejercicio_pyg_14', '2')
-def califica_ejercicio_pyg_10(f):
-    return f
-
-
-
-###############################################################
-#                              Tarea 3
-###############################################################
-
-
-@template_iterable([
-    [[10], 'dentro del rango'],
-    [[20], 'dentro del rango'],
-    [[2], 'fuera del rango'],
-    [[100], 'fuera del rango'],
-], 'ejercicio_pyg_15', '3')
-def califica_ejercicio_pyg_11(f):
-    return f
-
-
-@template_iterable([
-    [[17, True], 'descuento disponible'],
-    [[17, False], 'descuento disponible'],
-    [[18, False], 'sin descuento'],
-    [[21, True], 'descuento disponible'],
-], 'ejercicio_pyg_16', '3')
-def califica_ejercicio_pyg_12(f):
-    return f
-
-
-@template_iterable([
-    [["admin", "1234"], 'acceso concedido'],
-    [["admin", "124"], 'acceso denegado'],
-    [["admi", "1234"], 'acceso denegado'],
-], 'ejercicio_pyg_17', '3')
-def califica_ejercicio_pyg_13(f):
-    return f
-
-
-@template_iterable([
-    [[19], 'temperatura agradable'],
-    [[20], 'temperatura agradable'],
-    [[25], 'temperatura agradable'],
-    [[-1], 'temperatura no agradable'],
-    [[-10], 'temperatura no agradable'],
-    [[34], 'temperatura no agradable'],
-], 'ejercicio_pyg_18', '3')
-def califica_ejercicio_pyg_14(f):
-    return f
-
-
-@template_iterable([
-    [[20, True], 'puede entrar'],
-    [[20, False], 'no puede entrar'],
-    [[21, False], 'puede entrar'],
-    [[21, True], 'puede entrar'],
-], 'ejercicio_pyg_19', '3')
-def califica_ejercicio_pyg_15(f):
-    return f
-
-###############################################################
-#                              Tarea 4
-###############################################################
-
-@template_iterable([
-    [[[1,2,3,4,5,6]], 6],
-    [[[9,8,5,0,2]], 5],
-    [[[]], 0],
-], 'ejercicio_pyg_20', '4')
-def califica_ejercicio_pyg_16(f):
-    return f
-
-
-@template_iterable([
-    [[["Ana", "Luis"]], 'Ana'],
-    [[[2,3,4]], 2]
-], 'ejercicio_pyg_21', '4')
-def califica_ejercicio_pyg_17(f):
-    return f
-
-
-@template_iterable([
-    [[[100, 200, 300]], 300],
-    [[[0]], 0]
-], 'ejercicio_pyg_22', '4')
-def califica_ejercicio_pyg_18(f):
-    return f
-
-
-@template_iterable([
-    [[[1,2,3], "hola"], [1, 2, 3, 'hola']],
-    [[[1,2,3], ["hola"]], [1, 2, 3, ['hola']]]
-], 'ejercicio_pyg_23', '4')
-def califica_ejercicio_pyg_19(f):
-    return f
-
-
-@template_iterable([
-    [[[4,5,1,3]], 13]
-], 'ejercicio_pyg_24', '4')
-def califica_ejercicio_pyg_20(f):
-    return f
-
-
-###############################################################
-#                              Tarea 5
-###############################################################
-
-@template_iterable([
-    [[[1,2,3,4,5]], 55],
-    [[[-1,2,-3,4,-5]], 55],
-    [[[-1,2,-3,4,-5,100]], 10055],
-], 'ejercicio_pyg_25', '5')
-def califica_ejercicio_pyg_21(f):
-    return f
-
-
-@template_iterable([
-    [[[3,2,8,1,0,12,11]], 2],
-    [[[30,21,18,1,0,12,11]], 5]
-], 'ejercicio_pyg_26', '5')
-def califica_ejercicio_pyg_22(f):
-    return f
-
-
-@template_iterable([
-    [[[2,3,4]], [4, 6, 8]],
-    [[[4,7,1,2]], [8, 14, 2, 4]]
-], 'ejercicio_pyg_27', '5')
-def califica_ejercicio_pyg_23(f):
-    return f
-
-
-@template_iterable([
-    [[[1,2,3,1,2,5,4,6,7]], [2, 2, 4, 6]],
-    [[[20, 30, 12,12,13]], [20, 30, 12, 12]]
-], 'ejercicio_pyg_28', '5')
-def califica_ejercicio_pyg_24(f):
-    return f
-
-
-@template_iterable([
-    [[[20,4,5,6,7,8]], 20],
-    [[[20,4,5,6,70,8]], 70],
-], 'ejercicio_pyg_29', '5')
-def califica_ejercicio_pyg_25(f):
-    return f
-
-
-###############################################################
-#                              Tarea 6
-###############################################################
-
-@template_iterable([
-    [[[1,2,3,1,2,3], 3], 2],
-    [[[1,2,3,3,1,2,3], 3], 3],
-    [[[1,2,3,3,1,2,3], 23], 0],
-], 'ejercicio_pyg_30', '6')
-def califica_ejercicio_pyg_26(f):
-    return f
-
-
-@template_iterable([
-    [[[1,4,3,6,4,2,1]], [1, 4, 3, 6, 2]],
-    [[[4,3,4,3,2,1,2,5,3]], [4, 3, 2, 1, 5]]
-], 'ejercicio_pyg_31', '6')
-def califica_ejercicio_pyg_27(f):
-    return f
-
-
-@template_iterable([
-    [[["a", "b", "c"]], ['c', 'b', 'a']],
-    [[[3,2,1]], [1, 2, 3]]
-], 'ejercicio_pyg_32', '6')
-def califica_ejercicio_pyg_28(f):
-    return f
-
-
-@template_iterable([
-    [[[1,2,3,3,3,3,4,4,4,4]], 3],
-    [[[2,3,2,1,4]], 3]
-], 'ejercicio_pyg_33', '6')
-def califica_ejercicio_pyg_29(f):
-    return f
-
-
-@template_iterable([
-    [[[1,2,3]], [1, 3, 6]],
-    [[[6,5,4,3,1]], [6, 11, 15, 18, 19]],
-], 'ejercicio_pyg_34', '6')
-def califica_ejercicio_pyg_30(f):
+@template_pandas([
+    [[1,2,3,4], [5,6,7,8]], respuesta_lytd_9
+], 'ejercicio_lytd_10', '2')
+def califica_ejercicio_lytd_10(f):
     return f

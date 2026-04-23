@@ -7,13 +7,36 @@ guardar_11 <- function(df) {
     son_iguales <- all.equal(cabeza, df)
     calificacion <- 0
     if (son_iguales) {
+        print("Bien hecho :D")
         calificacion <- 1
+    }else{
+        print("Vuélvelo a intentar :)")
     }
     response <- POST(
         url = "https://calificar-r-435015279585.us-central1.run.app",
         body = list(JPY_SESSION_NAME = Sys.getenv("JPY_SESSION_NAME"), usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
         encode = "json" # Automatically sets Content-Type to application/json
     )
-    print("Guardado")
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_12 <- function(df) {
+    datos <- read_csv("cohorte_estudio.csv")
+    tabla_reducida <- datos |> select(nombre, edad, hospitalizado)
+    son_iguales <- all.equal(tabla_reducida, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    }else{
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = Sys.getenv("JPY_SESSION_NAME"), usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
     content(response, "parsed")
 }
