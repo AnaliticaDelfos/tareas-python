@@ -1,11 +1,11 @@
-id_paciente,nombre,edad,sexo,diagnostico,glucosa_mgdl,hospitalizado,fecha_ingreso,peso_kg
-101,Juan Pérez,45,M,Hipertensión,110,False,10/01/2026,78
-102,María García,62,F,Diabetes,145,True,12/01/2026,82
-103,Carlos López,38,M,Sano,88,False,15/01/2026,70
-104,Ana Martínez,55,F,Hipertensión,120,False,20/01/2026,85
-105,Luis Rodríguez,71,M,Diabetes,160,True,22/01/2026,76
-106,Elena Sánchez,29,F,Sano,92,False,01/02/2026,68
-107,Jorge Ramírez,48,M,Obesidad,105,False,05/02/2026,80
-108,Sofía Torres,65,F,Hipertensión,135,True,10/02/2026,79
-109,Miguel Hernández,52,M,Diabetes,150,True,15/02/2026,83
-110,Lucía Flores,41,F,Sano,85,False,20/02/2026,74
+id_paciente,nombre,edad,sexo,diagnostico,glucosa_mgdl,hospitalizado,fecha_ingreso,peso_kg,estatura_m
+101,Juan Pérez,45,M,Hipertensión,110,False,10/01/2026,78,1.72
+102,María García,62,F,Diabetes,145,True,12/01/2026,82,1.68
+103,Carlos López,38,M,Sano,88,False,15/01/2026,70,1.75
+104,Ana Martínez,55,F,Hipertensión,120,False,20/01/2026,85,1.70
+105,Luis Rodríguez,71,M,Diabetes,160,True,22/01/2026,76,1.66
+106,Elena Sánchez,29,F,Sano,92,False,01/02/2026,68,1.78
+107,Jorge Ramírez,48,M,Obesidad,105,False,05/02/2026,80,1.73
+108,Sofía Torres,65,F,Hipertensión,135,True,10/02/2026,79,1.69
+109,Miguel Hernández,52,M,Diabetes,150,True,15/02/2026,83,1.71
+110,Lucía Flores,41,F,Sano,85,False,20/02/2026,74,1.74
