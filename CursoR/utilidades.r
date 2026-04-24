@@ -181,7 +181,7 @@ guardar_18 <- function(df) {
 }
 
 
-guardar_20 <- function(df) {
+guardar_19 <- function(df) {
     df_resultado <- datos |>
         group_by(hospitalizado) |>
         summarise(
