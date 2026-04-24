@@ -112,10 +112,10 @@ guardar_15 <- function(df) {
 guardar_16 <- function(df) {
     datos <- read_csv("cohorte_estudio.csv")
     df_resultado <- datos |>
-        mutate(
-            glucosa_ajustada = glucosa_mgdl + 1
-        ) |>
-        select(nombre, glucosa_ajustada)
+  mutate(
+    glucosa_ajustada = glucosa_mgdl + 10
+  ) |>
+  select(nombre, glucosa_ajustada)
     son_iguales <- all.equal(df_resultado, df)
     calificacion <- 0
     if (son_iguales) {
