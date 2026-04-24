@@ -158,11 +158,8 @@ guardar_17 <- function(df) {
 
 guardar_18 <- function(df) {
     df_resultado <- datos |>
-        group_by(hospitalizado) |>
-        summarise(
-            promedio_edad = mean(edad),
-            glucosa_maxima = max(glucosa_mgdl)
-        )
+    group_by(sexo) |>
+  summarise(total = n())
     son_iguales <- all.equal(df_resultado, df)
     calificacion <- 0
     if (son_iguales) {
