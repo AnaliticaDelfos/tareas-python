@@ -230,7 +230,7 @@ guardar_20 <- function(df) {
 }
 
 guardar_21 <- function(variable) {
-    resultado <- c("sexo", "glucosa_mgdl")
+    resultado <- c("sexo", "glucosa_mgdl", "edad", "diagnostico")
     son_iguales <- variable %in% resultado
     calificacion <- 0
     if (son_iguales) {
