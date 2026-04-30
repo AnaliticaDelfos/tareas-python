@@ -112,10 +112,10 @@ guardar_15 <- function(df) {
 guardar_16 <- function(df) {
     datos <- read_csv("cohorte_estudio.csv")
     df_resultado <- datos |>
-  mutate(
-    glucosa_ajustada = glucosa_mgdl + 10
-  ) |>
-  select(nombre, glucosa_ajustada)
+        mutate(
+            glucosa_ajustada = glucosa_mgdl + 10
+        ) |>
+        select(nombre, glucosa_ajustada)
     son_iguales <- all.equal(df_resultado, df)
     calificacion <- 0
     if (son_iguales) {
@@ -158,8 +158,8 @@ guardar_17 <- function(df) {
 
 guardar_18 <- function(df) {
     df_resultado <- datos |>
-    group_by(sexo) |>
-  summarise(total = n())
+        group_by(sexo) |>
+        summarise(total = n())
     son_iguales <- all.equal(df_resultado, df)
     calificacion <- 0
     if (son_iguales) {
@@ -249,8 +249,84 @@ guardar_21 <- function(variable) {
 }
 
 guardar_22 <- function(df) {
+    datos <- read_csv("cohorte_limpieza.csv")
     mediana_peso <- median(datos$peso_kg, na.rm = TRUE)
     df_resultado <- datos |> mutate(peso_kg = replace_na(peso_kg, mediana_peso))
+    son_iguales <- all.equal(df_resultado, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook15", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_23 <- function(df) {
+    datos <- read_csv("cohorte_limpieza.csv")
+    pendiente_de_revision <- datos |>
+        mutate(diagnostico = replace_na(diagnostico, "Pendiente de revisión"))
+    df_resultado <- pendiente_de_revision |> count(diagnostico, sort = TRUE)
+    son_iguales <- all.equal(df_resultado, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook15", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+
+guardar_24 <- function(df) {
+    datos <- read_csv("cohorte_limpieza.csv")
+    df_resultado <- datos |>
+        drop_na(glucosa_mgdl) |>
+        filter(edad > 18)
+    son_iguales <- all.equal(df_resultado, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook15", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_25 <- function(df) {
+    datos <- read_csv("cohorte_limpieza.csv")
+    datos <- read_csv("cohorte_limpieza.csv")
+
+    mediana_edad <- median(datos$edad, na.rm = TRUE)
+    promedio_glucosa <- mean(datos$glucosa_mgdl, na.rm = TRUE)
+
+    df_resultado <- datos |>
+        mutate(
+            edad = replace_na(edad, mediana_edad), glucosa_mgdl = replace_na(glucosa_mgdl, promedio_glucosa), sexo = replace_na(sexo, "U"),
+            diagnostico = replace_na(diagnostico, "Sin registro")
+        ) |>
+        drop_na(peso_kg)
     son_iguales <- all.equal(df_resultado, df)
     calificacion <- 0
     if (son_iguales) {
