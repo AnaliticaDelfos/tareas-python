@@ -247,3 +247,23 @@ guardar_21 <- function(variable) {
     print("Calificación guardada")
     content(response, "parsed")
 }
+
+guardar_22 <- function(df) {
+    mediana_peso <- median(datos$peso_kg, na.rm = TRUE)
+    df_resultado <- datos |> mutate(peso_kg = replace_na(peso_kg, mediana_peso))
+    son_iguales <- all.equal(df_resultado, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook15", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
