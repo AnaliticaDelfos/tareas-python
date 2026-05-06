@@ -251,8 +251,8 @@ guardar_21 <- function(variable) {
 guardar_22 <- function(df) {
     datos <- read_csv("cohorte_limpieza.csv")
     mediana_peso <- median(datos$peso_kg, na.rm = TRUE)
-    df_resultado <- datos |> mutate(peso_kg = replace_na(peso_kg, mediana_peso))
-    son_iguales <- all.equal(df_resultado, df)
+    datos_limpios <- datos |> mutate(peso_kg = replace_na(peso_kg, mediana_peso))
+    son_iguales <- all.equal(datos_limpios, df)
     calificacion <- 0
     if (son_iguales) {
         print("Bien hecho :D")
