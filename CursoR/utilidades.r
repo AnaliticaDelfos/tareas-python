@@ -343,7 +343,7 @@ guardar_25 <- function(df) {
     content(response, "parsed")
 }
 
-guardar_26 <- function(df) {
+guardar_26 <- function() {
     
     son_iguales <- TRUE
     calificacion <- 0
@@ -362,7 +362,7 @@ guardar_26 <- function(df) {
     content(response, "parsed")
 }
 
-guardar_27 <- function(df) {
+guardar_27 <- function() {
     
     son_iguales <- TRUE
     calificacion <- 0
@@ -381,7 +381,7 @@ guardar_27 <- function(df) {
     content(response, "parsed")
 }
 
-guardar_28 <- function(df) {
+guardar_28 <- function() {
     
     son_iguales <- TRUE
     calificacion <- 0
@@ -400,7 +400,7 @@ guardar_28 <- function(df) {
     content(response, "parsed")
 }
 
-guardar_29 <- function(df) {
+guardar_29 <- function() {
     
     son_iguales <- TRUE
     calificacion <- 0
@@ -419,7 +419,7 @@ guardar_29 <- function(df) {
     content(response, "parsed")
 }
 
-guardar_30 <- function(df) {
+guardar_30 <- function() {
     
     son_iguales <- TRUE
     calificacion <- 0
