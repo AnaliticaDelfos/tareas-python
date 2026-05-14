@@ -558,7 +558,7 @@ guardar_36 <- function(df) {
     content(response, "parsed")
 }
 
-guardar_37 <- function() {
+guardar_37 <- function(df) {
     r1_p_valor <- 0.4386
     r2_significativo <- FALSE
     r3_incluye_cero <- TRUE
@@ -583,7 +583,7 @@ guardar_37 <- function() {
     content(response, "parsed")
 }
 
-guardar_38 <- function() {
+guardar_38 <- function(df) {
     r1_p_valor <- 0.8164
     r2_significativo <- FALSE
     r3_grupo_mayor <- "NO"
@@ -608,7 +608,7 @@ guardar_38 <- function() {
     content(response, "parsed")
 }
 
-guardar_39 <- function() {
+guardar_39 <- function(df) {
     r1_p_valor <- 0.1345
     r2_existe_asociacion <- FALSE
     r3_diagnostico_riesgo <- "Diabetes"
@@ -633,7 +633,7 @@ guardar_39 <- function() {
     content(response, "parsed")
 }
 
-guardar_40 <- function() {
+guardar_40 <- function(df) {
     r1_normal_a <- TRUE
     r2_p_estatura <- 0.6731
     r3_sig_glucosa_b <- FALSE
