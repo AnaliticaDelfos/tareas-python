@@ -532,3 +532,132 @@ guardar_35 <- function() {
     print("Calificación guardada")
     content(response, "parsed")
 }
+
+guardar_36 <- function(df) {
+    r1_p_valor <- 0.1455
+    r2_es_normal <- TRUE
+    r3_camino <- "Parametrica"
+    df_respuesta <- data.frame(
+    pregunta = c("p_valor", "es_normal", "camino_sugerido"),
+    respuesta = c(as.character(r1_p_valor), as.character(r2_es_normal), r3_camino)
+    )
+    son_iguales <- all.equal(df_respuesta, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook36", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_37 <- function() {
+    r1_p_valor <- 0.4386
+    r2_significativo <- FALSE
+    r3_incluye_cero <- TRUE
+    df_respuesta <- data.frame(
+        pregunta = c("p_valor", "significancia", "ic_cero"),
+        respuesta = c(as.character(r1_p_valor), as.character(r2_significativo), as.character(r3_incluye_cero))
+    )
+    son_iguales <- all.equal(df_respuesta, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook37", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_38 <- function() {
+    r1_p_valor <- 0.8164
+    r2_significativo <- FALSE
+    r3_grupo_mayor <- "NO"
+    df_respuesta <- data.frame(
+        pregunta = c("p_valor", "significancia", "mediana_superior"),
+        respuesta = c(as.character(r1_p_valor), as.character(r2_significativo), r3_grupo_mayor)
+    )
+    son_iguales <- all.equal(df_respuesta, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook38", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_39 <- function() {
+    r1_p_valor <- 0.1345
+    r2_existe_asociacion <- FALSE
+    r3_diagnostico_riesgo <- "Diabetes"
+    df_respuesta <- data.frame(
+        pregunta = c("p_valor", "asociacion", "riesgo_alto"),
+        respuesta = c(as.character(r1_p_valor), r2_existe_asociacion, r3_diagnostico_riesgo)
+    )
+    son_iguales <- all.equal(df_respuesta, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook39", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_40 <- function() {
+    r1_normal_a <- TRUE
+    r2_p_estatura <- 0.6731
+    r3_sig_glucosa_b <- FALSE
+    r4_asociacion_c <- FALSE
+    df_respuesta <- data.frame(
+        item = c("normalidad_a", "p_valor_a", "sig_wilcoxon_b", "asociacion_chi_c"),
+        valor = c(as.character(r1_normal_a),
+                    as.character(r2_p_estatura),
+                    as.character(r3_sig_glucosa_b),
+                    as.character(r4_asociacion_c))
+    )
+    son_iguales <- all.equal(df_respuesta, df)
+    calificacion <- 0
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook40", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
