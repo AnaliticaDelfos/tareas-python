@@ -739,7 +739,7 @@ guardar_43 <- function() {
     content(response, "parsed")
 }
 
-guardar_44 <- function() {
+guardar_44 <- function(df) {
     r1_r2_ajustado <- -0.0023
     r2_es_robusto <- FALSE
     r3_mejoro_modelo <- FALSE
@@ -765,7 +765,7 @@ guardar_44 <- function() {
     content(response, "parsed")
 }
 
-guardar_45 <- function() {
+guardar_45 <- function(df) {
     r1_calidad_modelo <- -0.0053
     r2_sexo_sig <- FALSE
     r3_coef_edad <- -0.0480
