@@ -794,19 +794,19 @@ guardar_45 <- function(df) {
 }
 
 #################################################################################
-
+ 
 guardar_46 <- function(df) {
-    r1_calidad_modelo <- -0.0053
-    r2_sexo_sig <- FALSE
-    r3_coef_edad <- -0.0480
-    r4_impacto_dominante <- "edad"
+    r1_n_total <- 200
+    r2_n_eventos <- 101
+    r3_n_censurados <- 99
+    r4_interpretacion <- "NO"
     df_respuesta <- data.frame(
-        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
-        valor = c(as.character(r1_calidad_modelo),
-                as.character(r2_sexo_sig),
-                as.character(r3_coef_edad),
-                r4_impacto_dominante)
-    )   
+        item = c("total_pacientes", "total_eventos", "total_censurados", "logica_censura"),
+        valor = c(as.character(r1_n_total),
+                    as.character(r2_n_eventos),
+                    as.character(r3_n_censurados),
+                    r4_interpretacion)
+    )
     son_iguales <- all.equal(df_respuesta, df)
     if (son_iguales) {
         print("Bien hecho :D")
@@ -824,16 +824,16 @@ guardar_46 <- function(df) {
 }
 
 guardar_47 <- function(df) {
-    r1_calidad_modelo <- -0.0053
-    r2_sexo_sig <- FALSE
-    r3_coef_edad <- -0.0480
-    r4_impacto_dominante <- "edad"
+    r1_mediana_h <- 0
+    r2_mediana_m <- 74
+    r3_mejor_grupo <- "Hombres"
+    r4_presencia_censura <- TRUE
     df_respuesta <- data.frame(
-        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
-        valor = c(as.character(r1_calidad_modelo),
-                as.character(r2_sexo_sig),
-                as.character(r3_coef_edad),
-                r4_impacto_dominante)
+        item = c("mediana_hombres", "mediana_mujeres", "mejor_supervivencia", "censura_visual"),
+        valor = c(as.character(r1_mediana_h),
+                    as.character(r2_mediana_m),
+                    r3_mejor_grupo,
+                    as.character(r4_presencia_censura))
     )   
     son_iguales <- all.equal(df_respuesta, df)
     if (son_iguales) {
@@ -852,17 +852,15 @@ guardar_47 <- function(df) {
 }
 
 guardar_48 <- function(df) {
-    r1_calidad_modelo <- -0.0053
-    r2_sexo_sig <- FALSE
-    r3_coef_edad <- -0.0480
-    r4_impacto_dominante <- "edad"
+    r1_p_valor <- 0.0000
+    r2_es_significativo <- TRUE
+    r3_grupo_clave <- "TRUE"
     df_respuesta <- data.frame(
-        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
-        valor = c(as.character(r1_calidad_modelo),
-                as.character(r2_sexo_sig),
-                as.character(r3_coef_edad),
-                r4_impacto_dominante)
-    )   
+        item = c("p_valor", "significancia", "grupo_mas_afectado"),
+        valor = c(as.character(r1_p_valor),
+                    as.character(r2_es_significativo),
+                    r3_grupo_clave)
+    )
     son_iguales <- all.equal(df_respuesta, df)
     if (son_iguales) {
         print("Bien hecho :D")
@@ -880,17 +878,15 @@ guardar_48 <- function(df) {
 }
 
 guardar_49 <- function(df) {
-    r1_calidad_modelo <- -0.0053
-    r2_sexo_sig <- FALSE
-    r3_coef_edad <- -0.0480
-    r4_impacto_dominante <- "edad"
+    r1_hr_diabetes <- 2.6727
+    r2_es_significativo <- TRUE
+    r3_tipo_factor <- "Protector"
     df_respuesta <- data.frame(
-        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
-        valor = c(as.character(r1_calidad_modelo),
-                as.character(r2_sexo_sig),
-                as.character(r3_coef_edad),
-                r4_impacto_dominante)
-    )   
+        item = c("hr_diabetes", "significancia_hr", "interpretacion_hr"),
+        valor = c(as.character(r1_hr_diabetes),
+                    as.character(r2_es_significativo),
+                    r3_tipo_factor)
+    )
     son_iguales <- all.equal(df_respuesta, df)
     if (son_iguales) {
         print("Bien hecho :D")
@@ -908,17 +904,17 @@ guardar_49 <- function(df) {
 }
 
 guardar_50 <- function(df) {
-    r1_calidad_modelo <- -0.0053
-    r2_sexo_sig <- FALSE
-    r3_coef_edad <- -0.0480
-    r4_impacto_dominante <- "edad"
+    r1_mediana_global <- 93
+    r2_sig_logrank <- TRUE
+    r3_hr_maximo <- 2.4217
+    r4_interpretacion_hr <- "A"
     df_respuesta <- data.frame(
-        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
-        valor = c(as.character(r1_calidad_modelo),
-                as.character(r2_sexo_sig),
-                as.character(r3_coef_edad),
-                r4_impacto_dominante)
-    )   
+        item = c("mediana_global", "diferencia_grupos", "hr_pico", "logica_clinica"),
+        valor = c(as.character(r1_mediana_global),
+                    as.character(r2_sig_logrank),
+                    as.character(r3_hr_maximo),
+                    r4_interpretacion_hr)
+    )
     son_iguales <- all.equal(df_respuesta, df)
     if (son_iguales) {
         print("Bien hecho :D")
