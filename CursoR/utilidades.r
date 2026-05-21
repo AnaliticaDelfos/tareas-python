@@ -792,3 +792,145 @@ guardar_45 <- function(df) {
     print("Calificación guardada")
     content(response, "parsed")
 }
+
+#################################################################################
+
+guardar_46 <- function(df) {
+    r1_calidad_modelo <- -0.0053
+    r2_sexo_sig <- FALSE
+    r3_coef_edad <- -0.0480
+    r4_impacto_dominante <- "edad"
+    df_respuesta <- data.frame(
+        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
+        valor = c(as.character(r1_calidad_modelo),
+                as.character(r2_sexo_sig),
+                as.character(r3_coef_edad),
+                r4_impacto_dominante)
+    )   
+    son_iguales <- all.equal(df_respuesta, df)
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook46", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_47 <- function(df) {
+    r1_calidad_modelo <- -0.0053
+    r2_sexo_sig <- FALSE
+    r3_coef_edad <- -0.0480
+    r4_impacto_dominante <- "edad"
+    df_respuesta <- data.frame(
+        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
+        valor = c(as.character(r1_calidad_modelo),
+                as.character(r2_sexo_sig),
+                as.character(r3_coef_edad),
+                r4_impacto_dominante)
+    )   
+    son_iguales <- all.equal(df_respuesta, df)
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook47", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_48 <- function(df) {
+    r1_calidad_modelo <- -0.0053
+    r2_sexo_sig <- FALSE
+    r3_coef_edad <- -0.0480
+    r4_impacto_dominante <- "edad"
+    df_respuesta <- data.frame(
+        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
+        valor = c(as.character(r1_calidad_modelo),
+                as.character(r2_sexo_sig),
+                as.character(r3_coef_edad),
+                r4_impacto_dominante)
+    )   
+    son_iguales <- all.equal(df_respuesta, df)
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook48", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_49 <- function(df) {
+    r1_calidad_modelo <- -0.0053
+    r2_sexo_sig <- FALSE
+    r3_coef_edad <- -0.0480
+    r4_impacto_dominante <- "edad"
+    df_respuesta <- data.frame(
+        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
+        valor = c(as.character(r1_calidad_modelo),
+                as.character(r2_sexo_sig),
+                as.character(r3_coef_edad),
+                r4_impacto_dominante)
+    )   
+    son_iguales <- all.equal(df_respuesta, df)
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook49", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
+
+guardar_50 <- function(df) {
+    r1_calidad_modelo <- -0.0053
+    r2_sexo_sig <- FALSE
+    r3_coef_edad <- -0.0480
+    r4_impacto_dominante <- "edad"
+    df_respuesta <- data.frame(
+        item = c("bondad_ajuste", "significancia_sexo", "efecto_edad", "lider_predictor"),
+        valor = c(as.character(r1_calidad_modelo),
+                as.character(r2_sexo_sig),
+                as.character(r3_coef_edad),
+                r4_impacto_dominante)
+    )   
+    son_iguales <- all.equal(df_respuesta, df)
+    if (son_iguales) {
+        print("Bien hecho :D")
+        calificacion <- 1
+    } else {
+        print("Vuélvelo a intentar :)")
+    }
+    response <- POST(
+        url = "https://calificar-r-435015279585.us-central1.run.app",
+        body = list(JPY_SESSION_NAME = "Notebook50", usuario = Sys.getenv("JUPYTERHUB_USER"), calificacion = calificacion),
+        encode = "json" # Automatically sets Content-Type to application/json
+    )
+    print("Calificación guardada")
+    content(response, "parsed")
+}
