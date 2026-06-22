@@ -1,38 +1,38 @@
 Tarea 0 - 3 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea0.ipynb&app=notebook
 
 Tarea 1 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea1_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea1.ipynb&app=notebook
 
 Tarea 2 - 9 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea2_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea2.ipynb&app=notebook
 
 Tarea 3 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea3_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea3.ipynb&app=notebook
 
 Tarea 4 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea4_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea4.ipynb&app=notebook
 
 Tarea 5 - 10 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea5_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea5.ipynb&app=notebook
 
 Tarea 6 - 12 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea6_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea6.ipynb&app=notebook
 
 Tarea 7 - 9 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea7_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea7.ipynb&app=notebook
 
 Tarea 8 - 3 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea8_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea8.ipynb&app=notebook
 
 Tarea 9 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea9_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea9.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea10_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea10.ipynb&app=notebook
 
 Tarea 10 - 4 Ejercicios
-http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=AutomatizacionDeExcelConPython/tarea11_0.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonParaBackend/tarea11.ipynb&app=notebook
 
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook

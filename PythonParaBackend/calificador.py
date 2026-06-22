@@ -9,19 +9,19 @@ import os
 
 @template_iterable([
     [[1, 2], 3],
-], 'ejercicio_0_1', '0')
+], '1', 'pb')
 def califica_ejercicio_0_1(f):
     return f
 
 @template_iterable([
     [[1, 2], -1],
-], 'ejercicio_0_2', '0')
+], '2', 'pb')
 def califica_ejercicio_0_2(f):
     return f
 
 @template_iterable([
     [[], "Hola, mundo!"],
-], 'ejercicio_0_3', '0')
+], '3', 'pb')
 def califica_ejercicio_0_3(f):
     return f
 
@@ -34,7 +34,7 @@ def califica_ejercicio_0_3(f):
     [["localhost", 8000], "http://localhost:8000"],
     [["127.0.0.1", 5432], "http://127.0.0.1:5432"],
     [["api.delfos.com", "443"], "http://api.delfos.com:443"]
-], 'ejercicio_1', '1')
+], '4', '1')
 def califica_ejercicio_1(f):
     return f
 
@@ -42,7 +42,7 @@ def califica_ejercicio_1(f):
     [["postgresql://user:pass@localhost:5432/mydb"], "postgresql"],
     [["sqlite:///:memory:"], "sqlite"],
     [["mongodb+srv://cluster/db"], "mongodb+srv"]
-], 'ejercicio_2', '1')
+], '5', '1')
 def califica_ejercicio_2(f):
     return f
 
@@ -50,7 +50,7 @@ def califica_ejercicio_2(f):
     [["8080"], 8080],
     [["443"], 443],
     [["5000"], 5000]
-], 'ejercicio_3', '1')
+], '6', '1')
 def califica_ejercicio_3(f):
     return f
 
@@ -58,7 +58,7 @@ def califica_ejercicio_3(f):
     [["/users", "limit=10&page=2"], "/users?limit=10&page=2"],
     [["/products", "category=books"], "/products?category=books"],
     [["/status", ""], "/status"]
-], 'ejercicio_4', '1')
+], '7', '1')
 def califica_ejercicio_4(f):
     return f
 
@@ -66,7 +66,7 @@ def califica_ejercicio_4(f):
     [["info", "User logged in"], "[INFO] User logged in"],
     [["error", "Failed to connect to database"], "[ERROR] Failed to connect to database"],
     [["WARNING", "Disk space low"], "[WARNING] Disk space low"]
-], 'ejercicio_5', '1')
+], '8', '1')
 def califica_ejercicio_5(f):
     return f
 
@@ -80,7 +80,7 @@ def califica_ejercicio_5(f):
     [["superuser"], True],
     [["guest"], False],
     [["user"], False]
-], 'ejercicio_6', '2')
+], '9', '2')
 def califica_ejercicio_6(f):
     return f
 
@@ -93,7 +93,7 @@ def califica_ejercicio_6(f):
     [[503], "SERVER_ERROR"],
     [[302], "OTHER"],
     [[101], "OTHER"]
-], 'ejercicio_7', '2')
+], '10', '2')
 def califica_ejercicio_7(f):
     return f
 
@@ -102,7 +102,7 @@ def califica_ejercicio_7(f):
     [["", "password123"], False],
     [["user1", "pass"], False],
     [["", ""], False]
-], 'ejercicio_8', '2')
+], '11', '2')
 def califica_ejercicio_8(f):
     return f
 
@@ -112,7 +112,7 @@ def califica_ejercicio_8(f):
     [[16, True], True],
     [[16, False], False],
     [[18, False], True]
-], 'ejercicio_9', '2')
+], '12', '2')
 def califica_ejercicio_9(f):
     return f
 
@@ -123,7 +123,7 @@ def califica_ejercicio_9(f):
     [["Application/Xml"], True],
     [["text/html"], False],
     [["image/png"], False]
-], 'ejercicio_10', '2')
+], '13', '2')
 def califica_ejercicio_10(f):
     return f
 
@@ -137,7 +137,7 @@ def califica_ejercicio_10(f):
     [[[{"status": "pending"}, {"status": "pending"}], "pending"], 2],
     [[[{"status": "pending"}, {"status": "pending"}], "active"], 0],
     [[[], "active"], 0]
-], 'ejercicio_11', '3')
+], '14', '3')
 def califica_ejercicio_11(f):
     return f
 
@@ -146,7 +146,7 @@ def califica_ejercicio_11(f):
     [[5], [1, 2, 3, 4, 5]],
     [[0], []],
     [[-1], []]
-], 'ejercicio_12', '3')
+], '15', '3')
 def califica_ejercicio_12(f):
     return f
 
@@ -155,7 +155,7 @@ def califica_ejercicio_12(f):
     [[["a", "b", "c", "d", "e"], 2, 2], ["c", "d"]],
     [[["a", "b", "c", "d", "e"], 3, 2], ["e"]],
     [[["a", "b", "c", "d", "e"], 4, 2], []]
-], 'ejercicio_13', '3')
+], '16', '3')
 def califica_ejercicio_13(f):
     return f
 
@@ -163,7 +163,7 @@ def califica_ejercicio_13(f):
     [[[100, 200, 50], 0.1], [90.0, 180.0, 45.0]],
     [[[10, 20], 0.5], [5.0, 10.0]],
     [[[], 0.1], []]
-], 'ejercicio_14', '3')
+], '17', '3')
 def califica_ejercicio_14(f):
     return f
 
@@ -171,7 +171,7 @@ def califica_ejercicio_14(f):
     [[["[INFO] OK", "[ERROR] DB fail", "[INFO] Job done"], "fail"], ["[ERROR] DB fail"]],
     [[["[INFO] OK", "[ERROR] DB fail", "[INFO] Job done"], "INFO"], ["[INFO] OK", "[INFO] Job done"]],
     [[["[INFO] OK", "[ERROR] DB fail", "[INFO] Job done"], "CORS"], []]
-], 'ejercicio_15', '3')
+], '18', '3')
 def califica_ejercicio_15(f):
     return f
 
@@ -183,7 +183,7 @@ def califica_ejercicio_15(f):
 @template_iterable([
     [[["task1", "task2"], "task3"], ["task1", "task2", "task3"]],
     [[[], "task1"], ["task1"]]
-], 'ejercicio_16', '4')
+], '19', '4')
 def califica_ejercicio_16(f):
     return f
 
@@ -191,7 +191,7 @@ def califica_ejercicio_16(f):
     [[["task1", "task2", "task3"]], ("task1", ["task2", "task3"])],
     [[["task1"]], ("task1", [])],
     [[[]], (None, [])]
-], 'ejercicio_17', '4')
+], '20', '4')
 def califica_ejercicio_17(f):
     return f
 
@@ -199,7 +199,7 @@ def califica_ejercicio_17(f):
     [[[4, 1, 2, 4, 3, 1]], [4, 1, 2, 3]],
     [[["a", "b", "a", "c"]], ["a", "b", "c"]],
     [[[]], []]
-], 'ejercicio_18', '4')
+], '21', '4')
 def califica_ejercicio_18(f):
     return f
 
@@ -207,14 +207,14 @@ def califica_ejercicio_18(f):
     [[[("Content-Type", "application/json"), ("Authorization", "Bearer token123")], "authorization"], "Bearer token123"],
     [[[("Content-Type", "application/json"), ("Authorization", "Bearer token123")], "content-type"], "application/json"],
     [[[("Content-Type", "application/json"), ("Authorization", "Bearer token123")], "host"], None]
-], 'ejercicio_19', '4')
+], '22', '4')
 def califica_ejercicio_19(f):
     return f
 
 @template_iterable([
     [[["Carlos", "Ana"], ["Beatriz", "Daniel"]], ["Ana", "Beatriz", "Carlos", "Daniel"]],
     [[[], ["A", "B"]], ["A", "B"]]
-], 'ejercicio_20', '4')
+], '23', '4')
 def califica_ejercicio_20(f):
     return f
 
@@ -226,7 +226,7 @@ def califica_ejercicio_20(f):
 @template_iterable([
     [[{"username": "angel"}, "role", "guest"], "guest"],
     [[{"username": "angel", "role": "admin"}, "role", "guest"], "admin"]
-], 'ejercicio_21', '5')
+], '24', '5')
 def califica_ejercicio_21(f):
     return f
 
@@ -234,14 +234,14 @@ def califica_ejercicio_21(f):
     [[{"juan": "editor"}, {"editor": {"read", "edit"}}, "juan"], {"read", "edit"}],
     [[{"juan": "editor"}, {"editor": {"read", "edit"}}, "pedro"], set()],
     [[{"juan": "guest"}, {"editor": {"read", "edit"}}, "juan"], set()]
-], 'ejercicio_22', '5')
+], '25', '5')
 def califica_ejercicio_22(f):
     return f
 
 @template_iterable([
     [[[{"id": 101, "name": "A"}, {"id": 102, "name": "B"}]], {101: {"id": 101, "name": "A"}, 102: {"id": 102, "name": "B"}}],
     [[[]], {}]
-], 'ejercicio_23', '5')
+], '26', '5')
 def califica_ejercicio_23(f):
     return f
 
@@ -256,7 +256,7 @@ def _eval_ejercicio_24(f):
     [[["read"], ["read", "write"]], False],
     [[set(), ["read"]], False],
     [[{"read"}, {"read"}], True]
-], 'ejercicio_24', '5')
+], '27', '5')
 def califica_ejercicio_24(f):
     return _eval_ejercicio_24(f)
 
@@ -264,7 +264,7 @@ def califica_ejercicio_24(f):
     [[{"id": 1, "desc": None, "price": 10}], {"id": 1, "price": 10}],
     [[{"name": None}], {}],
     [[{"a": 1, "b": 2}], {"a": 1, "b": 2}]
-], 'ejercicio_25', '5')
+], '28', '5')
 def califica_ejercicio_25(f):
     return f
 
@@ -276,7 +276,7 @@ def califica_ejercicio_25(f):
 @template_iterable([
     [["angel"], {"username": "angel", "role": "guest"}],
     [["admin", "superuser"], {"username": "admin", "role": "superuser"}]
-], 'ejercicio_26', '6')
+], '29', '6')
 def califica_ejercicio_26(f):
     return f
 
@@ -290,7 +290,7 @@ def _eval_ejercicio_27(f):
     [["https://api.delfos.com/users", {"limit": 10, "page": 1}], "https://api.delfos.com/users?limit=10&page=1"],
     [["https://api.delfos.com/users", {"page": 2, "limit": 5}], "https://api.delfos.com/users?limit=5&page=2"],
     [["https://status.delfos.com", {}], "https://status.delfos.com"]
-], 'ejercicio_27', '6')
+], '30', '6')
 def califica_ejercicio_27(f):
     return _eval_ejercicio_27(f)
 
@@ -304,14 +304,14 @@ def _eval_ejercicio_28(f):
     [[("auth", "logger", "cors")], ["cors", "logger", "auth"]],
     [[("auth",)], ["auth"]],
     [[()], []]
-], 'ejercicio_28', '6')
+], '31', '6')
 def califica_ejercicio_28(f):
     return _eval_ejercicio_28(f)
 
 @template_iterable([
     [[lambda x: len(x) > 3, "abcd"], "Validated"],
     [[lambda x: x % 2 == 0, 4], "Validated"]
-], 'ejercicio_29', '6')
+], '32', '6')
 def califica_ejercicio_29(f):
     return f
 
@@ -327,7 +327,7 @@ def validador_ejercicio_29_excepcion(f):
         r = False
     return [Resultado(["lambda x: len(x) > 3", "abc"], "ValueError('Invalid data')", "ValueError" if r else "Other", r).__dict__]
 
-@template_custom(validador_ejercicio_29_excepcion, 'ejercicio_29', '6')
+@template_custom(validador_ejercicio_29_excepcion, '32', '6')
 def califica_ejercicio_29_excepcion(f):
     return f
 
@@ -340,7 +340,7 @@ def _eval_ejercicio_30(f):
 @template_iterable([
     [[lambda x, y: x + y, (5, 10), {}], 15],
     [[lambda name, role: f"{name}-{role}", ("angel",), {"role": "admin"}], "angel-admin"]
-], 'ejercicio_30', '6')
+], '33', '6')
 def califica_ejercicio_30(f):
     return _eval_ejercicio_30(f)
 
@@ -362,7 +362,7 @@ def validador_ejercicio_31(f):
             os.remove(tmp_path)
     return [Resultado([tmp_path], 2, res, estado).__dict__]
 
-@template_custom(validador_ejercicio_31, 'ejercicio_31', '7')
+@template_custom(validador_ejercicio_31, '34', '7')
 def califica_ejercicio_31(f):
     return f
 
@@ -382,7 +382,7 @@ def validador_ejercicio_32(f):
             os.remove(tmp_path)
     return [Resultado([tmp_path, "[INFO] Hit"], "[INFO] Hit\n", res_obtenido, estado).__dict__]
 
-@template_custom(validador_ejercicio_32, 'ejercicio_32', '7')
+@template_custom(validador_ejercicio_32, '35', '7')
 def califica_ejercicio_32(f):
     return f
 
@@ -400,7 +400,7 @@ def validador_ejercicio_33(f):
             os.remove(tmp_path)
     return [Resultado([tmp_path], esperado, res, estado).__dict__]
 
-@template_custom(validador_ejercicio_33, 'ejercicio_33', '7')
+@template_custom(validador_ejercicio_33, '36', '7')
 def califica_ejercicio_33(f):
     return f
 
@@ -422,7 +422,7 @@ def validador_ejercicio_34(f):
             os.remove(tmp_path)
     return [Resultado([tmp_path, data], list(lineas_esperadas), list(lineas_obtenidas), estado).__dict__]
 
-@template_custom(validador_ejercicio_34, 'ejercicio_34', '7')
+@template_custom(validador_ejercicio_34, '37', '7')
 def califica_ejercicio_34(f):
     return f
 
@@ -440,7 +440,7 @@ def validador_ejercicio_35(f):
             os.remove(tmp_path)
     return [Resultado([tmp_path], esperado, res, estado).__dict__]
 
-@template_custom(validador_ejercicio_35, 'ejercicio_35', '7')
+@template_custom(validador_ejercicio_35, '38', '7')
 def califica_ejercicio_35(f):
     return f
 
@@ -453,7 +453,7 @@ def califica_ejercicio_35(f):
     [[lambda: "ok"], "ok"],
     [[lambda: 1/0], "DATABASE_ERROR"],
     [[lambda: int("abc")], "DATABASE_ERROR"]
-], 'ejercicio_36', '8')
+], '39', '8')
 def califica_ejercicio_36(f):
     return f
 
@@ -461,7 +461,7 @@ def califica_ejercicio_36(f):
     [[lambda x: int(x), "123"], 123],
     [[lambda x: int(x), "abc"], {"error": "invalid_format"}],
     [[lambda x: x.split(), None], {"error": "invalid_format"}]
-], 'ejercicio_37', '8')
+], '40', '8')
 def califica_ejercicio_37(f):
     return f
 
@@ -494,7 +494,7 @@ def validador_ejercicio_38(f):
         Resultado(["5"], "ValueError('Debe ser entero positivo')", "ValueError" if r3 else None, r3).__dict__
     ]
 
-@template_custom(validador_ejercicio_38, 'ejercicio_38', '8')
+@template_custom(validador_ejercicio_38, '41', '8')
 def califica_ejercicio_38(f):
     return f
 
@@ -523,7 +523,7 @@ def validador_ejercicio_39(f):
         Resultado(["db_func=lambda: 1/0"], "ZeroDivisionError + Cleanup=True", f"ZeroDivisionError + Cleanup={cleanup_called}", r2).__dict__
     ]
 
-@template_custom(validador_ejercicio_39, 'ejercicio_39', '8')
+@template_custom(validador_ejercicio_39, '42', '8')
 def califica_ejercicio_39(f):
     return f
 
@@ -548,7 +548,7 @@ def validador_ejercicio_40(f):
         Resultado([{"username": "ana"}], "MissingEmailError", "MissingEmailError" if r2 else None, r2).__dict__
     ]
 
-@template_custom(validador_ejercicio_40, 'ejercicio_40', '8')
+@template_custom(validador_ejercicio_40, '43', '8')
 def califica_ejercicio_40(f):
     return f
 
@@ -567,7 +567,7 @@ def validador_ejercicio_41(Usuario):
         Resultado(["to_dict"], {"username": "angel", "email": "a@delfos.com"}, d, r2).__dict__
     ]
 
-@template_custom(validador_ejercicio_41, 'ejercicio_41', '9')
+@template_custom(validador_ejercicio_41, '44', '9')
 def califica_ejercicio_41(f):
     return f
 
@@ -581,7 +581,7 @@ def validador_ejercicio_42(UsuarioVip):
         Resultado(["to_dict"], {"username": "angel_vip", "email": "vip@delfos.com", "descuento": 0.15}, d, r2).__dict__
     ]
 
-@template_custom(validador_ejercicio_42, 'ejercicio_42', '9')
+@template_custom(validador_ejercicio_42, '45', '9')
 def califica_ejercicio_42(f):
     return f
 
@@ -596,7 +596,7 @@ def validador_ejercicio_43(BaseModel):
         Resultado(["save"], [{"id": 101}], db, r2).__dict__
     ]
 
-@template_custom(validador_ejercicio_43, 'ejercicio_43', '9')
+@template_custom(validador_ejercicio_43, '46', '9')
 def califica_ejercicio_43(f):
     return f
 
@@ -629,7 +629,7 @@ def validador_ejercicio_44(validate_user):
         Resultado([{}], "ValidationError('Username invalido')", "ValidationError" if r3 else None, r3).__dict__
     ]
 
-@template_custom(validador_ejercicio_44, 'ejercicio_44', '9')
+@template_custom(validador_ejercicio_44, '47', '9')
 def califica_ejercicio_44(f):
     return f
 
@@ -651,6 +651,6 @@ def validador_ejercicio_45(APIResponse):
         Resultado(["is_success 299"], True, res3.is_success(), r4).__dict__
     ]
 
-@template_custom(validador_ejercicio_45, 'ejercicio_45', '9')
+@template_custom(validador_ejercicio_45, '48', '9')
 def califica_ejercicio_45(f):
     return f

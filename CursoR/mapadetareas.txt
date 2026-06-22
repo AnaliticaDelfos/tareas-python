@@ -66,6 +66,11 @@ http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://gith
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook43.ipynb&app=notebook
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook44.ipynb&app=notebook
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook45.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook46.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook47.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook48.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook49.ipynb&app=notebook
+http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=CursoR/Notebook50.ipynb&app=notebook
 
 Ejercicios 1
 http://tareasv2.analiticadelfos.com/hub/user-redirect/git-pull?repo=https://github.com/AnaliticaDelfos/tareas-python&subPath=PythonExpres/ejercicios1.ipynb&app=notebook
