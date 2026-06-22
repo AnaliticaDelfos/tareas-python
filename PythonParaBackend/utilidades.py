@@ -4,7 +4,7 @@ import os
 import mensajes
 from controlador import Controlador
 errores = []
-ID_CURSO = "c68pKZLnGhO3xWTC1amc"
+ID_CURSO = "tsJfmiWPH4BEZJlZPtwF"
 correo = os.environ.get("JUPYTERHUB_USER")
 
 def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
@@ -16,7 +16,6 @@ def mandar_a_firestore(ejercicio, calificacion, resultados, tarea):
     else:
         correo = 'estudiante@analiticadelfos.com'
         ruta = "http://127.0.0.1:8086"
-    requests.get(ruta)
     resp = requests \
         .post(ruta, \
         json={"uuid": correo, \
